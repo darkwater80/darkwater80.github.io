@@ -102,7 +102,7 @@ font-weight: bold;
 }
   
 .welcome a:hover {
-     color:#ffd00c!important;
+     color:#91052e!important;
 }  
 
 .leaguelogo {
@@ -163,7 +163,7 @@ font-weight: bold;
 #replacehometabs li.searchform .btn {height:32px;width:auto;padding:0;}
 #replacehometabs li.searchform .btn {outline: none;}
 #replacehometabs li a{display:inline-block;}
-#replacehometabs li,#replacehometabs li a {text-decoration:none;color:#bc9a6a;font-weight:400;text-transform:uppercase;font-size:11pt;}
+#replacehometabs li,#replacehometabs li a {text-decoration:none;color:#bc9a6a;font-weight:bold;text-transform:uppercase;font-size:9pt;}
 #replacehometabs li.tablink {border:0 none;padding:0!important;}
 #replacehometabs li.tablink.img1 {border-left:1px solid rgba(188,154,106,.4);}
 #replacehometabs li.tablink.img7 {border-right:1px solid rgba(188,154,106,.4);}
@@ -311,7 +311,6 @@ th {
 	 color: #bbbbbb!important;
 	 font-size: 100%;
 	 font-style: normal;
-	 font-weight: 400;
 	 text-align: center;
 	 text-transform: uppercase;
 }
@@ -430,7 +429,7 @@ a:active {
 h2 {
 	 background:rgba(188,154,106,.1);
 	 color: #bc9a6a;
-	 font-size: 14px;
+	 font-size: 13px;
 	 margin: 0px;
 	 color:#ccc;
 }
@@ -1305,7 +1304,7 @@ div#options_82.pagebody form table{
 	 margin:0px 0 5px 0;
 	 background: none repeat scroll 0px 0px #FFF;
 	 border-radius: 5px;
-	 border: 2px solid rgba(38, 62, 104, 0.4);
+	 border: 2px solid rgba(188, 154, 106, 0.4);
 	 box-shadow: 0px 0px 13px 1px rgba(38, 62, 104, 0.2) inset;
 	 text-transform:uppercase;
 	 color:#da2b2a;
@@ -1533,16 +1532,19 @@ img.ava {
 }
 
 #league_chat {
-	 margin-bottom:15px;
+     margin-bottom:15px;
+     text-transform:uppercase !important;
+     font-family:"Roboto", sans-serif !important;
 }
 
 #chat {
-	 margin-bottom: 0px;
-	 margin-top: 0px;
-	 padding-bottom: 0px;
-	 border:0;
-	 background:none;
-	 width: auto;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     padding-bottom: 0px;
+     border:0;
+     background:none;
+     width: auto;
+
 }
 
 #body_chat h2 {
@@ -1872,12 +1874,12 @@ a.playerPopupNewsIcon {
 }
 
 #playerPopupLoading span,#articlePopupLoading span {
-	 background: url("https://image.ibb.co/eMFm6F/47.gif") no-repeat scroll center top transparent;
-	 content: "";
-	 height: 15px;
-	 left: 0px;
-	 position: absolute;
-	 top: 40px;
+     background: url("http://nitrografixx.com/2016/ptd/ptd2017/ajax-loader.gif") no-repeat scroll center top transparent;
+     content: "";
+     height: 15px;
+     left: 0px;
+     position: absolute;
+     top: 40px;
 }
 
 h3#playerPopupName,h3#articlePopupName {
@@ -1941,8 +1943,8 @@ h3#playerPopupName a:hover {
 }
 
 #playerPopupWrapper ul.content_tabs {
-	 border-bottom: 2px solid #092b47;
-	 border-top: 2px solid #092b47;
+	 border-bottom: 2px solid #bc9a6a;
+	 border-top: 2px solid #bc9a6a;
 	 height: 34px;
 	 line-height: 34px;
 	 list-style: outside none none;
@@ -2191,7 +2193,7 @@ th.articlecaption a.playerPopupNewsIcon,
 }
 
 .ps-container .ps-scrollbar-x-rail {
-	 background: none repeat scroll 0px 0px #092b47;
+	 background: none repeat scroll 0px 0px #bc9a6a;
 	 bottom: 0px;
 	 height: 10px;
 	 margin-left: 16px ! important;
@@ -2770,8 +2772,8 @@ ul#rostertabs .currenttab {
 	 width:1%;
 	 cursor:pointer;
 	 text-transform:uppercase;
-	 border-left: 1px solid #092b47;
-	 border-right: 1px solid #092b47;
+	 border-left: 1px solid #bc9a6a;
+	 border-right: 1px solid #bc9a6a;
 	 color:#ccc; 
 	 transition: none;
 	 line-height:25px;
@@ -3129,553 +3131,6 @@ ul#rostertabs .currenttab {
 
 /*  ============================================================================================================== */
 
-
-
-/*    SCOREBOARD 
-===================== */
-
-td#myNavigationHolder {
-	 background: none;
-	 box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
-}
- 
-table.cbsWeeklyNavigation {
-	 font: normal bold 8pt Arial,Helvetica,sans-serif;
-	 text-align: center;
-	 width: 100%;
-	 color: #ccc;
-	 margin-bottom: 8px;
-	 height: 30px;
-	 background: rgba(0,0,0,.3);
-	 border-radius: 5px;
-	 border: 2px solid #33261;
-	 cursor: default;
-	 margin-top: 0px;
-	 border-radius: 5px;
-	 padding-top:2px;
-	 padding-left:40px;
-}
- 
-span.navWeekLink,span.navWeekCurr,span.navWeekInactive {
-	 vertical-align: middle!important;
-	 font: 400 8pt 'Roboto',sans-serif!important;
-}
- 
-span.navWeekLink a {
-	 text-decoration: none;
-	 padding: 0 2px;
-	 color: #ccc!important;
-}
- 
-span.navWeekLink a:hover {
-	 text-decoration: none; 
-	 color:#bc9a6a!important;
-}
- 
-span.navWeekCurr {
-	 color: #bc9a6a!important;
-	 padding: 0 2px;
-	 font-size: 11pt;
-	 background: none;
-}
- 
-span.navWeekInactive {
-	 padding: 0 0px;
-	 cursor: default;
-	 color: #FFF!important;
-}
- 
-span.navdash {
-	 color: #bc9a6a;
-	 cursor:pointer;
-}
- 
-.cbsMainScoreboard {
-	 table-layout: fixed;
-	 min-width: 960px!important;
-	 border-spacing: 2px!important
-}
- 
-#cbsRoadTeamName,#cbsHomeTeamName,#cbsRoadScore,#cbsHomeScore {
-	 width: 254px!important;
-}
-
-table.cbsMainScoreboard {
-	 width: 100%;
-	 font: normal bold 8pt Arial,Helvetica,sans-serif;
-	 margin-bottom: 5px;
-	 margin-top: -2px;
-	 background: none repeat scroll 0px 0px #111 ! important;
-	 border-radius: 5px;
-	 border: 1px solid #171717;
-	 box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
-	 padding: 3px;
-	 text-align: left;
-}
-
-td#cbsCenterTop {
-	 font-size: 0;
-	 background: transparent url(https://image.ibb.co/d67utv/scoreboard.png) center no-repeat;
-	 background-size: 100% 100%;
-}
-
-td#cbsRoadTeamRecord,td#cbsHomeTeamRecord {
-	 width: auto!important;
-	 letter-spacing: 2px;
-	 font: 400 8pt 'Roboto',sans-serif!important;
-	 border: 1px solid rgba(9,43,71,.2);
-}
- 
-td#cbsRoadTeamRecord {
-	 color: #ccc;
-	 text-align: center;
-	 height: 16px;
-}
- 
-td#cbsHomeTeamRecord {
-	 color: #ccc;
-	 text-align: center;
-	 height: 16px;
-}
-
-.cbsWeeklyNavigation td {
-	 vertical-align:middle!important;
-	 height:18px;
-	 line-height:18px;
-}
-
-#cbsScoreboardMessage {
-	 color: #bc9a6a;
-	 font: 400 .8em "Roboto",sans-serif;
-	 background:#000;
-	 padding:3px 5px;
-	 border-radius: 5px;
-	 width:100px!important;
-	 text-align:center;
-	 text-transform:uppercase;
-	 letter-spacing:1px;
-}
-#cbsScoreboardMessageResetTimer {
-	 cursor: pointer;
-	 color: #bc9a6a;
-	 font: 400 .8em "Roboto",sans-serif;
-	 background:#000;
-	 padding:3px 5px;
-	 border-radius: 5px;
-	 text-transform:uppercase;
-	 letter-spacing:1px;
-}
-
-td.cbsScoreboardTitle {
-	 background: url(http://nitrografixx.com/2016/ptd/ptd2017/digitholder.png) center top no-repeat;
-	 color: #FFF;
-	 text-align: center;
-}
- 
-td#cbsRoadPlayers,td#cbsRoadYTP,td#cbsRoadPMR,td#cbsHomePlayers,td#cbsHomeYTP,td#cbsHomePMR {
-	 background: url(http://nitrografixx.com/2016/ptd/ptd2017/digitholder.png) center bottom no-repeat;
-	 color: #FFF;
-	 text-align: center;
-}
-
-td#cbsRoadTeamName img,td#cbsHomeTeamName img {
-	 max-height: 46px;
-	 max-width: 246px;
-}
-
-td#cbsRoadTeamName,td#cbsHomeTeamName {
-	 text-align: center;
-	 border: 1px solid rgba(9,43,71,.2);
-	 font-size:15pt;
-	 height:55px;
-	 text-transform:uppercase;
-	 color:#bc9a6aa;
-}
-
-td#cbsRoadScore,td#cbsHomeScore {
-	 background: transparent;
-	 border: 0;
-	 padding:0;
-}
- 
-td#cbsRoadScore img,td#cbsHomeScore img {
-	 padding-top: 0px;
-	 margin: 0!important;
-	 margin-right:1px!important
-}
-
-td#cbsHomeLogo img {
-	 -moz-transform: scaleX(-1);
-	 -o-transform: scaleX(-1);
-	 -webkit-transform: scaleX(-1);
-	 transform: scaleX(-1);
-	 filter: FlipH;
-	 -ms-filter: "FlipH";
-}
-
-td#myMiddleTableHolder {
-	 -webkit-border-radius: 5px;
-	 -moz-border-radius: 5px;
-	 background:#111 ! important;
-	 border-radius: 5px;
-	 border: 1px solid #171717;
-	 box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
-	 padding: 5px;
-	 height:76px;
-}
- 
-.cbsGameLinks td {
-	 margin: 0;
-	 padding: 0;
-}
-
-table.cbsGameTable {
-	 border-collapse: collapse;
-	 position:relative;
-	 border:0!important;
-	 cursor:pointer;
-	 color: #ccc;
-	 min-width: 150px;
-}
-
-table.cbsLineups,table.cbsLineups a,table.cbsLineups th {
-	 font: 400 10pt 'Roboto',sans-serif!important;
-}
-
-.cbsLineups {     
-	 background:#111 ! important;
-	 border: 1px solid #171717;
-	 box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
-	 padding: 7px 5px;
-	 border-spacing: 0;
-	 margin-top: 5px;
-	 cursor: default;
-	 text-align:center;
-	 -webkit-border-radius: 5px;
-	 -moz-border-radius: 5px;
-	 border-radius: 5px;
-}
- 
-.cbsTeamLineup {
-	 border-spacing:0px!important;
-}
-#cbsRoadLineup,#cbsHomeLineup {
-	 width:50%;
-}
-
-#cbsBlankLineup {
-	 width:0%!important;
-	 display:none!important;
-} 
- 
-.cbsTeamLineup td,.cbsTeamLineup td.actual {
-	 border: 1px solid rgba(9,43,71,.2);
-	 border-top:0;
-	 padding: 1px;
-	 text-align: center;
-	 color: #ccc;
-}
-.cbsTeamLineup td {
-	 border-right:0;
-}
-
-.cbsTeamLineup td.cbsPlayerPoints,td.oppRankNA {
-	 border-right:1px solid rgba(9,43,71,.2);
-}
- 
-table.cbsOuterTable tbody tr td table.cbsLineups tbody tr td#cbsHomeLineup {
-	 padding-left: 5px;
-}
- 
-table.cbsLineups td#cbsBlankLineup {
-	 display: none;
-}
- 
-span.injuredPlayer {
-	 color: red;
-}
-
-.cbsLineups a:link,.cbsLineups a:active,.cbsLineups a:visited {
-	 color: #fff;
-	 text-decoration: none;
-}
- 
-.cbsLineups a:link:hover,.cbsLineups a:active:hover,.cbsLineups a:visited:hover {
-	 color: #bc9a6a;
-}
- 
-td.cbsPlayerName {
-	 text-align: left;
-}
- 
-.cbsLineups td.cbsPlayerPoints {
-	 cursor: pointer;
-	 color: #bc9a6a;
-}
-
-.cbsLineups td.cbsPlayerProjections {
-	 color: 0f64a1;
-	 cursor: default;
-}
-
-.lineupHeaderRow th {
-	 border: 0 none;
-	 color: #ccc!important;
-	 border-bottom: 2px solid #444;
-	 background:rgba(9,43,71,.1);
-}
- 
-tr.lineupHeaderRow {
-	 background-position: 0;
-	 height: 34px;
-}
- 
-th.lineupHeaderPlayer {
-	 text-align: left;
-	 text-indent:5px;
-}
-
-.cbsLineups th.pointTotalTitle,.cbsLineups th.pointTotalProj,.cbsLineups th.pointTotalActual {
-	 border: 0;
-	 color: #bc9a6a!important;
-	 border: 1px solid rgba(9,43,71,.2);
-	 box-shadow: 0px 0px 0px 0px #111111 inset;
-	 border-top:2px solid rgba(9,43,71,.2);
-	 background:none;
-}
-
-.cbsLineups th.pointTotalProj {
-	 color: 0f64a1!important;
-}
-
-.cbsLineups th.pointTotalTitle,.cbsLineups th.pointTotalProj {
-	 border-right:0;
-}
- 
-th.pointTotalTitle {
-	 text-align: left;
-}
-
-tr.rowYTP {
-	 background: none;
-}
- 
-tr.rowCurrentlyPlaying {
-	 background: rgba(13, 254, 1, .04);
-}
- 
-tr.rowGameOver {
-	 background-color: rgba(45, 45, 45,0.3);
-}
-
-.cbsLineups .oppRankBadMatchup,.cbsLineups .oppRankPoorMatchup,.cbsLineups .oppRankAvgMatchup,.cbsLineups .oppRankGoodMatchup,.cbsLineups .oppRankGreatMatchup,.cbsLineups td.oppRankNA {
-	 color: #263e68;
-	 font-size: 11px;
-	 text-align: center;
-	 border-left:1px solid rgba(38,62,104,.5)!important;
-	 border-right:1px solid rgba(38,62,104,.5)!important;
-}
-
-table.playerUpdateContainer {
-	 display: none;
-}
-
-table.cbsGameLinks>tbody>tr>td>center {
-	 color: #da2b2a;
-	 font-size:12pt;
-}
- 
-.cbsLineups th.lineupHeaderPlayer {
-	 width: 177px;
-	 padding: 0;
-}
- 
-.cbsLineups th.lineupHeaderGames {
-	 width: 100px;
-	 padding: 0;
-}
- 
-.cbsLineups th.sos {
-	 width: 36px;
-	 padding: 0;
-}
- 
-.cbsLineups th.gamestime {
-	 width: 64px;
-	 padding: 0;
-}
- 
-.cbsLineups th.lineupHeaderProj {
-	 width: 44px;
-	 padding: 0;
-}
- 
-.cbsLineups th.lineupHeaderActual {
-	 width: 44px;
-	 padding: 0;
-}
-
-
-
-
-
-
-#hintbox { 
-	 position:absolute;
-	 margin-left:13px;
-	 margin-top:3px;
-	 z-index: 100;
-	 visibility: hidden;
-	 background:#0a0a0a url(https://image.ibb.co/cUCubF/bg.jpg)center top;
-	 border-radius: 5px;
-	 border: 12px solid rgba(9,43,71,.2) ! important;
-	 box-shadow: 0px 0px 46px -9px #000000;
-}
-
-#hintbox caption {
-	 border-radius:0;
-	 color:#ccc;
-	 font-weight:900;
-	 padding:5px;
-}
-
-#hintbox table {
-	 padding: 0;
-	 text-align: left;
-	 width:100%!important;
-	 border-radius:0;
-	 width:98%!important;
-	 margin:0 auto;
-	 margin-bottom:5px;
-}
-
-#hintbox table td {
-	 background:#111;
-	 color: #ccc ! important;
-	 border: 1px solid rgba(9,43,71,.1);
-	 font-weight: 400;
-	 padding: 2px;
-}
-
-#hintbox table b {
-	 letter-spacing:1px;
-	 font-weight:400;
-	 color: #bc9a6a;
-}
-
-
-
-
-table.cbsNFLGameTable,table.cbsGameTable {
-	 border-collapse:separate;
-	 position:relative;
-	 border:0!important;
-	 cursor:pointer;
-	 color: #ccc;
-	 width:98%;
-	 margin:0 auto;
-	 border: 1px solid rgba(9,43,71,.2)!important;
-	 border-spacing:0px!important;
-}
-table.cbsNFLGameTable td.cbsNFLLiveClock {
-	 text-align:center;
-}
-#cbsFantasyMatchupsUpdate, #cbsNFLMatchupsUpdate {
-	 text-align: center;
-	 vertical-align: middle;
-	 font-size: 48px; 
-}
-.cbsSuspendedMessage {
-	 text-align: center;
-	 color: #fff;
-	 font-size:12pt;
-}
-.cbsGameTable td, .cbsNFLGameTable td {
-	 height: 22px;
-}
-.cbsLiveTeam {
-	 padding-left:2px!important;
-	 white-space:nowrap;
-	 overflow:hidden;
-}
-.cbsLiveTeam  img {
-	 max-height:24px;
-	 max-width:60px;
-}
-.cbsPaceScore {
-	 color:0f64a1;
-	 font-size:smaller;
-	 font-style:italic;
-	 text-align:right;;
-}
-.cbsLiveScore {
-	 color: #bc9a6a;
-	 text-align:center;
-}
-.cbsWinMarker  {
-	 line-height:1;
-	 text-align:right;
-	 color:0f64a1;
-	 font-weight:bold;
-	 width:0px;
-	 padding-right:2px!important;
-}
-.cbsLiveClock {
-	 text-align:center; 
-	 font-size:smaller;
-}
-.cbsNFLLiveTeam {
-	 padding-left:2px!important;
-}
-.cbsNFLLiveScore {
-	 text-align:right;
-	 color:#bc9a6a;
-	 padding-right:2px!important;
-	 font-family: Arial;
-	 font-weight: bold;
-}
-.cbsNFLWinMarker  {
-	 line-height:1;
-	 text-align:right;
-	 color:0f64a1;
-	 font-weight:bold;
-	 padding-right:2px!important;
-	 padding-bottom:2px!important;
-}
-tbody.matchupHilite, tbody.matchupHilite:hover {
-	 background: rgba(9,43,71,.1);
-}
-tbody.matchupLolite:hover {
-	 background-color: rgba(0,0,0,.4);
-}
-tr.matchupLolite {
-	 width:100%;
-	 height:100%;
-	 position:absolute;
-	 top:0;
-	 left:0;
-	 z-index:1;
-}
-td.cbsPlayerFantasyTeam{
-	 width:109px
-}
-#cbsRoadTeamName td div,#cbsHomeTeamName td div {
-	 margin:0 auto;
-}
-.hasball {
-	 width:0!important;
-	 padding:0!important;
-	 border-left:0!important;
-}
-
-
-
-
-
-
-/*  ============================================================================================================== */
-
-/*  ============================================================================================================== */
 
 
 
@@ -4329,19 +3784,19 @@ html,body{margin:0;}
 .myfantasyleague_menu ul ul > li.has-sub:hover > a:after{border-left-color:#bc9a6a;}
 .myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#bc9a6a;}
 .myfantasyleague_menu ul li:hover a,.myfantasyleague_menu ul li ul li:hover a,.myfantasyleague_menu ul li ul li ul li:hover a{color:#fffff;}
-.myfantasyleague_menu li:hover > a {background-color:#092b47;background-image:none;box-shadow:none;}
+.myfantasyleague_menu li:hover > a {background-color:#bc9a6a;background-image:none;box-shadow:none;}
 .myfantasyleague_menu ul li ul li:hover > a {background-color:#051726;}
 .myfantasyleague_menu li.player-search input[type="text"]{color:#001326;}
-.myfantasyleague_menu ul li ul {border-top-color:#092b47;}
-.myfantasyleague_menu ul ul li a,.myfantasyleague_menu ul ul li.has-sub a {border-color:#092b47;}
-.myfantasyleague_menu ul ul li.has-sub li:first-of-type {border-top-color:#092b47;}
+.myfantasyleague_menu ul li ul {border-top-color:#bc9a6a;}
+.myfantasyleague_menu ul ul li a,.myfantasyleague_menu ul ul li.has-sub a {border-color:#bc9a6a;}
+.myfantasyleague_menu ul ul li.has-sub li:first-of-type {border-top-color:#bc9a6a;}
 
 
 /* STYLE MFL POPUP BOXES
 ========================= */
 
 /* Loading circle */
-.MFLPlayerPopupLoader{border-color:#eee;border-top-color:#fffff;}
+.MFLPlayerPopupLoader{border-color:#eee;border-top-color:#9c0000;}
 
 /* Close button displayed in caption */
 #MFLPlayerPopupClose{color:#000;border-color:#000;background:#fff;}
@@ -4417,4 +3872,167 @@ ul.MFLPlayerPopupTab li a {
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
+}
+
+/*   SKIN SPECIFIC SCOREBOARD COLORING
+======================================= */
+/* color link of populating text in boxscores box and current week in weekly navigation */
+#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate,.navWeekCurr {color:#91052e}
+/* border color for each fantasy and nfl box score table  */
+.MFLGameTable,.MFLNFLGameTable{border-color:#bc9a6a}
+/* hover and current state background opactity color for boxscores  */
+#MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(9,43,71,.3)}
+#MFLBoxHolder td.matchupLolite:hover {background:rgba(5,134,226,.2)}
+/* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
+.MFLMainScoreboard {background:#171717;border-color:#bc9a6a}
+/* background graident color for the banner area for scoreboard name  */
+#MFLCenterTop{color:#fff;background-image:url(https://darkwater80.github.com/IMAGES/SCOREBOARD/scoreboard.png)}
+/* franchise team names and nfl team names box background and text colors  */
+#MFLRoadTeamName,#MFLHomeTeamName{color:#fff;border-color:#bc9a6a;background: #171717;}
+/* background gradient for scoreboard scores digits  */
+#MFLRoadScore span,#MFLHomeScore span {border-color:#171717;background: #030500;background: -moz-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: -webkit-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: linear-gradient(to bottom,  top,  #030500 0%, #092a46 50%,  #030500 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* color for horizontal lines in center of scoreboard scores digits  */
+#MFLRoadScore span:before,#MFLHomeScore span:before{background:#0685e4}
+#MFLRoadScore span:after,#MFLHomeScore span:after{background:#0685e4}
+/* gradient colors for the small side boxes on each side of scores digit center lines  */
+#MFLRoadScore span a:after,#MFLHomeScore span a:after,#MFLRoadScore span a:before,#MFLHomeScore span a:before{border-color:#bc9a6a;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* border color for container holding scores digits  */
+#MFLRoadScore,#MFLHomeScore{border-color:#0685e4}
+/* Franchise and Team records background and text color  */
+#MFLRoadTeamRecord,#MFLHomeTeamRecord {color:#bd9962;border-color:#171717;background: #04111c;}
+/* color for scoring digits  */
+#MFLRoadScore span a,#MFLHomeScore span a{color:#91052e}
+/* P-YTP-PMR backgrounds and text coloring  */
+.MFLMainScoreboard td.MFLScoreboardTitle {color:#91052e;border-color:#14294f;background: #14294f;background: -moz-linear-gradient(top,  #463727 0%, #bc9a6a 50%, #463727 100%);background: -webkit-linear-gradient(top,  #463727 0%, #bc9a6a 50%, #463727 100%);background: linear-gradient(to bottom,  #463727 0%, #bc9a6a 50%, #463727 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#463727', endColorstr='#463727',GradientType=0 )}
+#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR {color:#bc9a6a;border-color:#ccc;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* table row background color for games over or currently playing  */
+.rowGameOver {background:rgba(255,0,0,.1)}
+.CurrentlyPlaying {background:rgba(0,255,36,.1)}
+/* change colors for S.O.S td cells for matchups poor to great  */
+.MFLTeamLineup td.oppRankGreatMatchup{background:#04B404;color:#000}
+.MFLScoreboardLineups td.oppRankGoodMatchup{background:#01DF01;color:#000}
+.MFLScoreboardLineups td.oppRankAvgMatchup{background:#FFFF00;color:#000}
+.MFLScoreboardLineups td.oppRankPoorMatchup{background:#FF8000;color:#000}
+.MFLScoreboardLineups td.oppRankBadMatchup{background:#FF0000;color:#000}
+/* the small tooltip popup arrows shown when hovering actual and pace scores  */
+#scoreboardTooltip:after {border-top-color:#0586e2!important;}
+#scoreboardTooltip.top:after{border-bottom-color:#0586e2!important;}
+.MFLScoreboardLineups .report .oddtablerow {background:#04111c;}
+.MFLScoreboardLineups .report .eventablerow {background:#bc9a6a;}
+
+
+
+/*   SCOREBOARD TOOLTIP POPUP FOR SCORE DETAILS
+================================= */
+#scoreboardTooltip {position:absolute;z-index:100;background:#04111c!important;min-width:250px;min-width:15.625rem;}
+#scoreboardTooltip:after {width:0;height:0;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:8px solid #263e68!important;content: '';position:absolute;left:50%;bottom:-8px;margin-left:-5px}
+#scoreboardTooltip.top:after{border-top-color:transparent;border-bottom:10px solid #263e68!important;top:20px;bottom:auto}
+#scoreboardTooltip.left:after {left:10px;margin:0}
+#scoreboardTooltip.right:after {right:10px;left:auto;margin:0}
+#scoreboardTooltip table {margin:0}
+td[rel="scoreboardTooltip"]{cursor:help}
+#scoreboardTooltip #MFLPlayerPopupClose {display:none}
+#scoreboardTooltip caption {background:#bc9a6a}
+
+/*   SCOREBOARD LOADING CONTAINER
+================================== */
+#MFLScoreboardOverlay{display:none;height:100%;left:0;opacity:0.7;position:fixed;top:0;width:100%;z-index:99999;background-color:#000}
+#MFLScoreboardContainer{display:none;left:50%!important;overflow:hidden;position:fixed!important;top:50%!important;z-index:99999;width:100%;max-width:500px;max-width:31.25rem;height:275px;height:15.625rem}
+#MFLScoreboardLoading{display:block;padding-top:10px;padding-top:.625rem}
+
+
+/*   MFL SCOREBOARD LAYOUT
+=========================== */
+.MFLScoreboardLineups .desktop-hide-caption, .desktop-hide-table {display:none}
+#outerMFLScoreboardDiv td,#outerMFLScoreboardDiv td a,.MFLPlayerStatsPopup.report td{font-family: 'Roboto', sans-serif;}
+/*  TOP SECTION */
+.top_sb_container {min-height:70px;min-height:4.375rem}
+#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate {text-align:center;font-size:20px;font-size:1.250rem;line-height:75px;line-height:4.688rem}
+.MFLWeeklyNavigation select {width:auto}
+.MFLWeeklyNavigation .reportform {text-transform:uppercase;font-size:100%}
+/*  BOXSCORES SECTION */
+#MFLFantasyMatchups,#MFLNFLMatchups,#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate {height:85px;height:5.313rem;margin:5px 0;margin:0.313rem 0;width:100%;overflow:auto;padding:0;-webkit-overflow-scrolling: touch;}
+.MFLGameLinks tr{height:25px;height:1.563rem}
+.MFLGameLinks{border-spacing:1px}
+.MFLGameLinks,.MFLGameTable,.MFLNFLGameTable{height:100%}
+.MFLGameTable,.MFLNFLGameTable{border-style:solid;border-width:1px;border-spacing:0}
+.MFLGameTable{white-space:nowrap;min-width:150px;min-width:9.375rem}
+.matchupLolite,.matchupHilite{cursor:pointer}
+.MFLTeamLineup td.oppRankGreatMatchup,.MFLScoreboardLineups td.oppRankGoodMatchup,.MFLScoreboardLineups td.oppRankAvgMatchup,.MFLScoreboardLineups td.oppRankPoorMatchup,.MFLScoreboardLineups td.oppRankBadMatchup{cursor:default}
+.MFLGameLinks .nflicon {height: 24px;height:1.500rem;width:auto;border-radius:50%;padding: 1px;background:#fff;border:1px solid #ddd;}
+.MFLLiveClock,.MFLNFLLiveClock {text-align:center}
+/*  CENTER TABLE */
+#MFLRoadTeamName,#MFLHomeTeamName,#MFLRoadTeamRecord,#MFLHomeTeamRecord,#MFLRoadScore,#MFLHomeScore {width:33%;}
+#MFLCenterTop span {display: none;}
+#MFLCenterTop,#MFLCenterTop span {font-size:0;} #MFLRoadTeamName,#MFLHomeTeamName{font-size:24px;font-size:1.500rem;}
+#MFLRoadScore,#MFLHomeScore{font-size:30px;font-size:1.875rem;padding:0;}
+#MFLRoadScore span.blank a,#MFLHomeScore span.blank a {padding:4px;padding:4px}
+#MFLRoadScore span,#MFLHomeScore span {border-width:1px;border-width:0.063rem;border-style:solid;text-align:center;position:relative;width:1%;display:table-cell;font-weight:600;line-height:45px;line-height:2.813rem;font-size:40px;font-size:2.500rem;text-decoration:none}
+#MFLRoadScore span:before,#MFLHomeScore span:before{content:"";display:block;position:absolute;height:1px;height:0.063rem;width:100%;top:22px;top:1.375rem;left:0;z-index:0;}
+#MFLRoadScore span:after,#MFLHomeScore span:after{content:"";display:block;position:absolute;height:1px;height:0.063rem;width:100%;top:23px;top:1.438rem;left:0;z-index:0;}
+#MFLRoadScore span a:after,#MFLHomeScore span a:after{content:"";display:block;position:absolute;height:9px;height:0.563rem;width:3px;width:0.188rem;top:18px;top:1.125rem;left:0;z-index:1;}
+#MFLRoadScore span a:before,#MFLHomeScore span a:before{content:"";display:block;position:absolute;height:9px;height:0.563rem;width:3px;width:0.188rem;top:18px;top:1.125rem;right:0;z-index:1;}
+.MFLMainScoreboard,#MFLRoadTeamName,#MFLHomeTeamName,#MFLRoadScore,#MFLHomeScore,#MFLRoadTeamRecord,#MFLHomeTeamRecord,
+.MFLMainScoreboard td.MFLScoreboardTitle,#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR,
+#MFLRoadScore span a:after,#MFLHomeScore span a:after,#MFLRoadScore span a:before,#MFLHomeScore span a:before{border-width:1px;border-width:0.063rem;border-style:solid}
+#MFLRoadScore span,#MFLHomeScore span {cursor:default;border-width:1px;border-width:0.063rem;border-style:solid}
+#MFLCenterTop span {font-size:11px;font-size:0.688rem;font-weight:400;}
+#MFLCenterTop span.hometeam{position:absolute;right:1%;bottom:1%}
+#MFLCenterTop span.awayteam{position:absolute;left:1%;bottom:1%}
+#MFLRoadTeamName img,#MFLHomeTeamName img{max-width:100%;max-height:60px;max-height:3.750rem}
+.MFLMainScoreboard .nflicon{max-width:100%;max-height:60px;max-height:3.750rem;border-radius:50%;margin:2px;margin:0.125rem;border: 2px solid #aaa;border: 0.125rem solid #aaa;padding:5px;padding:0.313rem;background: #fff}
+#MFLCenterTop .awayteam:before{content:"<";}
+#MFLCenterTop .hometeam:after{content:">";}
+#MFLRoadScore div,#MFLHomeScore div{border-spacing:1px;border-spacing:0.063rem}
+/*  PLAYERS TABLES */
+.MFLMainScoreboard {text-align:center;border-radius:2px;border-radius:0.125rem;table-layout:fixed;border-spacing:2px;border-spacing:0.125rem}
+.MFLOuterTable.report {padding:5px 4px;padding:0.313rem 0.250rem;}
+.MFLScoreboardLineups .borderhide {border-left:0;border-right:0;}
+.MFLScoreboardLineups tr.lineupHeaderRow th {width:9%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.sos {width:5%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.gamestime {width:14%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderGames {width:20%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderPlayer {width:35%;}
+.MFLTeamLineup{margin-bottom:0}
+#outerMFLScoreboardDiv .mobile-view {width:50%}
+.MFLScoreboardLineups{border-spacing:0}
+.MFLScoreboardLineups .report td,.MFLScoreboardLineups .report th {text-align:center;border-left:0;border-right:0;box-shadow:none}
+.MFLScoreboardLineups .report th.lineupHeaderPlayer,.MFLScoreboardLineups .report td.MFLPlayerName,.MFLScoreboardLineups .report td.MFLPlayerGame mobile-hide,.MFLScoreboardLineups .report th.pointTotalTitle {text-align:left}
+.MFLScoreboardLineups th.pointTotalActual,.MFLScoreboardLineups th.pointTotalProj {font-weight:bold;font-size:14px;font-size:0.875rem}
+.MFLScoreboardLineups td.MFLPlayerProjections,.MFLScoreboardLineups th.pointTotalProj {font-style:italic}
+td.MFLPlayerGame,td.MFLGameClock,td.sos {font-size:11px;font-size:0.688rem}
+.MFLScoreboardLineups .borderhide {border-left:0;border-right:0}
+#MFLCenterTop,#MFLCenterTop span {font-size:0;} 
+
+/*   SCOREBOARED RESPONSIVE STYLE
+================================== */
+@media only screen and (max-width: 66.500em) {
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:none;}
+}
+@media only screen and (max-width: 62.500em) {
+	#outerMFLScoreboardDiv .mobile-view {width:50%!important;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:none;}
+}
+@media only screen and (max-width:54.250em){
+	#outerMFLScoreboardDiv .mobile-view {width:100%!important;}
+	#MFLScoreboardHomeLineup,#MFLScoreboardRoadLineup {margin-top:5px;margin-top:0.313rem;}
+	#outerMFLScoreboardDiv .mobile-hide {display:none;}
+	#outerMFLScoreboardDiv .desktop-hide-caption {display:table-caption;}
+	.desktop-hide-table {display:table}
+	#MFLCenterTop,.MFLMainScoreboard td.MFLScoreboardTitle,#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR{display:none;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:table-cell;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:table-cell;}
+	.MFLScoreboardLineups tr.lineupHeaderRow th {width:20%}
+	.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderPlayer {width:60%}
+}
+@media only screen and (max-width:44.250em){
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:none}
+}
+@media only screen and (max-width:38.250em){
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:none}
+	#MFLRoadTeamName, #MFLHomeTeamName {font-size:20px;font-size:1.250rem}
+       #MFLRoadScore span a,#MFLHomeScore span a{font-size:30px;font-size:1.875rem}
+}
+@media only screen and (max-width:32.250em){
+	#MFLRoadTeamName, #MFLHomeTeamName {font-size:16px;font-size:1.000rem}
 }
