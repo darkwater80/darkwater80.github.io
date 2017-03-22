@@ -1,0 +1,13 @@
+<!-------------------------------------------------------------
+                       RAFTERS IMAGE
+--------------------------------------------------------------->
+
+<div id="rafters" class="close_by_div">
+<center><img src="http://www.dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/rafters.png"></img></center>
+</div>
+
+
+
+
+
+

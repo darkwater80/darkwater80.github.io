@@ -1,0 +1,145 @@
+<style type="text/css"> 
+
+/*   
+====================================
+START GENERAL MANAGEMENT ICONS STYLE
+====================================
+*/
+
+#nav {
+    width:100%; 
+    margin:0 auto;
+    background:none;
+    position:relative;margin-top:-10px;margin-bottom:20px 
+}     
+#nav ul {
+    text-align:center;
+    padding:0!important;
+}
+#nav li {
+    vertical-align:top;
+    display:inline-block;
+    margin:0 auto;
+    text-align:center;
+    width:9%;          /*** ADJUST THIS WIDTH SO IMAGES FILL TEMPLATE WIDTH ****/
+}
+#nav a {
+    color:#e3e3e3;
+    text-shadow: 1px 1px 2px #202020;
+    font:400 9pt 'Oswald',sans-serif!important;
+    text-decoration:none;
+    text-align:center;
+    text-transform: uppercase;
+    line-height:13px!important;
+}
+#nav a:hover {
+    color:#fff;
+}
+#nav li > a {
+    height:60px; 
+    display:block;
+    text-align:center;
+    margin:0 auto;
+}
+#nav li > a span.innerimage { 
+    display:block;
+    height:60px; 
+    opacity:0; filter: alpha(opacity=0);
+    -webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;
+    margin-bottom:-10px;
+}
+
+
+
+/*   
+===========================================
+START BACKGROUND IMAGES FOR EACH IMAGE LINK
+===========================================
+*/
+
+/*  Submit Lineup */
+#nav li.lineup > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/submit-lineup.png) no-repeat  center top;}
+#nav li.lineup > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/submit-lineup.png) no-repeat center bottom;}
+
+/*  Rosters */
+#nav li.rosters > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/league_rosters.png) no-repeat center top;}
+#nav li.rosters > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/league_rosters.png) no-repeat center bottom;}
+
+/*  Add Drop Players */
+#nav li.adds > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/add_drop.png) no-repeat center top;}
+#nav li.adds > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/add_drop.png) no-repeat center bottom;}
+
+/*  H2H Schedules */
+#nav li.schedule > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/h2h.png) no-repeat center top;}
+#nav li.schedule > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/h2h.png) no-repeat center bottom;}
+
+/*  Team Trades */
+#nav li.trades > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/team_trades.png) no-repeat center top;}
+#nav li.trades > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/team_trades.png) no-repeat center bottom;}
+
+/*  INJURED RESERVE */
+#nav li.ir > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/injured_reserve.png) no-repeat center top;}
+#nav li.ir > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/injured_reserve.png) no-repeat center bottom;}
+
+/*  Franchise Setup */
+#nav li.setup > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/franchise_setup.png) no-repeat center top;}
+#nav li.setup > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/franchise_setup.png) no-repeat center bottom;}
+
+/*  Taxi Squad */
+#nav li.taxisquad > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/taxi_squad.png) no-repeat center top;}
+#nav li.taxisquad > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/taxi_squad.png) no-repeat center bottom;}
+
+/*  Aucion Bid */
+#nav li.auctionbids > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/auction-bids.png) no-repeat center top;}
+#nav li.auctionbids > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/auction-bids.png) no-repeat center bottom;}
+
+/*  Team Locker Room */
+#nav li.lockerroom > a {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/lockerroom.png) no-repeat center top;}
+#nav li.lockerroom > a span.innerimage {background:url(http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/lockerroom.png) no-repeat center bottom;}
+
+
+/*   
+==========================
+HOVER STYLE FOR ALL IMAGES
+===========================
+*/
+
+#nav li:hover {
+    background:none;transition: background-color 1s ease-in 0s;
+}
+#nav li > a:hover span.innerimage {
+    opacity:1; filter: alpha(opacity=100);transition: background-color 1s ease-in 0s;
+}
+</style>
+
+
+
+<!-------------------------------------
+         ENTER MANAGEMENT HTML 
+--------------------------------------->
+<div id="nav_icons">
+<div id="nav">
+ <ul>
+  <li class="lineup" title="Submit Lineup"><a href="http://%HOST%/%YEAR%/options?LEAGUE_ID=%LEAGUEID%&O=02&%FRANCHISEID%"><span class="innerimage"></span>SUBMIT</br>LINEUP</a></li>
+
+  <li class="rosters"title="League Rosters"><a href="http://%HOST%/%YEAR%/options?LEAGUE_ID=%LEAGUEID%&O=07"><span class="innerimage"></span>LEAGUE</br>ROSTERS</a></li>
+
+  <li class="adds"title="Add/Drop Players"><a href="//%HOST%/%YEAR%/add_drop?L=%LEAGUEID%"><span class="innerimage"></span>ADD/DROP</br>PLAYERS</a></li>
+ 
+  <li class="schedule"title="Head to Head"><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=15"><span class="innerimage"></span>H-2-H</br>SCHEDULES</a></li>
+
+  <li class="trades"title="Team Trades"><a href="http://%HOST%/%YEAR%/options?LEAGUE_ID=%LEAGUEID%&O=05&%FRANCHISEID%"><span class="innerimage"></span>TEAM</br>TRADES</a></li>
+
+  <li class="ir"title="Injured-Reserved"><a href="http://%HOST%/%YEAR%/options?LEAGUE_ID=%LEAGUEID%&O=18"><span class="innerimage"></span>INJURED</br>RESERVED</a></li>
+
+  <li class="setup"title="Setup"><a href="http://%HOST%/%YEAR%/options?LEAGUE_ID=%LEAGUEID%&O=50"><span class="innerimage"></span>FRANCHISE</br>SETUP</a></li>
+
+  <li class="taxisquad"title="Taxi Squad"><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=98"><span class="innerimage"></span>TAXI</br>SQUAD</a></li>
+
+  <li class="auctionbids"title="Auction Bids"><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=43"><span class="innerimage"></span>AUCTION</br>BIDS</a></li>
+
+  <li class="lockerroom"title="Locker-Room"><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=01"><span class="innerimage"></span>LOCKER</br>ROOM</a></li>
+
+ </ul>
+</div>
+</div>

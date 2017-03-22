@@ -1,0 +1,630 @@
+<!-------------------------------------------------------------
+                     LOAD FAV ICO IMAGE
+--------------------------------------------------------------->
+<link rel="icon" href="http://www.dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/black.ico" type="image/x-icon">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------
+                         JQUERY TABS SCRIPT
+----------------------------------------------------------------->
+<script>
+$('.tabbed-reports li').on('click',function(e){
+    $('.reports-content>.'+ e.target.classList[0]).show().siblings().hide();
+});
+
+
+var selector = '.tabbed-reports li';
+
+$(selector).on('click', function(){
+    $(this).parent().find('li').removeClass('active');
+    $(this).parent().find('li').removeClass('current');
+    $(this).addClass('active');
+});
+</script>
+
+
+
+
+
+<!---------------------------------------------------------------
+               ADD SOME PADDING FOR PLAYOFF BRACKETS
+----------------------------------------------------------------->
+<script type="text/javascript">
+$(document).ready(function () {
+$('#playoff1 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff1 tr:last');
+$('#playoff2 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff2 tr:last');
+$('#playoff3 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff3 tr:last');
+$('#playoff4 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff4 tr:last');
+$('#playoff5 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff5 tr:last');
+$('#playoff6 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff6 tr:last');
+$('#playoff1 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff1 tr.header');
+$('#playoff2 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff2 tr.header');
+$('#playoff3 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff3 tr.header');
+$('#playoff4 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff4 tr.header');
+$('#playoff5 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff5 tr.header');
+$('#playoff6 .oddtablerow:first').clone().addClass('lastrow').insertAfter('#playoff6 tr.header');
+});
+</script>
+
+
+
+
+
+<!---------------------------------------------------------------
+               HABMAN TRADES POPUP SCRIPT
+----------------------------------------------------------------->
+<script language="Javascript" type="text/javascript">
+<!--
+
+//POPUP SETTINGS either set to true or false
+var popupTradeProposalsFromMe = true;
+var popupTradeProposalsToMe = true;
+var popupTradeAwaitingCommissionerApproval = true;
+var popupTradeAwaitingCommissionerReview = true;
+
+//FREQUENCY; 0=always, 1=once per browser session; 2=once per day; 3=once per week
+var popupTradeFrequency = 1;
+
+//POPUP COLOUR SETTING; use either color names (black) or code (#000000)
+var popupTradeBGColor = ''; 
+//var popupTradeBorder  = '';
+
+// -->
+</script>
+
+
+
+<!---------------------------------------------------------------
+               LOAD RAW HABMAN TRADE JS FILE
+----------------------------------------------------------------->
+<script>
+document.write('<div id="habTradePopupBox" style="position:absolute; width: 300px; left: 0; top: -400px; border: ' + popupTradeBorder + '; background-color: ' + popupTradeBGColor + '; padding: 4px; z-index: 100; visibility:hidden;filter:progid:DXImageTransform.Microsoft.RandomDissolve(duration=1) progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135); -moz-opacity:0;"></div>');
+
+if(popupTradeMessageToMe==undefined) var popupTradeMessageToMe="";
+
+var tradeDisplayMode="always"
+
+var tradeFadeEnabled="yes"       //("yes" to enable fade in effect, "no" to disable)
+var tradeAutoHideBox=["no", 5]  //Automatically hide box after x seconds? [yes/no, if_yes_hide_after_seconds]
+var tradeShowOnScroll="yes"      //Should box remain visible even when user scrolls page? ("yes"/"no)
+var tradeFadeLengthIE=1          //fade in duration for IE, in seconds
+var tradeFadeDegreeMoz=0.05      //fade in degree for NS6+ (number between 0 and 1. Recommended max: 0.2)
+
+if (parseInt(tradeDisplayMode)!=NaN)
+var tradeRandomNum=Math.floor(Math.random()*tradeDisplayMode)
+
+function displayTradePopupBox(){
+  var ie=document.all && !window.opera
+  var dom=document.getElementById
+  iebody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body
+  objref=(dom)? document.getElementById("habTradePopupBox") : document.all.habTradePopupBox
+  var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+  var docwidth=(ie)? iebody.clientWidth : window.innerWidth
+  docheight=(ie)? iebody.clientHeight: window.innerHeight
+  var objwidth=objref.offsetWidth
+  objheight=objref.offsetHeight
+
+  try {
+   switch(popupTradePositioning) {
+     case 0: { objref.style.left=docwidth/2-objwidth/2+"px"; objref.style.top=scroll_top+docheight/2-objheight/2+"px"; break; } 
+     case 1: { objref.style.left="1px"; objref.style.top="1px"; break; }
+     case 2: { objref.style.left="1px"; objref.style.top=scroll_top+docheight/2-objheight/2+"px"; break; }
+     case 3: { objref.style.left="1px"; objref.style.top=scroll_top+docheight-objheight+"px"; break; }
+     case 4: { objref.style.left=docwidth/2-objwidth/2+"px"; objref.style.top="1px"; break; } 
+     case 5: { objref.style.left=docwidth/2-objwidth/2+"px"; objref.style.top=scroll_top+docheight-objheight+"px"; break; } 
+     case 6: { objref.style.left=docwidth-objwidth+"px"; objref.style.top="1px"; break; } 
+     case 7: { objref.style.left=docwidth-objwidth+"px"; objref.style.top=scroll_top+docheight/2-objheight/2+"px"; break; } 
+     case 8: { objref.style.left=docwidth-objwidth+"px"; objref.style.top=scroll_top+docheight-objheight+"px"; break; } 
+     default: { objref.style.left=docwidth/2-objwidth/2+"px"; objref.style.top=scroll_top+docheight/2-objheight/2+"px"; } 
+   }
+  } catch(er) {
+   objref.style.left=docwidth/2-objwidth/2+"px"
+   objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+  }
+
+  if (tradeShowOnScroll=="yes") tradeShowOnScrollVar=setInterval("tradeStaticFadeBox()", 50)
+
+  if (tradeFadeEnabled=="yes" && objref.filters) {
+   objref.filters[0].duration=tradeFadeLengthIE
+   objref.filters[0].Apply()
+   objref.filters[0].Play()
+  }
+  objref.style.visibility="visible"
+  if (objref.style.MozOpacity){
+   if (tradeFadeEnabled=="yes")
+    mozfadevar=setInterval("tradeFadeFxMoz()", 90)
+   else {
+    objref.style.MozOpacity=1
+    controlledTradeHideBox()
+   }
+  } else
+     controlledTradeHideBox()
+}
+
+function tradeFadeFxMoz(){
+  if (parseFloat(objref.style.MozOpacity)<1)
+   objref.style.MozOpacity=parseFloat(objref.style.MozOpacity)+tradeFadeDegreeMoz
+  else {
+   clearInterval(mozfadevar)
+   controlledTradeHideBox()
+  }
+}
+
+function tradeStaticFadeBox(){
+  var ie=document.all && !window.opera
+  var scroll_top=(ie)? iebody.scrollTop : window.pageYOffset
+  try {
+   switch(popupTradePositioning) {
+     case 1: { objref.style.top=scroll_top; break;}
+     case 4: { objref.style.top=scroll_top; break;}
+     case 6: { objref.style.top=scroll_top; break;}
+     case 3: { objref.style.top=scroll_top+docheight-objheight+"px"; break; }
+     case 5: { objref.style.top=scroll_top+docheight-objheight+"px"; break; }
+     case 8: { objref.style.top=scroll_top+docheight-objheight+"px"; break; }
+     default: { objref.style.top=scroll_top+docheight/2-objheight/2+"px"; }
+   }
+  } catch(er) {
+   objref.style.top=scroll_top+docheight/2-objheight/2+"px"
+  }
+}
+
+function hideTradeFadeBox(){
+  objref.style.visibility="hidden"
+  if (typeof tradeShowOnScrollVar!="undefined")
+  clearInterval(tradeShowOnScrollVar)
+}
+
+function controlledTradeHideBox(){
+  if (tradeAutoHideBox[0]=="yes"){
+   var delayvar=(tradeFadeEnabled=="yes" && objref.filters)? (tradeAutoHideBox[1]+objref.filters[0].duration)*1000 : tradeAutoHideBox[1]*1000
+   setTimeout("hideTradeFadeBox()", delayvar)
+  }
+}
+
+function initTradeFunction(){
+  setTimeout("displayTradePopupBox()", 100)
+}
+//== END DYNAMIC DRIVE SCRIPT=====================
+
+
+function getHabTradeCookie(Name) {
+  var search = Name + "="
+  var returnvalue = "";
+  if (document.cookie.length > 0) {
+    offset = document.cookie.indexOf(search)
+    if (offset != -1) { // if cookie exists
+      offset += search.length
+      // set index of beginning of value
+      end = document.cookie.indexOf(";", offset);
+      // set index of end of cookie value
+      if (end == -1)
+         end = document.cookie.length;
+      returnvalue=unescape(document.cookie.substring(offset, end))
+      }
+   }
+  return returnvalue;
+}
+
+function getHabTradePopupCookie(Name) {
+   var cookieExists = getHabTradeCookie(Name);
+   if(cookieExists=="") return false; else return true;
+}
+function setHabTradePopupCookie(which) {
+  switch (which) {
+   case 'from': { var cookieName = 'habTradePopup_FromMe_' + league_id + franchise_id;
+                  break; }
+   case 'to':   { var cookieName = 'habTradePopup_ToMe_'   + league_id + franchise_id;
+                  break; }
+   case 'commishapproval': { var cookieName = 'habTradePopup_CommishApproval_'   + league_id + franchise_id;
+                  break; }
+   case 'commishreview': { var cookieName = 'habTradePopup_CommishReview_'   + league_id + franchise_id;
+                  break; }
+  }
+  var today = new Date();
+  var expire = new Date();
+
+  switch (popupTradeFrequency) {
+   case 0: { document.cookie=cookieName+"=;";                      // clear cookie
+                   break; }
+   case 1: { document.cookie=cookieName+"=session;";               // expire on window close
+                   break; }
+   case 2: { expire.setTime(today.getTime() + 1000*60*60*24);      // expire in one day
+                   document.cookie=cookieName+"=24;expires="+expire.toGMTString();
+                   break; }
+   case 3: { expire.setTime(today.getTime() + 1000*60*60*24*7);    // expire in one week
+                   document.cookie=cookieName+"=week;expires="+expire.toGMTString();
+                   break; }
+  }
+}
+try {
+ var tempHTML = "";
+ if(popupTradeFrequency==0) {  //Show each visit so clear all cookies
+   setHabTradePopupCookie('from');
+   setHabTradePopupCookie('to');
+   setHabTradePopupCookie('commishapproval');
+   setHabTradePopupCookie('commishreview');
+ }
+ if(popupTradeProposalsFromMe&&leagueAttributes['PendingTradesFromMe']>0&&!getHabTradePopupCookie('habTradePopup_FromMe_' + league_id + franchise_id)) {
+   tempHTML += '<li>' + leagueAttributes['PendingTradesFromMe'] + ' trades proposed by me to others';
+   tempHTML += '</li>';
+   setHabTradePopupCookie('from');
+   var tradeOption = '05';
+ }
+ if(popupTradeProposalsToMe&&leagueAttributes['PendingTradesToMe']>0&&!getHabTradePopupCookie('habTradePopup_ToMe_' + league_id + franchise_id)) {
+   if(popupTradeMessageToMe=="") {
+    tempHTML += '<li>' + leagueAttributes['PendingTradesToMe'] + ' trades proposed by others to me';
+    tempHTML += '</li>';
+   } else {
+    tempHTML += popupTradeMessageToMe;
+   }
+   setHabTradePopupCookie('to');
+   var tradeOption = '05';
+ }
+ if(popupTradeAwaitingCommissionerApproval&&leagueAttributes['PendingTradesAwaitingCommishApproval']>0&&!getHabTradePopupCookie('habTradePopup_CommishApproval_' + league_id + franchise_id)) {
+   tempHTML += '<li>' + leagueAttributes['PendingTradesAwaitingCommishApproval'] + ' trades awaiting commissioner approval';
+   tempHTML += '</li>';
+   setHabTradePopupCookie('commishapproval');
+   var tradeOption = '05';
+ }
+ if(popupTradeAwaitingCommissionerApproval&&leagueAttributes['PendingTradesForCommish']>0&&!getHabTradePopupCookie('habTradePopup_CommishReview_' + league_id + franchise_id)) {
+   tempHTML += '<li>' + leagueAttributes['PendingTradesForCommish'] + ' trades awaiting your review';
+   tempHTML += '</li>';
+   setHabTradePopupCookie('commishreview');
+   var tradeOption = '34';
+ }
+ if(tempHTML!="") {
+    var tableHTML = '<br /><table align="center" cellspacing="1" class="homepagemodule trades_are_pending report" id="trades"><caption><span>Pending Trades</span></caption><tbody><tr><th>Currently Outstanding Trades</th></tr>';
+    tableHTML += '<tr class="oddtablerow"><td><br /><ul>' + tempHTML + '</ul><br /><br /></td></tr>';
+    tableHTML += '<tr class="eventablerow"><td style="text-align: center;"><br />[<a href="' + baseURLDynamic + '/' + year + '/options?L=' + league_id + '&O=' + tradeOption + '">View trades now</a>] [<a href="#1" onClick="hideTradeFadeBox(); return false">Close</a>]<br /><br /></td></tr><div class="closeme"><a href="#1" onClick="hideTradeFadeBox(); return false"></a></div>';
+    tableHTML += '</table>';
+    document.getElementById('habTradePopupBox').innerHTML = tableHTML;
+    displayTradePopupBox();
+ }
+} catch(er) {
+ //Do Nothing
+}
+</script>
+
+
+
+
+
+<!---------------------------------------------------------------
+               ARTICLE NEWS POPUP SCRIPT 
+----------------------------------------------------------------->
+<script id="articlePopupTemplate" type="text/template">
+    <h3 id="articlePopupName"></h3>
+    <span id="articlePopupClose" onclick="hidePopupart()">X</span>
+    <div id="articlePopupLoading">
+        <p>Wait...Loading Article</p>
+        <span></span>
+    </div>
+    <div id="articlePopupContent">
+        
+    </div>
+</script>
+
+<script type="text/javascript">
+function showarticlePopupLoading() {
+		$('#articlePopupLoading').css('display', 'block');
+	}
+_popupOpen = false;
+function showPopupart() {
+
+		$('#playerPopupOverlay').fadeIn(300);
+                $('#playerPopupWrapper').show();
+		_popupOpen = true;
+	}
+function setPopupSizeart() {
+		$('.newsContent div, #articlePopupContent, #articlePopupLoading').css('width','540px');
+		$('.newsContent div, #articlePopupContent, #articlePopupLoading').css('height','250px');
+
+		$('#articlePopupLoading p').css({
+			'top':  $(this).parent().height() / 2
+		});
+		$('#articlePopupLoading span').css({
+			'width': '540px'
+		});
+                 
+		//Left Popup margins so it stays centered when zoomed on mobile
+		var wrapperHeight = $('#playerPopupWrapper').height();
+		var wrapperWidth = $('#playerPopupWrapper').width();
+		$('#playerPopupWrapper').css({
+			'margin-left': '-' + wrapperWidth / 2 + 'px',
+			'margin-top': '-' + wrapperHeight / 2 + 'px'
+		});
+	}
+function hidePopupart() {
+		if (_popupOpen === true) {
+			if (true) {
+				if (true) {
+					$('#playerPopupOverlay').fadeOut(300);
+                                        $('#playerPopupWrapper').fadeOut(300);
+				} else {
+					$('#playerPopupOverlay').hide();
+                                        $('#playerPopupWrapper').hide();
+				}
+			}
+			if (true) {
+				$('#playerPopupWrapper').fadeOut(300, function () {
+					$(this).html('');
+				});
+			} else {
+				$('#playerPopupWrapper').html('').hide();
+			}
+			_popupOpen = false;
+		}
+	}
+function bindPopupCloseart() {
+		$('#playerPopupClose ').unbind().click(function () {
+			hidePopupart();
+		});
+
+		if (true) {
+			var external;
+			if (true) {
+				external = $('#playerPopupOverlay');
+			} else {
+				external = $('body');
+			}
+
+			$(external).unbind().click(function () {
+				hidePopupart();
+			});
+		}
+	}
+function setPopupPositionart() {
+		$('#playerPopupWrapper').center(false);
+	}
+function setPopupTitle(playerName) {
+		$('#articlePopupName').html(playerName);
+	}
+function pop_art(uri){
+var template = $('#articlePopupTemplate').html();
+		$('#playerPopupWrapper').html(template);
+		showarticlePopupLoading();
+                setPopupSizeart();
+                bindPopupCloseart();
+                setPopupPositionart();
+		showPopupart();
+                req(uri);
+return false;
+}
+$(document).ready(function () {
+ $('#my_news > tbody  > tr , #news_articles > tbody  > tr').each(function() {
+ var tds = $(this).find('td');
+if(tds.eq(0).text().indexOf("View All")<0){
+tds.eq(0).append('<a href="javascript:void(0);" onclick=pop_art("'+$(this).find('a').attr('href')+'") title="recent news" class="playerPopupNewsIcon"><img src="http://dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/recent_news.gif" alt="recent news" border="0" class="playerPopupNewsIcon"/></a>');
+}
+});
+         });
+function req(uri){
+ $.ajax({
+                      type: "GET",
+                      url : uri,
+                      data: {},
+                      dataType:"HTML",
+                })
+               .done(function(data){
+$("#articlePopupLoading").hide();
+var uri_now = document.URL.split("/");
+data = data.replace('href="player','href="http://%HOST%/'+uri_now[3]+'/player/');
+   var title = $(data).find('.report caption span').text();
+   setPopupTitle(title.split(">")[1])
+   var content = $(data).find('.report tbody .oddtablerow');
+  if(content.eq(content.length-1).html().indexOf('fb:comments') >-1){
+      content = (content.eq(0));
+  }else{
+      content = content.eq(content.length-1);
+   }
+  
+  var cont_2 = content.find('script').remove();
+  var new_c = "";
+ if(content.html().indexOf('Article Link') >-1){
+   new_c = '<table class="report"><tr class="oddtablerow"><td>'+content.html().replace(cont_2.html(),"").split("Article Link</a>")[0]+"Article Link</a>)"+'</td></tr></table>';
+  }else{
+   cont_2 = content.find('script').remove();
+     new_c = '<table class="report"><tr class="oddtablerow"><td>'+content.find('td').html().split(content.find('p').eq(0).html())[0]+content.find('p').eq(0).html()+'</td></tr></table>';
+//console.log(content.find('td').html().split(content.find('p').eq(0).html())[0]);
+  }
+$("#articlePopupContent").html(new_c);
+$('#articlePopupContent td div').remove();
+$( '#articlePopupContent td:empty' ).remove();                   });
+}
+</script>
+
+
+
+
+
+
+<!---------------------------------------------------------------
+                  REPLACE TEXT WITH ICONS
+----------------------------------------------------------------->
+<script type="text/javascript">
+var iconDisplayCheckArr    =    new Array();
+
+//IF YOUR A NOVICE USER PLEASE ONLY CONCERN YOURSELF WITH CHANGING
+//THE 3RD "true" or "false" IN THE "new CustomConfigIcons" AREA - THIS IS THE ICONS OR TEXT SELECTION
+//DEFAULT CONFIGURATION WILL DISPLAY ICONS ON BRIEF STANDINGS - RECENT DRAFT PICKS - LIVE SCORING SUMMARY
+//DEFAULT CONFIGURATION WILL DISPLAY TEXT ON OPTIONS_15 AND OPTIONS_16 REPORTS
+
+iconDisplayCheckArr['brief_standings']            = new CustomConfigIcons(false, true, true, true, false,'','');
+iconDisplayCheckArr['livescoring_summary']        = new CustomConfigIcons(false, true, true, true, false,'','');
+iconDisplayCheckArr['recent_draft_picks']        = new CustomConfigIcons(false, true, true, true, false,'','');
+
+showDetailsIcon    =    true; //SET TO FALSE TO REMOVE THE CUSTOM IMAGE I HAVE ADDED ON THE LIVE SCORING REPORT TO REPLACE THE TEXT WORD "DETAILS"
+
+function CustomConfigIcons (isClass, isId, showIcon, forAllInstances, isCustom, source, value)
+{
+   this.isClass        =    isClass;
+   this.isId        =    isId;
+   this.showIcon    =    showIcon;
+   this.forAllInstances    =    forAllInstances;
+   this.isCustom    =    isCustom;
+   this.source        =    source;
+   this.value        =    value;
+}
+(function($) {
+    var prop,fdb,filter_fn = null;
+    var displayContent = '';
+      for(prop in franchiseDatabase)
+      {    
+          fdb = franchiseDatabase[prop];
+          if(fdb instanceof Franchise)
+          {
+        $('#brief_standings , #livescoring_summary ,#recent_draft_picks').each(function(index, element)
+        {
+            checkAndReplaceNamesWithIcon(element, fdb);
+        });
+          }
+      }
+})(jQuery);
+function checkAndReplaceNamesWithIcon(element, fdb)
+{        
+        if(showDetailsIcon)
+        {       
+        //YOU CAN LINK YOU OWN CUSTOM IMAGE FOR LIVESCORING DETAILS TEXT REPLACEMENT HERE                                                                       
+            $('*#livescoring_summary td a:contains("Details")').html('<img src="http://www.dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/LivescoreLink.png" title="View Scoring Details"/>');
+        }
+         if(element!=null)
+         {
+            var    cConfig        =    iconDisplayCheckArr[element.id.trim()==''?element.classList[0]:element.id];
+            var displayContent    =    '';
+            var    key        =    '';
+
+            if(cConfig!=null && cConfig instanceof CustomConfigIcons)
+            {
+                if(cConfig.forAllInstances)
+                {
+                    key+='*';
+                }
+                 if(cConfig.class)
+                 {
+                    key = key+'.'+element.classList[0];
+                 }
+                 if(cConfig.isId)
+                 {
+                    key = key+'#'+element.id;
+                 }
+                 if(cConfig.showIcon && fdb.icon!='')
+                 {
+                    displayContent	=   '<img src="' + fdb.icon + '"class="franchiseicon" title="' + fdb.name + '" />';  
+                 }
+                 else
+                 {
+                    displayContent    =     fdb.name;     
+                    $(key).find('img').filter(function()
+                    {
+                        return $(this).attr('src')==fdb.icon;
+                    }).parent().html(displayContent);
+                  }                
+                 $(key)
+                .find('td').filter(function() { return $(this).text() == fdb.name; })
+                                 //CHANGE THE URL OF THE DESTINATION YOUR ICONS/TEAM NAMES ARE DIRECTED - CURRENTLY SET TO 01 FOR OPTIONS PAGE 01 TEAM HOME PAGE
+                .html( '<a href="' + window.baseURLDynamic + '/' + window.year + '/options?L=' + window.league_id + '&F=' + fdb.id + '&O=01">' + displayContent+'</a>' );                
+            }
+        }
+}
+</script>
+
+
+
+
+
+
+<!---------------------------------------------------------------
+                  ADD BLANK DIV FOR FOOTER PAD
+----------------------------------------------------------------->
+<div class="blank_footer"></div>
+
+
+
+
+
+
+
+<!---------------------------------------------------------------
+           CLOSE DIV CONTENTWRAPPER IN #1HEADER MESSAGE
+----------------------------------------------------------------->
+</div>
+
+
+
+
+
+
+
+<!-------------------------------------------------------------
+                     FOOTER LINKS AND LOGO
+--------------------------------------------------------------->
+
+
+
+
+<div id="DAfooter">
+  <table id="footer_table" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+   <tr>
+    <th class="foot_head foot_img">Defending League Champions</th>     
+    <th class="foot_head">Management</th>
+    <th class="blank_line"></th>
+    <th class="foot_head">Franchise</th>
+    <th class="blank_line"></th>
+    <th class="foot_head">Stats</th>
+    <th class="blank_line"></th>
+    <th class="foot_head last">Features</th>
+   </tr>
+   <tr>
+    <td rowspan="2" class="foot_icon"><img src="http://www.dagrafixdesigns.com/Images/2008/DA_2013/Sticks_10101/DA_AllMadden/Mini/UR4.png "  alt="UR4BIDN" height="32" title="UR4BIDN"/></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=02">Submit Lineup</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/accounting_report?L=%LEAGUEID%">Accounting</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=08">Sortable Stats</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=17">Draft</a></li></td>
+   </tr>
+   <tr>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=46">Add Player</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=03">Transactions</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/top?L=%LEAGUEID%&SEARCHTYPE=ADVANCED&COUNT=30&CATEGORY=freeagent&POSITION=*&DISPLAY=points&TEAM=*">Free Agents</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/live_scoring_summary?L=%LEAGUEID%">Live Scoring</a></li></td>
+   </tr>
+   <tr>
+    <td rowspan="2" class="designby"><li><a href="http://www.dagrafixdesigns.com" target="_blank">Site By DAGrafixDesigns.com</a></li></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=05">Trades</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=07">League Rosters</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/fantasy_box_score?L=%LEAGUEID%">Box Scores</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=44">Auction Results</a></li></td>
+   </tr>
+   <tr>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=50">Setup</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=26">By-Laws</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/depth_chart?L=%LEAGUEID%">Depth Charts</a></li></td>
+    <td class="blank_line"></td>
+    <td><li><a href="http://%HOST%/%YEAR%/options?L=%LEAGUEID%&O=101">Power Rank</a></li></td>
+   </tr>
+  </tbody>
+  </table>
+</div>

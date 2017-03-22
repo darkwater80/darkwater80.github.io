@@ -1,0 +1,45 @@
+<!-------------------------------------   
+           QUICK LINKS TABS
+-------------------------------------->
+a
+<!-----  ADD  CAPTION AND WRAP TABS AND CONTENT IN TABLE TO MATCH SITE  ------>
+<table id="custom-reports" class="report quick"><caption><span>Quick Links</span></caption>
+ <tbody><tr><td>
+
+<!-----  TABBED REPORT NAVIGATION  ------>
+   <ul class="tabbed-reports">
+    <li class="report1 current">Activity</li>
+    <li class="report2">Twitter</li>
+    <li class="report3">Schedules</li>
+    <li class="report4">Options</li>
+    <li class="report5">LogIn</li>
+   </ul>
+
+
+<!-----  TABBED REPORTS CONTENT  ------>
+   <div class="reports-content">
+    <div class="report1"><module name="OWNER_ACTIVITY"/></div>
+    <div class="report2" style="display:none;"><script src="http://www.dagrafixdesigns.com/Templates/DA-2011/DA-2013/Nike_B/js/customize-twitter-1.1.min.js" type="text/javascript">
+</script><script>
+var options = {
+    "url": "http://www.dagrafixdesigns.com/Images/2008/DA_2017/DA_Pro16/Pro17_Twitter.css"
+};
+CustomizeTwitterWidget(options);
+</script>
+
+<a class="twitter-timeline" 
+    data-chrome="noheader noborders transparent nofooter noscrollbar"
+    data-link-color="#ea4a69"
+    width="300" height="350"
+    data-dnt="true"
+    data-widget-id="344811004590424064"
+    href="https://twitter.com/DA_Sticks/dagrafix"></a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+    <div class="report3" style="display:none;"><div class="scheduletwo"><module name="NEXT_WEEKS_FANTASY_SCHEDULE"/></div></div>
+    <div class="report4" style="display:none;"><module name="MY_OPTIONS"/></div>
+    <div class="report5" style="display:none;"><module name="WELCOME"/></div>
+
+   </div>
+ </td></tr></tbody>
+</table>

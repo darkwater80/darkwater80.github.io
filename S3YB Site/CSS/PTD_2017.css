@@ -1,0 +1,4022 @@
+
+
+#homepagetabsdiv {
+     display:none;
+}
+
+/*   HTML BODY LAYOUT
+========================== */
+
+html {
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     width: 100%;
+}
+
+#commishmessage,#aj_bod h4,#aj_bod #rostertable + .reportnavigation,
+td#cbsRoadTeamName,td#cbsHomeTeamName,table.cbsGameTable,table.cbsNFLGameTable,#aj_auction h4,
+#aj_auction #rostertable + .reportnavigation,caption, .homepagemodule caption, .homepagecolumn .homepagemodule caption,#nitro-roster td.teamname a {
+     background: none!important;
+}
+
+body {
+     background:#0a0a0a url(http://nitrografixx.com/2016/ptd/bg.jpg)center top;
+     background-attachment:fixed;
+     color: #ccc;
+     font-size: 9.8pt;
+font-weight: bold;
+     margin: 0px auto;
+     margin-bottom:0px;
+     margin-top:4px;     
+}
+
+:-moz-any-link:focus, :focus, img {
+     outline: medium none;
+}
+
+
+/*   PAGEBODY AND PAGEHEADER
+============================= */
+.contentwrapper {
+     padding: 0px 5px 0px;
+     max-width: 1280px;
+     margin:0 auto;
+     min-height:800px;
+}
+
+.pagebody {
+     margin-bottom: 0px;
+     padding: 10px 0px 0px;
+}
+
+.pageheader {
+     color:#0687e3;
+     font-size: 9pt;
+     position: relative;
+     width: 100%;
+}
+
+.pageheader a:link, .pageheader a:active, .pageheader a:visited {
+     color:#0687e3;
+}
+
+.pageheader a:link:hover, .pageheader a:active:hover, .pageheader a:visited:hover {
+     color: #fff;
+}
+
+.brandlogo,.pagetitle {
+     display: none;
+}
+
+.welcome {
+     position:absolute;
+     right:5px;
+     width:100%;
+      
+}    
+    .welcome small {
+     display:none;      
+}
+
+.welcome b {
+     color:#ffd00c
+}
+  
+.welcome a:hover {
+     color:#ffd00c!important;
+}  
+
+.leaguelogo {
+     margin-bottom: 1px;
+     margin-top: -12px;
+     width:100%;
+     max-width: 1250px;
+}
+
+.logoimage {
+     display:block;
+     max-width:1250px;
+     margin:0 auto;
+}
+
+
+
+/*   PAGEFOOTER
+================== */
+
+.pagefooter {
+     color: rgba(5,134,226,.8);
+     font-size: 10pt;
+     height: 105px;
+     padding-bottom: 0px;
+     width: auto ! important;
+     background:#0a0a0a;
+     padding-top:10px;
+     border-top:4px double #0586e2;
+     border-bottom:4px double #0586e2;
+}
+
+.pagefooter a:link, .pagefooter a:active, .pagefooter a:visited {
+     color:#aaa;
+}
+
+.pagefooter a:link:hover, .pagefooter a:active:hover, .pagefooter a:visited:hover {
+     color: #FFF;
+}
+
+.pagefooter table {max-width:1280px;margin:0 auto;width:100%;}
+.pagefooter td.nitrolink,.pagefooter td.copyright {width:25%;color:#aaa}
+.pagefooter td.copyright img {display:block;margin:0 auto;}
+.pagefooter td {text-align:center;margin:0 auto;}
+.pagefooter td a{text-decoration:none;}
+
+
+/*   CUSTOM MFL TABS
+=============================== */
+
+#replacehometabs {text-align:center;border:3px solid #0586e2;border-bottom:3px solid #0586e2;border-left:0;border-right:0;margin-bottom:10px;}
+#replacehometabs ul{padding:0}
+#replacehometabs.tab_v2 li {list-style:none;text-align:center;display:inline-block;vertical-align:middle;padding:0 13px;margin:0 -3px;border-right:1px solid rgba(17,86,142,.4);height:36px;line-height:34px;}
+#replacehometabs.tab_v1 li {list-style:none;text-align:center;display:inline-block;vertical-align:middle;padding:0 13px;margin:0 -3px;border-right:1px solid rgba(17,86,142,.4);height:36px;line-height:34px;}
+#replacehometabs li:first-of-type {border-left:1px solid rgba(17,86,142,.4);}
+#replacehometabs li.searchform {border:none;padding:0 3px;}
+#replacehometabs li.searchform input{background:none;border:0;color:#444;text-transform:uppercase;font: 400 9pt "Roboto",sans-serif;width:92px;line-height:32px;text-align:center;padding:0 8px;font-style:italic;vertical-align:top;}
+#replacehometabs li.searchform .btn {height:32px;width:auto;padding:0;}
+#replacehometabs li.searchform .btn {outline: none;}
+#replacehometabs li a{display:inline-block;}
+#replacehometabs li,#replacehometabs li a {text-decoration:none;color:#0486de;font-weight: bold;text-transform:uppercase;font-size:9.3pt;}
+#replacehometabs li.tablink {border:0 none;padding:0!important;}
+#replacehometabs li.tablink.img1 {border-left:1px solid rgba(9,43,71,.4);}
+#replacehometabs li.tablink.img7 {border-right:1px solid rgba(9,43,71,.4);}
+#replacehometabs li:hover,#replacehometabs li a:hover,#replacehometabs li.currenttab a{color:#ffd00c;cursor:pointer}
+#body_home #replacehometabs.tab_v1 {display:none;}
+#replacehometabs.tab_v2 {display:none;}
+#body_home #replacehometabs.tab_v2 {display:block;}
+
+        /* SCREEN RESOLUTION UNDER 1300PX WIDTH REMOVE IMAGE LINKS NEXT TO TABS */
+           @media only screen and (max-width: 1300px) {
+               #replacehometabs li.tablink {display:none;} 
+               #replacehometabs li.searchform .btn {border-right:1px solid rgba(9,43,71,.4);padding-bottom:2px}
+           }
+        /* SCREEN RESOLUTION UNDER 1100PX WIDTH REMOVE SEARCH BAR IN TABS AREA */
+           @media only screen and (max-width: 1100px) {
+               #replacehometabs li.searchform {display:none;} 
+           }
+
+#tabcontent0 caption {display:none;}
+#tabcontent0 th {height:20px;}
+#tabcontent0 #league_chat th,#tabcontent0 #news_articles .timestamp {display:none;}
+
+#tabcontent0 > table:nth-child(1) {border-bottom:4px double rgba(9,43,71,.4);margin-bottom:13px;}
+
+#tabcontent0 .standingtab {height:310px;}
+#tabcontent0 .standingtab > tbody:nth-child(2){vertical-align:top;}
+#tabcontent0 #brief_standings tr.oddtablerow,#tabcontent0 #brief_standings tr.eventablerow{height:43.2px}
+#tabcontent0 .standingtab td.fname {padding:0 4px}
+
+#tabcontent0 #news_articles .timestamp {text-align:center;white-space:nowrap;}
+#tabcontent0 #news_articles  {height:310px;}
+
+#tabcontent0 #top_performers {height:330px;}
+
+#tabcontent0 #top_performers td {font-size:90%;}
+
+#tabcontent0 #league_chat {height:541px}
+#tabcontent0 #league_chat td:first-of-type {width:122px;}
+#tabcontent0 #league_chat .franchiseicon {height:20px;width:auto}
+#tabcontent0 #league_chat,#tabcontent0 #news_articles {padding:5px;}
+
+#custom-reports.quick .reports-content .report {height:493px;}
+#tabcontent0 #owner_activity .franchiseicon {max-width:130px;}
+#custom-reports #franchise_schedule td.franchisename {width:100%;}
+#custom-reports #franchise_schedule td.points {padding:0 15px;}
+#custom-reports #franchise_schedule,#custom-reports #twitter_feed {margin-left:0px!important;width:99%!important;}
+#tabcontent0 .scheduleWrap {position:relative;overflow: hidden;height:493px;}
+#tabcontent0 #my_options td{vertical-align:top;}
+
+#tabcontent0 .standingtab .report::after,#tabcontent0 .topplayertab .report::after,#tabcontent0 #wowslider-container1::after {content: "";width:1px;height:100%;background:rgba(9,43,71,.2);display:block;position:absolute;right:-10px;top:0;} 
+#tabcontent0 .quick::before {content: "";width:1px;height:100%;background:rgba(9,43,71,.2);display:block;position:absolute;left:-10px;top:0;}
+
+.close_by_div {max-width:1280px;}
+.postseasontab .reports-content img,#rafters img {width:100%;}
+.postseasontab,#rafters {margin-top:50px}
+
+#league_chat td img {vertical-align:middle;}
+
+
+.tablink a:hover,#replacetabs li:hover a {border-bottom:2px solid yellow;}
+.tablink a:hover {border-bottom:2px solid yellow;}
+
+/*   HOMEPAGE COLUMNS AND TABS
+=============================== */
+
+.homepagetabcontent .report {
+     width: 100% ! important;
+}
+
+.homepagecolumn .homepagemodule {
+     margin-bottom: 15px;
+     width: 100%;
+}
+
+.homepagecolumn {
+     padding-right: 18px;
+     padding-top: 0px;
+}
+
+.homepagecolumn:last-child {
+     padding-right: 0px;
+}
+
+
+/*   CAPTIONS AND TH
+========================= */
+
+caption, .homepagemodule caption, .homepagecolumn .homepagemodule caption {
+     color: #0687e5;
+     cursor: default;
+     font-size: 12pt;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     margin-right: 0px;
+     margin-top: 0px;
+     padding-right: 5px;
+     padding-bottom:0;
+     position: relative;
+     text-align: right;
+     text-transform: uppercase;
+     width: auto;
+     font-weight:300;
+}
+
+caption span {
+     padding-lef: 45px;
+}
+
+caption a:link, caption a:active, caption a:visited {
+     color: #0687e5 ! important;
+     font-weight: 900;
+     text-decoration: none;
+}
+
+caption a img, th a img, h3 a img {
+     vertical-align: middle;
+}
+
+caption a:hover, caption a:link:hover, caption a:active:hover, caption a:visited:hover {
+     color: #fff ! important;
+     font-weight: 900;
+     text-decoration: none;
+}
+
+caption > span.module_expand {
+     color: #0687e5;
+     font-size: 0.8em;
+     margin-top: -2px;
+     position: absolute;
+     right: 2px;display:none;
+}
+
+caption > span.module_expand:hover {
+     color: #fff;
+}
+
+caption > span.module_expand {
+     background: none repeat scroll 0px 0px rgba(0, 0, 0, 0) ! important;
+     padding-left: 0px ! important;
+}
+
+th {
+     background-color: #000000;
+     border: 1px solid rgba(5,134,226,.15);
+     color: #bbbbbb!important;
+     font-size: 100%;
+     font-style: normal;
+     
+     text-align: center;
+     text-transform: uppercase;
+}
+
+th a:link, th a:active, th a:visited,
+th.articlecaption a:active,th.articlecaption a:link,th.articlecaption a:visited {
+     color: #ccc;
+     text-decoration: none;
+}
+
+th a:hover,th.articlecaption a:hover {
+     color: #0687e5!important;
+     text-decoration: none;
+}
+
+
+/*   TABLE ROWS AND CELLS
+============================= */
+
+.oddtablerow a:link, .oddtablerow a:active, .oddtablerow a:visited, .oddtablerow {
+     color: #ccc;
+     text-decoration: none;
+}
+
+.eventablerow a:link, .eventablerow a:active, .eventablerow a:visited, .eventablerow {
+     color: #ccc;
+     text-decoration: none;
+}
+
+.oddtablerow a:hover, .eventablerow a:hover {
+     color: #0687e5!important;
+}
+
+.oddtablerow td {
+     border: 1px solid rgba(5,134,226,.15);
+     font-weight: 400;
+     padding: 2px;
+}
+
+.eventablerow td {
+     border: 1px solid rgba(5,134,226,.15);
+     font-weight: 400;
+     padding: 2px;
+}
+
+.oddtablerow {
+     background:#0e0e0e;
+     color: #999898!important;
+}
+
+.eventablerow {
+     background:#0e0e0e;
+     color: #999898!important;
+}
+
+.newposition td {
+     box-shadow: 0 -3px 0px 0px rgba(5,134,226,.4); 
+}
+
+
+/*   FONT COLORING
+======================= */
+
+* {
+     transition: color 0.6s ease 0s;
+}
+
+a:link, a:active, a:visited {
+     color: #ccc;
+     font-weight: 400;
+     text-transform: uppercase ! important;
+}
+
+a:link:hover, a:active:hover, a:visited:hover {
+     color: #0685e4;
+     font-weight: 400;
+     text-transform: uppercase ! important;
+}
+
+.warning {
+     color:red;
+     font-size: 10pt;
+     font-weight: 400;
+}
+
+th.warning {
+     color: red;
+     font-size: 10pt;
+     font-weight: 400;
+}
+
+.oddtablerow td.status span.freeagent {
+     color: #0685e4;
+}
+
+.eventablerow td.status span.freeagent {
+     color: #0685e4;
+}
+
+a:hover {
+     color: #0685e4;
+}
+
+A:link img, A:visited img {
+     border-color: transparent;
+}
+
+A:hover img {
+     border-color: transparent;
+}
+
+a:active {
+     background: none repeat scroll 0px 0px transparent;
+}
+
+h2 {
+     background:rgba(5,134,226,.1);
+     color: #0685e4;
+     font-size: 13px;
+     margin: 0px;
+     color:#ccc;
+}
+
+#article h2,#options_73 .report h2 {
+     background: none;
+     color: #ccc;
+     margin: 10px;
+}
+
+h2 a:link, h2 a:active, h2 a:visited {
+     color:#FFF;
+}
+
+h3 {
+     border: medium none;
+     color: #ccc;
+     font-size: 12pt;
+     margin-bottom: 6px;
+     margin-top: 4px;
+     padding: 4px;
+     text-transform: uppercase;
+}
+
+h3 a:link, h3 a:visited, h3 a:active {
+     color: #0685e4;
+}
+
+h3 a:link:hover, h3 a:visited:hover, h3 a:active:hover {
+     color: #ccc;
+}
+
+#body_options_13 h3 {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+}
+
+#my_options li  {
+     color: #0685e4;
+}
+
+
+/*   MOBILE DEVICE ADJUSTMENTS
+============================== */
+
+        /* REMOVE BACKGROUND COLORS WHEN LINK CLICKED ON MOBILE DEVICES */
+           * {-webkit-tap-highlight-color:rgba(0,0,0,0)!important;}
+
+        /* FORCE MOBILE SAFARI FOR IPHONE NOT TO ENLARGE BODY TEXT SIZE */
+           @media screen and (max-device-width: 480px){
+             body{
+               -webkit-text-size-adjust: none;
+             }
+           }
+
+        /* MAKE REPORTS AND MODULES FULL WIDTH AND SINGLE ROW */
+           @media only screen and (max-width: 1000px) {
+               #homepagecolumn1,
+               #homepagecolumn2,
+               #homepagecolumn3,
+               #homepagecolumn4,
+               #homepagecolumn5,
+               #homepagecolumn6,
+               #homepagecolumn7,
+               #homepagecolumn8,
+               .two_column_layout {width:100%!important;float:left;} 
+               .standingtab .report::after,.topplayertab .report::after,#wowslider-container1::after {display:none!important;} 
+               .quick::before {display:none!important;}
+           }
+
+
+/*   MY FRANCHISE COLORING
+=========================== */
+
+#body_options_08 tr.myfranchise,#body_top tr.myfranchise,
+#body_options_236 tr.myfranchise,#body_options_117 tr.myfranchise,
+#body_options_32 tr.myfranchise { 
+     background-color: rgba(5,134,226,.3);
+}
+
+#body_options_08 tr.myfranchise td a:hover,#body_top tr.myfranchise td a:hover,
+#body_options_236 tr.myfranchise td a:hover,#body_options_117 tr.myfranchise td a:hover,
+#body_options_32 tr.myfranchise td a:hover { 
+     color:#0685e4!important;
+}
+
+#standings .myfranchise  {
+     color:#0685e4;
+}
+
+#standings .myfranchise:hover {
+     color:#ffffff;
+}
+
+
+/*   REPORTS AND TABLE SIZING
+============================== */
+
+.report {
+     background:#111 ! important;
+     border-radius: 5px;
+     border: 1px solid #171717;
+     box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+     padding: 5px;
+     text-align: left;
+}
+#tabcontent0 .report {
+     padding: 2px;
+}
+
+.playoffbracket, #home .playoffbracket, #monthly_calendar, #home #monthly_calendar, .pagebody table, #monthly_calendar, .report, td.two_column_layout table, table.two_column_layout, #player table, table#youtubevideo.homepagemodule.report embed, #body_board_show textarea {
+     width: 100%;
+}
+
+table.articlepicturetable {
+    width:auto;
+}
+
+table.two_column_layout {
+     border-spacing: 0px;
+     padding: 0px ! important;
+}
+
+table.two_column_layout .two_column_layout {
+     padding-left: 0px;
+     padding-right: 5px;
+}
+
+table.two_column_layout .two_column_layout:last-child {
+     padding-right: 0px;
+}
+
+table.report td.two_column_layout {
+     padding-left: 0px;
+     padding-right: 5px;
+}
+
+table.report td.two_column_layout:last-child {
+     padding-right: 0px;
+}
+
+div#options_31.pagebody table:last-child {
+     border-spacing: 0px;
+}
+
+div#options_31.pagebody table.report:last-child {
+     border-spacing: 1px;
+}
+
+#body_player .report {
+     width: 99%;
+}
+
+#body_player td[width="33%"],#body_player td[width="67%"] { 
+     float:left; 
+     width:100%;
+}
+
+#body_player .biography {
+     position:relative;
+     height:210px;
+}
+
+#body_player td.player_photo {
+     position: absolute;
+     top: 88px;
+     right:30px;
+}
+
+#my_options li {
+     font-size: 10pt;
+     padding: 2px;
+}
+
+#welcome select {
+     max-width:240px;
+}
+
+#body_options_98 .report.nocaption,
+#body_options_18 .report.nocaption  {
+     background: none! important;
+     border-radius: 0px;
+     border: 0;
+     box-shadow: 0px 0px 0px 0px rgba(38, 62, 104, 0.2) inset;
+     padding: 0px;
+     padding-top:10px;
+}
+
+#body_options_98 .report.nocaption td[valign="top"],
+#body_options_18 .report.nocaption td[valign="top"]  {
+     width:100%;
+     float:left;
+}
+
+#body_options_67 h3,#body_options_69 h3,#player_records td.rank:nth-child(2),#player_records th:nth-child(2) {
+     display:none;
+}
+
+div.mqa-zl:nth-child(8) > img{
+     width:100px!important;
+     height:17px!important;
+}
+
+#body_options_170 .report td {
+     width:100px;
+}
+
+#body_options_170 select {
+     width:100%;
+     margin:0 auto;
+}
+
+#my_draft_picks th:first-of-type,#options_208 .report th.rank,#options_117 .report th.rank,
+#options_204 .report th.rank,#options_158 .report .rank,#options_157 .report .rank {
+     width:40px;
+}
+
+.pooltab td:first-of-type,#options_153 .report td:first-of-type,#options_232 .report td.franchisename,#options_156 .report td.franchisename,
+#options_204 .report td.franchisename,#options_208 .report td.franchisename,#options_158 .report td.franchisename,#options_157 .report td.player,
+#options_157 .report td.status,#body_free_agents .report td.player,#body_free_agents .report td:nth-child(3),#bbid_summary td.franchisename,
+#season_records td.franchisename,#record_streaks td.franchisename,#franchise_records td.franchisename,#player_records td.player,#body_options_07 .report td.player,
+#body_options_49 .report td:nth-child(2),#body_options_49 .report td:first-of-type,#options_171 .report td:first-of-type,#body_options_23 .report td:first-of-type {
+     text-align:left;
+}
+
+#top_survivor_picks td:first-of-type,#roster .contractyear,#roster .contractstatus,
+#options_17 .report .timestamp,#options_202 .report .year,#options_202 .reportfooter,#options_194 .report .rank,
+#options_232 .report td,#options_156 .report td,#options_208 .report td,#options_204 .report td,#body_options_23 .report td
+#options_158 .report td,#options_157 .report td,#options_232 .report .rank,#options_156 .report td.rank,#nfl_confidence_pool .reportfooter td,
+#options_208 .report th.rank,#options_204 .report th.rank,#options_158 .report .rank,#options_157 .report .rank,#options_171 .report td,
+#body_free_agents .report td,#options_187 .contractyear,#options_187 .contractstatus,#options_187 .contractinfo,#bbid_summary td,
+#season_records td,#record_streaks td,#franchise_records td,#player_records td,#hot_news .reportfooter,#body_options_151 .report td,blockquote,
+#hot_news td.points,#hot_news td.rank,#draft_tracker td.rank,#options_153 .report td,#body_options_07 .report td,
+#recent_draft_picks td[align="right"],.pooltab td,#my_draft_picks td[align="right"],#body_options_170 .report td,
+#options_17 .report td.rank,#options_117 .report td.rank,#options_117 td[align="right"],#body_options_49 .report tr:last-of-type td:first-of-type,
+table#youtubevideo.homepagemodule.report embed,#my_watch_list .reportfooter,#fantasy_confidence_pool .reportfooter td,
+#body_news_articles .report td.timestamp,#body_news_articles .report td.rank,#body_options_49 .report td,#body_options_09 .report td.test
+#body_options_20 .report td.points,#body_options_215 .report td:first-of-type,#body_options_09 .report td.edit {
+     text-align:center;
+}
+
+div.reports-content #standings th.fname {
+     min-width:130px;
+}
+
+#season_records td.rank,#record_streaks td.rank,#franchise_records td.rank,#player_records td.rank {
+     width:20px;
+}
+
+#options_153 .report,#options_232 .report,#options_208 .report,#options_204 .report,
+#options_158 .report,#options_157 .report,#options_120 .report,#body_free_agents .report {
+     table-layout:fixed;
+}
+
+#options_153 .report th:first-of-type,#options_153 .report td:first-of-type,#options_17 .report .franchisename,
+#options_208 .report th.franchisename,#options_204 .report th.franchisename,#options_158 .report th.franchisename,
+#options_157 .report th.player,#options_120 .report th:first-of-type,#body_free_agents .report th.player,#body_free_agents .report th:nth-child(3) {
+     width:202px;
+}
+
+#options_153 .report td:last-of-type {
+     color: #da2b2a;
+     font-size:12pt;
+}
+
+#options_194 .report .rank,#options_232 .report .rank,#options_156 .report td.rank {
+     width:80px;
+}
+
+#article iframe {
+     max-width:460px;
+}
+
+#options_17 td[colspan="3"] a {
+     vertical-align:top;
+     font-size:0;
+}
+
+#options_17 td[colspan="3"] b {
+     line-height:34px;
+}
+
+#owner_activity td.timestamp {
+     width:100%;
+}
+
+#bbid_summary td.franchisename {
+     width:200px;
+}
+
+#livescoring_summary td {
+     font-size:13pt;
+}
+
+#livescoring_summary td.points {
+     font-size:13pt;
+     color:#0685e4;
+     width:50%;
+}
+
+#livescoring_summary td[rowspan="2"] {
+     width:50%;
+}
+
+#body_options_49 .report input[type="text"] {
+     width:90%;
+}
+
+#body_options_49 .report td:first-of-type,#body_options_20 .report .franchisename {
+     width:0px;
+}
+
+#body_options_20 .report td.points,#body_options_151 .report td:first-of-type {
+     font-size:13pt;
+     color:#0685e4;
+}
+
+#body_options_09 .report td.points {
+     text-align:left;
+     width:150px;
+     text-indent:10px;
+}
+
+#body_options_09 .report td.event,#body_options_09 .report td.range {
+     min-width:200px;
+}
+
+#body_options_09 .report td.test,#body_options_09 .report td.edit {
+     width:120px;
+}
+
+#body_options_151 .report td select {
+     width:50%
+}
+
+#options_171 .report td:first-of-type {
+     width:180px;
+}
+
+.blank_footer {
+     width:100%; 
+     height:12px;
+}
+
+#owner_activity td.franchisename {
+     text-transform:uppercase;
+}
+
+#owner_activity tbody{
+     overflow-y: auto!important;
+     max-height: 550px!important;
+}
+#owner_activity tbody {
+     display: block;
+}
+
+#my_draft_picks td:last-of-type,#recent_draft_picks td:last-of-type {
+     text-align:center;
+}
+
+#options_46 > form table td,#options_27 > form table td{
+     text-align:center;
+     vertical-align:middle;
+}
+
+#options_46 > form table td a,#options_46 > form td:nth-child(1) > div:nth-child(2),
+#options_27 > form table td a,#options_27 > form td:nth-child(1) > div:nth-child(2) {
+     text-align:left;
+}
+
+
+
+
+/*   REMOVE SCORESUMMARY AND H2HMATCHUP TABLE NOT NEEDED
+========================================================= */
+
+#options_06 .h2hmatchups,#options_169 .h2hmatchups,#options_169 .h2hmatchups + h3,
+#options_22 .scoresummary,#options_22 h3,
+#body_weekly .scoresummary,#body_weekly h3 {
+     display:none;
+} 
+
+
+/*   PLAYER PHOTOS AND ARTICLE IMAGES
+====================================== */
+
+img.articlepicture {
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+     border: 6px solid rgba(5,134,226,1) ! important;
+     height: auto;
+     margin: 10px;
+     max-width: 200px;
+}
+
+#my_player_photos td img {
+     border: 8px solid rgba(5,134,226,1) ! important;
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+     height: auto;
+     margin: 10px;
+     width: 115px;
+}
+
+td.player_photo img {
+     border: 2px solid #da2b2a;
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/*   BODY FOR TOP PLAYER ADJUST TD AND REMOVE ITEMS NOT NEEDED
+============================================================== */
+
+#options_08 .contractyear,#body_top .contractyear {
+     display:none;
+}
+
+#options_08 .report th.week + th,#options_08 .report tr.weeklypointtotals,
+#body_top .report th.week + th,#body_top .report tr.weeklypointtotals {
+     display:none;
+}
+
+#options_08 .report .rank + .rank,#body_top .report .rank + .rank {
+     display:none;
+}
+
+#options_08 .report td,#body_top .report td {
+     text-align:center;
+}
+
+#options_08 .report .player,#body_top .report .player {
+     text-align:left;
+}
+
+#body_player .biography td {
+     text-align:left;
+}
+
+
+/*   FORMS AND TEXTAREA
+======================== */
+
+#options_12 #MSG {
+     width: 98%;
+}
+
+textarea {
+     height: auto;
+     margin-left: 13px;
+     width: 96%;
+}
+
+#body_options_46 textarea {
+     width: 80%;
+}
+
+form table {
+     width: 90%;
+}
+
+#options_12 #MSG {
+     background:#ddd;
+     color: #000;
+     margin-bottom: 10px;
+     margin-left: 10px;font-weight:bold;
+     padding: 0px;
+}
+
+#commish_email textarea {
+     height: auto;
+     margin-left: 13px;
+}
+
+#body_options_13 form {
+     text-align: center;
+}
+
+#options_12 form b,#options_12 form br {
+     display:none;
+}
+
+#player_search input[type="text"]{
+     width:50%;
+     font: 400 1.1em "Oswald",sans-serif; 
+     color: #0685e4;
+}
+
+#player_search form{
+     text-align:center;
+}
+
+
+
+/*   MESSAGE BOARD
+==================== */
+
+#board_show td {
+     vertical-align: top;
+}
+
+#body_board_show textarea {
+     height: auto;
+     margin: 0px auto 10px -3px;
+}
+
+#body_board_show form {
+     padding: 0px 5px;
+}
+
+#body_board_show th.messageboardbar {
+     background: none repeat scroll 0px 0px transparent;
+     border: medium none;
+     color: #ccc!important;
+     font-size: 14px;
+     font-weight: bold;
+     padding-right: 0px;
+     text-decoration: underline;
+}
+
+#body_board_show th.messageboardbar a {
+     color:#0685e4;
+}
+
+#body_board_show th.messageboardbar a:hover {
+     color: #fff!important;
+}
+
+#body_board_show .messageboardlink {
+     padding: 24px;
+}
+
+a.messageboardlink {
+     background: rgba(9,43,71,.1);
+     border-radius: 3px;
+     border: 1px solid rgba(9,43,71,.2);
+     color: #ccc!important;
+     margin: 0px 2px;
+     padding: 2px 10px ! important;
+     text-decoration: none;
+}
+
+a.messageboardlink:hover {
+     background: none repeat scroll 0px 0px rgba(9,43,71,.5);
+     border: 1px solid rgba(133,80,38,.7);
+     color: #ffffff!important;
+}
+
+th.messageboardbar {
+     background:#222!important;
+     margin: 0px 2px;
+     padding: 0px;
+     text-decoration: none;
+}
+
+th.messageboardbar {
+     text-decoration:none!important;
+}
+
+
+
+/*   POWER RANK
+================== */
+
+#power_rank td.franchisename,#body_options_101 .report td.franchisename,
+#power_rank th.franchisename,#body_options_101 .report th.franchisename {
+     width: 100px;
+}
+
+#power_rank td+td,#body_options_101 .report td+td {
+     min-width:40px; 
+     text-align:center;
+}
+
+
+
+/*   TIE BREAKERS
+==================== */
+
+#body_options_119 .report td:first-of-type,
+#body_options_119 .report th:first-of-type {
+     width: 100px;
+}
+
+#body_options_119 .report td+td {
+     min-width:40px; 
+     text-align:center;
+}
+
+
+
+/*   PLAYER PROJECTIONS
+========================= */
+
+#body_options_236 .report td.player {
+     width: 180px;
+     text-align:left
+}
+
+#body_options_236 .report td {
+     min-width:40px; 
+     text-align:center;
+}
+
+#body_options_236 .report td.rank {
+     min-width:10px; 
+}
+
+
+
+/*   STANDINGS
+================== */
+
+#standings h3, .homepagecolumn #standings h3, .homepagecolumn #brief_standings h3, #brief_standings h3 {
+     background: #0e0e0e;
+     background-repeat: repeat;
+     background-size: auto auto;
+     border: 3px solid #000;
+     color: #0685e4;
+     font-size: 18pt;
+     height: 38px;
+     letter-spacing: 3px;
+     line-height: 38px;
+     margin-bottom: 5px;
+     margin-top: 6px;
+     outline: 2px solid rgba(9,43,71,.2);
+     padding: 0px;
+     text-shadow: 1px 1px 0px #000;
+     text-transform: uppercase;
+}
+
+#standings .fname {
+     width:300px;
+}
+
+#standings td, #standings th, #brief_standings td, #brief_standings th {
+     text-align: center;
+}
+
+#brief_standings td.fname, #brief_standings th.fname, #standings td.fname, #standings th.fname, #standings td.ficonname {
+     text-align: left;
+}
+
+#home .standingslogo {
+     width: 100%;
+}
+
+.standingslogo {
+     max-width: 1264px;
+     width: 100%;
+}
+
+div.report41 #brief_standings tr:nth-child(1) {
+     background:url(http://nitrografixx.com/2016/ptd/ptd2017/DivBanner1-sm.png)no-repeat center;
+}
+
+div.report42 #brief_standings tr:nth-child(1) {
+     background:url(http://nitrografixx.com/2016/ptd/ptd2017/DivBanner2-sm.png)no-repeat center;
+}
+
+div.report43 #brief_standings tr:nth-child(1) {
+     background:url(http://nitrografixx.com/2016/ptd/ptd2017/DivBanner3-sm.png)no-repeat center;
+}
+
+.standingtab #brief_standings h3 {background:none!important;text-indent:-99999px;}
+
+.homepagecolumn #brief_standings h3, #brief_standings h3 {
+     background:#000;
+     border-color:transparent;
+     outline: 2px solid transparent;     
+}
+
+
+
+/*   LIVE SCORING PAGES
+============================== */
+
+#live_scoring_summary table,#live_scoring table {
+     max-width:1280px;
+     margin:0 auto;
+}
+
+#live_scoring_summary table.report, #live_scoring table.report {
+     min-width: 300px;
+}
+
+#live_scoring_summary .scoresummary {
+     max-width:400px;;
+}
+
+table.scoresummary, table.h2hmatchups, table.report td.two_column_layout, table.two_column_layout .two_column_layout {
+     width: 50%;
+}
+
+#body_live_scoring_summary h2, #body_live_scoring h2 {
+     color: #ccc;
+     font-size: 18pt;
+     padding: 10px 0px;
+     text-transform: uppercase;
+}
+
+#body_live_scoring_summary h3, #body_live_scoring h3 {
+     border:1px solid #222;
+}
+
+#live_scoring_summary, #live_scoring {
+     margin-bottom:0;
+     padding-bottom: 5px;
+     z-index: 99999;
+}
+
+#live_scoring_summary .scoresummary {
+     border: medium none ! important;
+     margin-top: 10px;
+     padding: 0px;
+}
+
+#livescoring_summary td+td  {
+     text-align:center;
+     padding:2px 0;
+}
+
+#live_scoring_summary table.report .newposition td,
+#live_scoring table.report .newposition td {
+     border-top: 0;
+}
+
+tr.total td {
+     background:red;
+     color:#FFF;
+     font-size:12pt;
+}
+
+tr.players_yet_to_play td {
+     background:green;
+     color:#FFF;
+     font-size:12pt;
+}
+
+tr.players_currently_playing td {
+     color:#FFF;
+     font-size:12pt;
+}
+
+tr.player_minutes_remaining td {
+     color:green;
+     font-size:12pt;
+}
+
+.gameunderway { 
+     background:url(http://www.nitrografixx.com/2015/ladder/images/game_on.png) no-repeat; 
+     background-position: center right; 
+}
+
+.updatedstats { 
+     background:url(http://www.nitrografixx.com/2015/ladder/images/update_stats.png) no-repeat; 
+     background-position: center right; 
+}
+
+.haspossession { 
+     background:url(http://www.nitrografixx.com/2015/ladder/images/has_ball.png) no-repeat; 
+     background-position: center right; 
+}
+
+.redzone { 
+     background:url(http://www.nitrografixx.com/2015/ladder/images/red_zone.gif) no-repeat; 
+     background-position: center right; 
+}
+
+.shouldstart { 
+     background: url(http://www.nitrografixx.com/2015/ladder/images/green_up.png) center right no-repeat; 
+     padding-right: 20px; 
+}
+
+.shouldbench { 
+     background: url(http://www.nitrografixx.com/2015/ladder/images/red_down.png) center right no-repeat; 
+     padding-right: 20px; 
+}
+
+.franchise_online { 
+     background: url(http://nitrografixx.com/2016/ptd/online.png) center right no-repeat; 
+     padding-right: 18px; 
+}
+
+.franchise_offline { 
+     background: url(http://www.nitrografixx.com/2015/ladder/images/offline.png) center right no-repeat; 
+     padding-right: 18px; 
+}
+
+.franchise_offline+a,.franchise_offline+a+a,.franchise_offline+a+a+a,
+.franchise_online+a,.franchise_online+a+a,.franchise_online+a+a+a {
+     display:none;
+}
+
+
+/*   PLAYOFF BRACKETS
+======================= */
+
+.playoffbracket td {
+     border: 0px none;
+     outline: medium none ! important;
+}
+
+.playoffbracket .oddtablerow td {
+     box-shadow: none;
+}
+
+.playoffbracket {
+     background:#111 ! important;
+     border-radius: 5px;
+     border: 1px solid #171717;
+     box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+     padding: 5px;
+     text-align: left;
+}
+
+.playoffbracket td.topteam {
+     border-bottom: 2px solid rgba(5,134,226,1);
+}
+
+.playoffbracket td.bracket {
+     border-right: 2px solid rgba(5,134,226,1);
+}
+
+.playoffbracket td.bottomteam {
+     border-bottom: 2px solid rgba(5,134,226,1);
+     border-right: 2px solid rgba(5,134,226,1);
+}
+
+.playoffbracket td b {
+     color: #fff;
+}
+
+.playoffbracket td {
+     font-size: 11pt ! important;
+     text-align: center;
+}
+
+#home th.playoffbracketname {
+     font-size: 12pt;
+     text-transform: uppercase;
+}
+
+.playoffbracket tr.lastrow {
+     line-height:10px!important;
+}
+
+.playoffbracket tr.lastrow td{
+     border:none!important;
+     color:transparent!important;
+     font-size:0!important;
+}
+
+.playoffbracket tr.lastrow img{
+     display:none!important;
+}
+
+
+/*    COMMISH SETUP PLAYOFF BRACKETS
+========================================= */ 
+div#options_82.pagebody td.two_column_layout{ 
+     float:left; 
+     width:100%;
+}
+
+div#options_82.pagebody form table{ 
+     width:100%; 
+}
+
+
+/*   Habman Player Generator
+============================== */
+
+#playoffTable h4  {
+     margin:0px 0 5px 0;
+     background: none repeat scroll 0px 0px #FFF;
+     border-radius: 5px;
+     border: 2px solid rgba(38, 62, 104, 0.4);
+     box-shadow: 0px 0px 13px 1px rgba(38, 62, 104, 0.2) inset;
+     text-transform:uppercase;
+     color:#da2b2a;
+}
+
+#outerplayoff_table0-1 {
+     padding:0;
+     border:0;
+     box-shadow:0 0 0 0 #fff inset;
+     border-spacing:0;
+}
+
+
+/*   MONTHLY CALENDAR
+======================= */
+
+#monthly_calendar {
+     border-collapse: separate ! important;
+     margin-bottom: 13px;
+     background:#111 ! important;
+     border-radius: 5px;
+     border: 1px solid #171717;
+     box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+     padding: 5px;
+     text-align: left;
+}
+
+#monthly_calendar td {
+     border: 1px solid rgba(5,134,226,.15);
+     padding: 0px;
+}
+
+#monthly_calendar th {
+     border: 1px solid rgba(5,134,226,.15);
+     color: #ffffff;
+}
+
+#monthly_calendar .month_header th a {
+     color: #ffffff;
+}
+
+#monthly_calendar .day_of_week_header th {
+     background-color: #222;
+     color: #fff;
+}
+
+#monthly_calendar td .calendarday {
+     background-color: rgba(5,134,226,.2);
+     border-bottom: 1px solid rgba(5,134,226,.3);
+     border-left: 1px solid rgba(5,134,226,.5);
+     color: #ffffff;
+     height: 25px;
+     line-height: 25px;
+}
+
+.calendarday {
+     width: 40px;
+}
+
+.calendarday a {
+     color: #ffffff ! important;
+     font-family: Verdana;
+     font-size: 10pt;
+}
+
+#monthly_calendar td.today {
+     border: 3px dotted rgba(5,134,226,.6);
+     box-shadow: 0px 0px 9px 1px rgba(0,0,0,.8) inset ! important;
+}
+
+
+
+
+/*   TWITTER FEED COLORING
+=============================== */
+
+#twitter_feed td:nth-child(1)  a{
+     color:#fff;
+}
+#twitter_feed td:nth-child(2) {
+     font-size:9pt;
+}
+
+#twitter_feed td:nth-child(3) a {
+     font-size:7pt;
+}
+
+
+/*   FRANCHISE ICONS AND LOGOS
+=============================== */
+
+.franchiseicon {
+     height: auto;
+     max-height: 60px;
+     max-width: 200px;
+     width: auto;
+}
+
+caption.withfranchiseicon,#submit_lineup caption.withfranchiseicon {
+     padding: 5px 0px;
+     text-align: center ! important;
+     text-indent: 0px;
+}
+
+caption.withfranchiseicon span {
+     background: none repeat scroll 0px 0px rgba(0, 0, 0, 0) ! important;
+}
+
+caption.withfranchiseicon img {
+     background: none repeat scroll 0px 0px transparent;
+     height: auto;
+     max-height: 60px;
+     max-width: 200px;
+     width: auto;
+}
+
+span.ownername {
+     display: none;
+}
+
+#standings .franchiseicon,#home #standings .franchiseicon {
+     height:100%;
+     max-width:100%;
+     width: 100%;
+}
+#standings th {
+     white-space:nowrap;
+}
+
+#options_207 tr td .franchiseicon, #options_197 tr td .franchiseicon {
+     height: auto;
+     max-height: 40px;
+     max-width: 150px;
+     width: auto;
+}
+
+img.ava {
+     height: auto;
+     max-height: 50px;
+     max-width: 225px;
+     width: auto;
+}
+
+.franchiseicon {
+     opacity: 1;
+     transition: opacity 1s ease 0s;
+}
+
+.franchiseicon:hover {
+     opacity: 0.8;
+     transition: opacity 1s ease 0s;
+}
+
+#options_93 .franchiseicon {
+     width:100px;
+     height:auto;
+}
+
+#options_08 .franchiseicon,#body_top .franchiseicon {
+     width:70px;
+     height:auto;
+}
+
+#livescoring_summary .franchiseicon {
+     width:150px;
+     height:auto;
+}
+
+#brief_standings .franchiseicon {
+     width:200px;
+     height:auto;
+}
+
+#recent_draft_picks .franchiseicon {
+     width:150px;
+     height:auto;
+}
+
+#body_options_13 img.franchiselogo {
+     display: none;
+}
+
+#options_13 .franchiselogo {
+     display: none;
+}
+
+.franchiselogo {
+     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.4) ! important;
+     height: auto;
+     margin-bottom: 8px;
+     margin-top: 8px;
+}
+
+#body_options_113 .franchiseicon {
+     width:70px;
+}
+
+#body_options_218 .franchiseicon {
+     margin:5px;
+     display:block;
+}
+
+#body_options_170 .franchiseicon{
+     width:100px;
+     height:auto;
+}
+
+
+/*   LEAGUE CHAT 
+=================== */
+
+#body_chat, #chat {
+     width: auto;
+     box-shadow:none;
+     border:0;
+}
+
+#chat_audio_clip {
+     display:none;
+}
+
+#sort_icon {
+     margin-top:-4px;
+     vertical-align:middle;
+}
+
+#league_chat {
+     margin-bottom:15px;
+     text-transform:uppercase !important;
+     font-family:"Roboto", sans-serif !important;
+}
+
+#chat {
+     margin-bottom: 0px;
+     margin-top: 0px;
+     padding-bottom: 0px;
+     border:0;
+     background:none;
+     width: auto;
+
+}
+
+#body_chat h2 {
+     display: none;
+     margin-top: 10px;
+}
+
+#league_chat b {
+     color: #0384e2;
+     text-transform: uppercase;
+     font-weight:normal;
+}
+
+#league_chat td:nth-child(1) {
+     padding: 0px 5px;
+}
+
+select, #chat_text_field {
+     color: #000;
+     
+     margin: 5px 0px;
+}
+
+#league_chat input[type="button"] {
+     margin: 0px;
+}
+
+#league_chat select {
+     max-width:240px;
+}
+
+
+/*   CHAMPIONS PLAQUE 
+======================= */
+
+#championship_plaque .plaque {
+     text-align:center;
+}
+
+#championship_plaque .plaque div{
+     margin:0 auto!important;
+     float:none!important;
+     display:inline-block!important;
+     margin:0 10px!important;
+}
+
+#championship_plaque .plaque {
+     text-align:center;
+}
+
+#championship_plaque .plaque h2{
+     color:#fff;
+}
+
+#championship_plaque h3 {
+     color:#eee!important;
+     font-family: "Oswald";
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase ! important;
+}
+
+#championship_plaque h4 {
+     border: 0px none;
+     color:#aaa!important;
+     font-family: "Oswald";
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 400;
+     height: 18px;
+     text-transform: uppercase ! important;
+}
+
+.plaqueframe div p {
+     display:none;
+}
+
+
+/*   INPUT AND BUTTONS 
+======================= */
+
+#home select {
+     
+     font-size: 14px ! important;
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase;
+}
+
+select {
+    
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"],#ownerbox .btn {
+     background: rgba(5,134,226,.1);
+     border-radius: 5px;
+     border: 1px solid rgba(5,134,226,.2);
+     color: #ccc;
+     cursor: pointer;
+     font-weight: 900;
+     margin: 2px;
+     padding: 4px ! important;
+     text-transform: uppercase;
+     
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase;
+     text-decoration:none;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover,#ownerbox .btn:hover {
+     background: none repeat scroll 0px 0px rgba(5,134,226,.5);
+     border: 1px solid rgba(5,134,226,.7);
+     color: #ffffff;
+}
+
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner {
+     border: 0px none;
+}
+
+input[type="submit"]:focus, input[type="button"]:focus, input[type="text"]:focus, input[type="reset"]:focus, button {
+     outline: medium none;
+}
+
+
+
+/*   COMMISSIONER SETUP PAGE
+============================= */
+
+#commissioner_setup table th {
+     background-color:#0c0500;;
+     color: #fff!important;
+     font-size: 13pt;
+     height: 40px;
+     line-height: 40px;
+     text-align: left;
+     text-indent: 55px;
+     text-transform: uppercase;
+}
+
+#commissioner_setup table li {
+     color: #0585e0;
+}
+
+#commissioner_setup th#recently_used {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/recent.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#general_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/setting_tools.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#commissioner_franchise_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/commish_setup.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#history_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/hourglass.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#scoring_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/whistle.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#players_and_rosters {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/group.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#adjust_scores {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/numeric_stepper.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#home_page_message_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/widgets.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#salary_cap_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/chart_curve_edit.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#use_with_caution {
+     background: url("http://www.nitrografixx.com/2015/ladder/images/commish/error.png") no-repeat scroll 10px 4px #c61616;
+     color: #ffffff;
+}
+
+#commissioner_setup th#playoff_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/playoffs.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#other_transactions_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/small_business.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#waivers_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/arrow_refresh.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#draft_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/events.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#auction_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/auction_hammer_gavel.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#fantasy_schedule_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/calendar_edit.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+#commissioner_setup th#appearance_setup {
+     background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/layout_edit.png");
+     background-position: 10px 4px;
+     background-repeat: no-repeat;
+}
+
+
+/*   PLAYER NEWS AND NEWS ARTICLE POPUP
+======================================= */
+
+a.playerPopupNewsIcon {
+     position:absolute;
+     margin-left:3px!important;
+     margin-top:5px;
+}
+
+#body_options_02 .report td:first-of-type,
+#body_options_02 td.player,
+#body_options_05 td.player,
+#body_options_06 td.player,
+#body_options_07 td.player,
+#body_options_08 td.player,
+#body_options_117 td.player,
+#body_options_133 td.player,
+#body_options_236 td.player,
+#body_options_247 td.player,
+#body_top td.player,
+#body_player_search td.player,
+#body_home td.player,
+#nitro-roster td.player {
+    padding-right:20px!important;
+}
+
+#playerPopupOverlay{
+     background-color: #000000;
+     display: none;
+     height: 100%;
+     left: 0px;
+     opacity: 0.7;
+     position: fixed;
+     top: 0px;
+     width: 100%;
+     z-index: 99999;
+}
+
+#playerPopupWrapper {
+     background-attachment: scroll;
+     background-clip: padding-box ! important;
+     background:#0a0a0a url(http://nitrografixx.com/2016/ptd/bg.jpg)center top;
+     background-image: none;
+     background-origin: padding-box;
+     background-position: 0px 0px;
+     background-repeat: repeat;
+     background-size: auto auto;
+     border-radius: 5px;
+     border: 12px solid rgba(5,134,226,.2) ! important;
+     box-shadow: 0px 0px 46px -9px #000000;
+     display: none;
+     left: 50% ! important;
+     overflow: hidden;
+     padding-bottom: 20px ! important;
+     position: fixed ! important;
+     top: 40% ! important;
+     z-index: 99999;
+}
+
+#playerPopupWrapper li {
+     list-style-image: none;
+     margin: 0px;
+}
+
+#playerPopupLoading,#articlePopupLoading {
+     background:#0a0a0a;
+     position: absolute;
+     text-align: center;
+     z-index: 1;
+}
+
+#playerPopupLoading p,#articlePopupLoading p {
+     color: #0585e0;
+     font-size: 11pt;
+     font-weight: bold;
+     position: relative;
+}
+
+#playerPopupLoading span,#articlePopupLoading span {
+     background: url("http://nitrografixx.com/2016/ptd/ptd2017/ajax-loader.gif") no-repeat scroll center top transparent;
+     content: "";
+     height: 15px;
+     left: 0px;
+     position: absolute;
+     top: 40px;
+}
+
+h3#playerPopupName,h3#articlePopupName {
+     color: #FFF;
+     cursor: default;
+     font-size: 14pt;
+     font-weight: 900;
+     height: 33px;
+     line-height: 33px;
+     margin: 0px;
+     padding: 5px 0px 5px 10px;
+     text-align: left;
+     text-indent: 0px;
+     text-transform: uppercase;
+     visibility: visible;
+}
+
+h3#playerPopupName a:hover {
+     color: #da2b2a;
+}
+
+#playerPopupClose,#articlePopupClose {
+     background: none repeat scroll 0px 0px #0585e0;
+     border: 1px solid #000;
+     color: #000!important;
+     cursor: pointer;
+     font-weight: bold;
+     padding: 1px 6px ! important;
+     position: absolute;
+     right: 5px;
+     top: 8px;
+}
+
+#playerPopupClose:hover,#articlePopupClose:hover {
+     color: #ffffff!important;
+}
+
+#player_news > h3:nth-child(4) {
+     background: none repeat scroll 0px 0px transparent;
+     border-radius: 5px;
+     border: 1px solid #171717;
+     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+     color: #FFF ! important;
+     display: table;
+     float: left;
+     font-size: 13pt ! important;
+     font-weight: 900 ! important;
+     height: 20px;
+     line-height: 40px ! important;
+     margin-left: 14px;
+     margin-top: 20px;
+     padding: 0px ! important;
+     text-align: center ! important;
+     text-transform: uppercase ! important;
+     visibility: visible ! important;
+     width: 508px ! important;
+}
+
+#playerPopupWrapper ul li {
+     margin-left: 0px;
+}
+
+#playerPopupWrapper ul.content_tabs {
+     border-bottom: 2px solid #092b47;
+     border-top: 2px solid #092b47;
+     height: 34px;
+     line-height: 34px;
+     list-style: outside none none;
+     margin-bottom: 4px;
+     margin-top: 0px;
+     padding: 0px;
+     width: 100%;
+}
+
+#playerPopupWrapper ul.content_tabs li a {
+     -moz-border-bottom-colors: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     background: none;
+     border-color: rgba(9,43,71,.4);
+     border-image: none;
+     border-style: none solid none none;
+     border-width: medium 1px medium medium;
+     color: #0687e3;
+     display: block;
+     float: left;
+     font-size: 11.4pt;
+     font-weight: 400;
+     margin: 0px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+
+#playerPopupWrapper ul.content_tabs li a:focus {
+     outline: medium none;
+}
+
+#playerPopupWrapper ul.content_tabs li:last-child a {
+     border-right: 0px none;
+}
+
+#playerPopupWrapper ul.content_tabs li.ui-state-active a {
+     background: none;
+     border-bottom: medium none;
+     color: #FFF;
+}
+
+#playerPopupWrapper ul.content_tabs li:hover a {
+     background: none;
+     color: #FFF;
+}
+
+ul.content_tabs li.ui-state-active a {
+     color: #FFF;
+}
+
+#playerpopup_tabs ul {
+     margin: 0px ! important;
+     padding: 0px ! important;
+}
+
+#playerpopup_tabs li {
+     display: table-cell;
+     text-align: center;
+     width: 1%;
+}
+
+#player_news > h3:nth-child(4) {
+     visibility: visible ! important;
+}
+
+#trade_bait a.playerPopupNewsIcon,
+#transactions a.playerPopupNewsIcon,
+#fantasy_recap a.playerPopupNewsIcon,
+#fantasy_preview a.playerPopupNewsIcon,
+#TabbedPanels8 a.playerPopupNewsIcon,
+th.articlecaption a.playerPopupNewsIcon,
+.articlepicturetable a.playerPopupNewsIcon {
+    display:none;
+}
+
+.newsContent table.report,#articlePopupContent .report {
+     border-spacing: 1px ! important;
+     float: left;
+     margin-left: 14px ! important;
+     margin-top: 0px ! important;
+     width: 510px ! important;
+}
+
+#articlePopupContent .report a {
+     color:#FFF;
+}
+
+.newsContent table.report td {
+     text-align: center ! important;
+}
+
+.newsContent #player_stathistory table tr th {
+     display: table-cell;
+     margin: 0px;
+     padding: 2px;
+     text-align: center;
+     white-space: nowrap;
+     width: 1%;
+}
+
+.newsContent #player_stathistory table tr td {
+     display: table-cell;
+     margin: 0px;
+     padding: 2px;
+     text-align: center;
+     white-space: nowrap;
+     width: 1%;
+}
+
+#player_stats_table td, #player_stats_table th {
+     text-align: center;
+}
+
+.newsContent table.report.biography td {
+     border-spacing: 0px ! important;
+     text-align: left ! important;
+     text-indent: 4px;
+}
+
+.newsContent .biography td.player_photo {
+     text-align: center ! important;
+}
+
+.newsContent .biography td.player_photo img {
+     background: none repeat scroll 0px 0px #222;
+     border: 6px solid rgba(5,134,226,1) ! important;
+     padding: 5px;
+     vertical-align: middle ! important;
+}
+
+.newsContent .biography th, .newsContent table.report td.headline {
+     text-align: left ! important;
+}
+
+.newsContent .biography th {
+     padding: 0px 5px;
+}
+
+.newsContent .biography td {
+     width: 100%;
+}
+
+.newsContent #player_stats_table th:nth-child(4), .newsContent #player_stats_table th:nth-child(5) {
+     display: none;
+}
+
+.newsContent #player_stats_table tr > td:nth-child(4), .newsContent #player_stats_table tr > td:nth-child(5) {
+     display: none;
+}
+
+#player_stathistory .report, #player_news > table:nth-child(3), #player_stats_table {
+     margin-bottom: 0px ! important;
+}
+
+.newsContent {
+     clear: both;
+     padding-top: 4px;
+}
+
+.newsContent table.report {
+     clear: both;
+}
+
+.newsContent div {
+     overflow: hidden;
+     position: relative;
+}
+
+.newsContent .warning.reportfooter {
+     color: #ffd00c;
+     display: table-row;
+     text-indent: 5px;
+     text-transform: uppercase;
+}
+
+.newsContent .biography .player_photo img[src="http://www.myfantasyleague.com/player_photos_2010/no_photo_available.jpg"] {
+     background: url("http://www.nitrografixx.com/2015/ladder/images/football-noplayer-image.jpg") no-repeat scroll 0px 0px transparent;
+     border: medium none ! important;
+     box-sizing: border-box;
+     display: block ! important;
+     height: 119px ! important;
+     padding-left: 87px;
+     width: 0px;
+}
+
+.ps-container.ie .ps-scrollbar-x, .ps-container.ie .ps-scrollbar-y {
+     visibility: hidden;
+}
+
+.ps-container.ie:hover .ps-scrollbar-x, .ps-container.ie:hover .ps-scrollbar-y, .ps-container.ie.hover .ps-scrollbar-x, .ps-container.ie.hover .ps-scrollbar-y {
+     visibility: visible;
+}
+
+.ps-container .ps-scrollbar-y-rail {
+     background:none;
+     opacity: 0;
+     position: absolute;
+     right: 3px;
+     transition: background-color 0.2s linear 0s, opacity 0.2s linear 0s;
+     width: 10px;
+}
+
+.ps-container .ps-scrollbar-y {
+     background: linear-gradient(to bottom, transparent 0%, rgba(5,134,226,1) 51%, transparent 100%) repeat scroll 0px 0px transparent;
+     border-radius: 5px;
+     position: absolute;
+     right: 2px;
+     transition: background-color 0.2s linear 0s;
+     width: 6px;
+}
+
+.scheduleWrap .ps-scrollbar-y-rail,.messageWrap .ps-scrollbar-y-rail {
+     background:none;
+}
+
+.scheduleWrap .ps-scrollbar-y,.messageWrap .ps-scrollbar-y {
+     background: linear-gradient(to bottom, transparent 0%, rgba(5,134,226,1) 51%, transparent 100%) repeat scroll 0px 0px transparent;
+     border-radius: 5px;
+     position: absolute;
+     right: -3px;
+     transition: background-color 0.2s linear 0s;
+     width: 3px;
+}
+
+.scheduleWrap .ps-scrollbar-x-rail,.messageWrap .ps-scrollbar-x-rail {
+     display:none!important
+}
+
+.ps-container:hover .ps-scrollbar-y-rail, .ps-container.hover .ps-scrollbar-y-rail {
+     opacity: 1;
+}
+
+.ps-container .ps-scrollbar-y-rail:hover, .ps-container .ps-scrollbar-y-rail.hover {
+     opacity: 1;
+}
+
+.ps-container .ps-scrollbar-y-rail.in-scrolling {
+     opacity: 1;
+}
+
+.ps-container.ie6 .ps-scrollbar-y {
+     font-size: 0px;
+}
+
+.ps-container .ps-scrollbar-x-rail {
+     background: none repeat scroll 0px 0px #092b47;
+     bottom: 0px;
+     height: 10px;
+     margin-left: 16px ! important;
+     opacity: 0;
+     position: absolute;
+     transition: background-color 0.2s linear 0s, opacity 0.2s linear 0s;
+     width: 512px ! important;
+     z-index: 1;
+}
+
+.ps-container .ps-scrollbar-x {
+     background: linear-gradient(to right, #000000 0%, #444444 51%, #000000 100%) repeat scroll 0px 0px transparent;
+     border-radius: 5px;
+     bottom: 2px;
+     height: 6px;
+     position: absolute;
+     transition: background-color 0.2s linear 0s;
+     width: 430px ! important;
+}
+
+.ps-container:hover .ps-scrollbar-x-rail, .ps-container.hover .ps-scrollbar-x-rail {
+     opacity: 1;
+}
+
+.ps-container .ps-scrollbar-x-rail:hover, .ps-container .ps-scrollbar-x-rail.hover {
+     opacity: 1;
+}
+
+.ps-container .ps-scrollbar-x-rail.in-scrolling {
+     opacity: 1;
+}
+
+.ps-container.ie6 .ps-scrollbar-x {
+     font-size: 0px;
+}
+
+
+
+/*  REPORT NAVIGAION STYLE
+============================ */
+
+span.reportnavigation {
+     text-transform:uppercase;
+}
+
+span.reportnavigation a {
+     background: rgba(5,134,226,.1);
+     border-radius: 3px;
+     border: 1px solid rgba(5,134,226,.2);
+     color: #ffffff;
+     margin: 0px 2px;
+     padding: 2px 6px;
+     text-decoration: none;
+}
+
+.reportnavigation a:hover {
+     background: rgba(5,134,226,.5);
+     border: 1px solid rgba(5,134,226,.7);
+     color: #ffffff;
+}
+
+.reportnavigation .currentweek {
+     background: rgba(5,134,226,.5);
+     border-radius: 3px;
+     border: 1px solid rgba(5,134,226,.7);
+     color: #ffffff;
+     margin: 0px 2px;
+     padding: 2px 6px;
+     text-decoration:none;
+}
+
+.report span.reportnavigation a,table + span.reportnavigation a,form + span.reportnavigation a,
+p.form_buttons + span.reportnavigation a,#body_options_129 .reportnavigation a,#body_options_46 .reportnavigation a,
+#body_commissioner_setup .reportnavigation a,#body_site_news .reportnavigation a,#body_options_119 .reportnavigation a,
+#body_options_60 .reportnavigation a,#body_options_103 .reportnavigation a,#body_options_64 .reportnavigation a,
+#body_options_167 .reportnavigation a,#body_options_52 .reportnavigation a,#body_free_agents .reportnavigation a,
+#body_options_149 .reportnavigation a,#body_options_111 .reportnavigation a,#body_options_144 .reportnavigation a,
+#body_options_19 .reportnavigation a,#body_options_21 .reportnavigation a,#body_options_220 .reportnavigation a,
+#body_options_239 .reportnavigation a,#body_options_25 .reportnavigation a,#body_options_231 .reportnavigation a,
+#body_options_71 .reportnavigation a,#body_options_130 .reportnavigation a,#body_options_79 .reportnavigation a,
+#body_options_02 .reportnavigation+.reportnavigation+.reportnavigation a,#body_options_02 .reportnavigation+.reportnavigation+img+.reportnavigation a {
+     background: none;
+     border-radius: 0px;
+     border: 0;
+     color: #0687e3;
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+}
+
+.report .reportnavigation a:hover,table + span.reportnavigation a:hover,form + span.reportnavigation a:hover,
+p.form_buttons + span.reportnavigation a:hover,#body_options_129 .reportnavigation a:hover,#body_options_46 .reportnavigation a:hover,
+#body_commissioner_setup .reportnavigation a:hover,#body_site_news .reportnavigation a:hover,#body_options_119 .reportnavigation a:hover,
+#body_options_60 .reportnavigation a:hover,#body_options_103 .reportnavigation a:hover,#body_options_64 .reportnavigation a:hover,
+#body_options_167 .reportnavigation a:hover,#body_options_52 .reportnavigation a:hover,#body_free_agents .reportnavigation a:hover,
+#body_options_149 .reportnavigation a:hover,#body_options_111 .reportnavigation a:hover,#body_options_144 .reportnavigation a:hover,
+#body_options_19 .reportnavigation a:hover,#body_options_21 .reportnavigation a:hover,#body_options_220 .reportnavigation a:hover,
+#body_options_239 .reportnavigation a:hover,#body_options_25 .reportnavigation a:hover,#body_options_231 .reportnavigation a:hover,
+#body_options_71 .reportnavigation a:hover,#body_options_130 .reportnavigation a:hover,#body_options_79 .reportnavigation a:hover,
+#body_options_02 span.reportnavigation+.reportnavigation+.reportnavigation a:hover,#body_options_02 span.reportnavigation+.reportnavigation+img+.reportnavigation a:hover {
+     background: none;
+     border: 0;
+     color: #fff;
+}
+
+#pro_schedule .reportnavigation a {
+     display: inline-block;
+     margin-bottom: 5px;
+}
+
+
+
+/*  HOMEPAGE MESSAGE POPUP STYLE
+=================================== */
+
+.homepagemessage {
+     display:none;
+     width:98%!important;
+     margin:0 auto;
+     margin-bottom:5px;
+     background:#111 ! important;
+     border-radius: 5px;
+     border: 1px solid #171717;
+     box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+     padding: 2px;
+     text-align: left;
+}
+
+#messagePopupContent .homepagemessage {
+     display:block;
+}
+
+.homepagemessage td {
+     padding: 5px ! important;
+}
+
+.homepagemessage span.warning, .homepagemessage h4.warning {
+     color: red;
+}
+
+.homepagemessage a:link {
+     color: #fff!important;
+}
+
+.homepagemessage a:link:hover {
+     color: #0687e3!important;
+}
+
+.messagePopupOverlay {
+     background-color: #000;
+     display: none;
+     height: 100%;
+     left: 0;
+     opacity: 0.7;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 9999999;
+}
+
+.messagePopupContent {
+     clear: both;
+     padding:0px;
+     width:700px;
+     padding-top:0px;
+     margin-top:10px;
+}
+
+.messageWrap {
+  position:relative;
+  overflow: hidden;
+  max-height:360px;
+}
+
+.messagePopupWrapper {
+     display: none;
+     left: 50% !important;
+     overflow: hidden;
+     position: fixed !important;
+     top: 50% !important;
+     z-index: 9999999;
+     display:none;
+     margin-left:-365px;
+     margin-top:-220px;
+     padding: 5px;
+     text-align: left;
+     background-attachment: scroll;
+     background-clip: padding-box ! important;
+     background:#0a0a0a url(http://nitrografixx.com/2016/ptd/bg.jpg)center top;
+     background-image: none;
+     background-origin: padding-box;
+     background-position: 0px 0px;
+     background-repeat: repeat;
+     background-size: auto auto;
+     border-radius: 5px;
+     border: 12px solid rgba(5,134,226,.2) ! important;
+     box-shadow: 0px 0px 46px -9px #000000;
+}
+
+.messagePopupName {
+     width:auto;
+     margin:0;
+     text-align:left;
+     cursor:default;
+     color: #ffffff;
+     cursor: default;
+     font-size: 14pt;
+     font-weight: 900;
+     height: 23px;
+     line-height: 33px;
+     padding: 5px 0px 5px 10px;
+     border:0;
+}
+
+.homepagemessage .reallysmall:hover {
+     background:none!important;
+}
+
+.messagePopupClose {
+     text-decoration:none;
+     outline:none!important;
+     background: none repeat scroll 0px 0px #0687e3;
+     border: 1px solid #000;
+     color: #000!important;
+     cursor: pointer;
+     font-weight: bold;
+     padding: 1px 6px ! important;
+     position: absolute;
+     right: 5px;
+     top: 8px;
+}
+
+.messagePopupClose:hover {
+     color: #fff!important;
+}
+
+.messagePopupClose span{
+     background:none;
+     position:fixed;
+     height:100%;
+     width:100%;
+     left:0;
+     top:0;
+     z-index:-1;
+     cursor:default;
+}
+
+#openMessageLink {
+     cursor:pointer;
+     position:absolute;
+     top:0px;
+     right:5px;
+     z-index: 9999;
+}
+
+#openMessageLink.alert_img{
+     background:url(http://nitrografixx.com/2016/ptd/message_alert.png)no-repeat;
+     width:40px;
+     height:40px;
+}
+
+#messagePopupContent #league_reminders {
+     display:table;
+}
+
+
+/*  HABMAN TRADE POPUP STYLE
+=================================== */
+
+#habTradePopupBox {
+     width:400px!important;
+     position:fixed!important;
+     top: 50%!important;
+     left: 50%!important;
+     margin-top: -150px!important;
+     margin-left: -200px!important;
+     z-index:999999!important;
+}
+
+#habTradePopupBox div.closeme a {     
+     background-color: #000;
+     height: 100%;
+     left: 0;
+     opacity: 0.7;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+     cursor:default;
+}
+
+
+
+/*   REMOVE MFL ADS
+======================= */
+
+#body_news_articles td.timestamp + td,
+#body_news_articles th.timestamp + th,
+#body_view_news_article .report div[style="float: right;"],
+#body_player table div,
+#body_live_scoring_summary div[align="center"],
+#body_live_scoring div[align="center"],#body_view_news_article object {
+     display: none!important;
+}
+
+
+
+
+/*  JQUERY SELECT BOX HOVER OVERRIDE TO MATCH SKIN
+==================================================== */
+
+option:hover,select option:hover,.selectBox a:hover {
+     background:rgba(5,134,226,1)!important;
+     background-image:url(http://nitrografixx.com/2016/ptd/select-brown.jpg)!important;
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,134,226,1)), color-stop(100%, rgba(5,134,226,1)))!important;
+     background: -webkit-linear-gradient(top, rgba(5,134,226,1) 0%, rgba(5,134,226,1) 100%)!important;
+     color:#fff!important;
+}
+
+option:checked,.selectBox .selectBox-selected a {
+     background:#222!important;
+     background-image:url(http://nitrografixx.com/2016/ptd/select-hover-dark.jpg)!important; 
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,34,34,1)), color-stop(100%, rgba(34,34,34,1)))!important;
+     background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 100%)!important;
+}
+
+option,select,li.reallysmall a,.selectBox li a {
+     transition: none!important;
+}
+
+#left_list li,#right_list li {
+     text-transform:uppercase!important;
+}
+
+
+
+
+/*  ============================================================================================================== */
+
+/*  ============================================================================================================== */
+
+
+
+/*   TABBED ROSTERS
+===================== */
+
+#btn_run {
+     text-align:center;
+     text-decoration:none;
+     background-color: #000000;
+     border: 1px solid rgba(5,134,226,.15);
+     color: #bbbbbb!important;
+     width:99%;
+     margin:0 auto;
+}
+
+#btn_run a{
+     text-decoration:none;
+}
+
+#rosterTradeLinkDIV #rostertabs li {
+     list-style:none;
+     position:absolute;
+     width:100px;
+     text-align:center;
+     margin:0 auto;
+     margin-left:5px;
+     margin-top:18px;
+}
+
+#rosterTradeLinkDIV #rostertabs li a {
+     text-decoration:none;
+     background: rgba(5,134,226,.1);
+     border-radius: 5px;
+     border: 1px solid rgba(5,134,226,.2);
+     color: #ccc;
+     cursor: pointer;
+     font-weight: 900;
+     margin: 2px;
+     padding: 4px ! important;
+     text-transform: uppercase;
+     font-family: "Oswald",sans-serif ! important;
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase;
+}
+
+#rosterTradeLinkDIV #rostertabs li a:hover {
+     background: none repeat scroll 0px 0px rgba(5,134,226,.5);
+     border: 1px solid rgba(5,134,226,.7);
+     color: #ffffff;
+}
+
+ul#rostertabs .currenttab {
+     display:none;
+}
+
+#nitro-roster td {
+     vertical-align:top!important;
+}
+
+#nitro-roster .report td{
+     text-align:center;
+}
+
+#nitro-roster th.points,#nitro-roster th.week,#nitro-roster th.salary,#nitro-roster th.year,#nitro-roster th.status,#nitro-roster th.drafted {
+     white-space:nowrap;
+     text-align:center;
+}
+
+#nitro-roster th {
+     white-space: nowrap;
+     text-align:left;
+}
+
+#nitro-roster td.player {
+     text-align:left;
+     white-space: nowrap;
+}
+
+#nitro-roster .report caption.withfranchiseicon {
+     text-align:center;
+     padding:0;
+     text-indent:0;
+     background:none!important;
+     border:0;
+     height:52px!important;
+     line-height:52px!important;
+}
+
+#nitro-roster .report caption.withfranchiseicon span{
+     padding:0;
+     text-indent:0;
+     margin:0;
+     background:none;
+}
+
+#nitro-roster .withfranchiseicon {
+     box-shadow:none;
+}
+
+#nitro-roster .withfranchiseicon img {
+     width:250px;max-width:250px;
+     height:auto;
+}
+
+#roster_column_left {
+     margin-top:52px;margin-left:-5px
+}
+
+#roster_column_left .franchiseicon {
+     width:180px;
+     height:auto;
+     margin-bottom:2px;
+}
+
+#messageBoxDIV th{
+    text-align:center;
+}
+
+#messageBoxDIV textarea{
+     width:100%;
+     margin:0;
+     padding:0;
+     height:100px;
+}
+
+#nitro-roster {
+     border:none!important;
+     padding:0;
+     padding-top:20px!important;
+     width:100%;
+     margin:0 auto;
+     padding-bottom:10px!important;
+}
+
+#nitro-roster table{
+     width:100%;
+}
+
+#nitro-roster.report {
+     background:none!important;
+     border:none;
+     box-shadow:none;
+     padding:0;
+}
+
+#roster_column_left {
+     width:198px;
+}
+
+#roster_column_middle,#roster_column_right{
+     width:98%;
+     display:table;
+     table-layout:fixed;
+}
+
+#roster_column_middle .report,#roster_column_right .report{
+     padding:3px;
+}
+
+#roster th.drafted,#roster td.drafted,
+#roster th.contractinfo,#roster td.contractinfo,
+#options_07 .report th.contractinfo,#options_07 .report td.contractinfo {
+     display:none;
+}
+
+#roster th.contractinfo,#roster td.contractinfo,#options_07 .report th.contractinfo,#roster th.contractyear,#roster th.contractstatus  {
+     text-align:center;
+     width:80px;
+}
+
+#roster td {
+     vertical-align:middle!important;
+}
+
+#roster td.week,#roster td.points{
+     text-align:center;
+}
+
+#nitro-roster td.teamname a {
+     text-decoration:none;
+     color:#263e68;
+     border:1px solid #263e68;
+     display:block;
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     border-radius: 3px;
+}
+
+#nitro-roster td.teamname a:hover {
+     color:#da2b2a;
+}
+
+#nitro-roster td.teamname  {
+     text-indent:3px;
+}
+
+
+
+
+*  ============================================================================================================== */
+
+/*  ============================================================================================================== */
+
+
+
+/*   jQuery TABS 
+===================== */
+
+#custom-reports {
+     padding-bottom:0!important;
+     background:none!important;
+     margin-top:5px;
+     margin-bottom:15px!important;
+     border-spacing:0;
+     padding:2px 1px!important
+}
+
+.tabbed-reports {
+     list-style:none;
+     padding-left:0;
+     text-align:center;
+     margin:0px 0 5px 0;
+     background: #0c0500;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     border: 2px solid #0c0500;
+     border-spacing:0;
+}
+
+.tabbed-reports li {
+     margin:0;
+     display:table-cell;
+     width:1%;
+     cursor:pointer;
+     text-transform:uppercase;
+     border-left: 1px solid #092b47;
+     border-right: 1px solid #092b47;
+     color:#ccc; 
+     transition: none;
+     line-height:25px;
+}
+
+.tabbed-reports li.active,.tabbed-reports li.current {
+     color:#0687e3; 
+     background: #000000;
+}
+
+.tabbed-reports li:hover { 
+     color:#0687e3; 
+     background: #000000;
+} 
+
+.tabbed-reports li:last-of-type {
+     border-right:0;
+     -webkit-border-top-right-radius: 5px;
+     -webkit-border-bottom-right-radius: 5px;
+     -moz-border-radius-topright: 5px;
+     -moz-border-radius-bottomright: 5px;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+
+.tabbed-reports li:first-of-type {
+     border-left:0;
+     -webkit-border-top-left-radius: 5px;
+     -webkit-border-bottom-left-radius: 5px;
+     -moz-border-radius-topleft: 5px;
+     -moz-border-radius-bottomleft: 5px;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+
+.reports-content .report {
+     width:100%;
+     border:0;
+     padding:0;
+     background:none!important;
+     border:none!important;
+     box-shadow:0 0 0 0 #000!important;
+     padding-bottom:0!important;
+     margin-bottom:0!important;
+}
+
+#custom-reports.report caption:first-of-type {
+     margin-top:5px;    
+}
+
+.reports-content .report caption {
+     display:none;
+}
+
+.reports-content .franchiseicon {
+     width:140px;
+     max-width:140px;
+     height:auto;
+}
+
+.reports-content #brief_standings  .franchiseicon {
+     width:180px;
+     max-width:180px;
+     height:auto;
+}
+
+.reports-content #brief_standings  th.fname {
+     width:180px;
+}
+
+.reports-content #owner_activity  .franchiseicon {
+     width:140px;
+     max-width:140px;
+     height:auto;
+}
+
+.reports-content #owner_activity  td span  {
+     font-size:7.8pt;height:28.5px;line-height:28.5px;
+}
+
+
+/*        REPORTS TABS 
+============================ */
+.report.tabreports .franchiseicon {
+     width:250px;
+     max-width:250px;
+}
+
+.report.tabreports .franchisename {
+     width:250px;
+}
+
+#weekly_summary td {
+     text-align:center;
+}
+
+#last_weeks_fantasy_results td.points {
+     font-size:16pt;
+     color:#0687e3;
+     padding-right:10px;
+}
+
+/*        POOLS TABS 
+============================ */
+
+#custom-reports.pooltab .franchiseicon {
+     width:100%!important;
+     max-width:250px;
+}
+
+#custom-reports.pooltab #fantasy_confidence_pool th:nth-child(1),
+#custom-reports.pooltab #nfl_survivor_pool th:nth-child(1),
+#custom-reports.pooltab #nfl_confidence_pool th:nth-child(1) {
+     width:250px!important;
+}
+
+#custom-reports.pooltab #nfl_survivor_pool td.reportfooter {
+     text-align:center;
+}
+
+
+/*    TOP PLAYER TABS 
+============================ */
+
+#custom-reports.topextras table.report td[align="right"] {
+     text-align:center;
+     width:100px;
+}
+
+#custom-reports.topextras table.report td.rank {
+     text-align:center;
+     width:26px;
+}
+
+#custom-reports.topplayertab td.rank,
+#custom-reports.topplayertab th.rank,
+#custom-reports.topfatab td.rank,
+#custom-reports.topfatab th.rank   {
+     width:26px;
+     text-align:center;
+}
+
+#custom-reports.topplayertab td.points,
+#custom-reports.topplayertab th.points,
+#custom-reports.topfatab td.points,
+#custom-reports.topfatab th.points  {
+     width:50px;
+     text-align:center;
+}
+
+
+
+/*   MFL HISTORY
+===================== */
+
+#mflhistory .reports-content .report caption {
+     display: table-caption;
+}
+
+#mflhistory .leaguehistorymodule,#mflhistory .report,#mflhistory table {
+     vertical-align:top!important;
+}
+
+#mflhistory .homepagemodule.report {
+     background:#111;
+     border-radius: 5px;
+     border: 1px solid #171717!important;
+     box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4)!important;
+     padding:5px!important;
+     margin-bottom:10px!important;
+}
+
+#mflhistory #gamecenter .homepagemodule.gamecentertable.report {
+     background:none!important;
+     border-radius: 5px;
+     border: 0px solid #171717!important;
+     box-shadow: 0px 0px 0px 0px rgba(0,0,0,.4)!important;
+     padding:0px!important;
+     margin-bottom:0px!important;
+}
+
+#mflhistory {
+     position:relative;
+}
+
+#mflhistory #admin {
+     position:absolute;
+     left:10px;
+     z-index:1;
+     top:5px;
+}
+
+#mflhistory #admin a{
+     text-decoration:none;
+}
+
+#mflhistory select {
+     height:25px;
+}
+
+#mflhistory .gamecentertable > tbody > tr > td {
+     width:50%;
+     vertical-align:top;
+}
+
+#mflhistory #gamecenter table.gamecentertable {
+     padding:0px!important;
+     border-spacing:0;
+}
+
+#mflhistory .homepagemodule.prevmatchups.report  {
+     padding:0!important;
+     border:none!important;
+}
+
+#mflhistory td.gamehistorycell,#mflhistory .homepagemodule.gamecentertable {
+     border:0!important;
+}
+
+#mflhistory #mfl-gamecenter th.gametypehead {
+     display:none;
+}
+
+#mflhistory .homepagemodule.prevmatchups caption {
+     background:none;border:0;
+     box-shadow: 0 0 0 0 rgba(255,255,255,1)inset;
+     padding:0;
+     text-indent:0;
+     color:#b2784a;
+     text-align:center;
+}
+
+#mflhistory .homepagemodule.prevmatchups caption span {
+     background:none!important;
+     padding:0;
+     font-size:12pt;
+}
+
+#mflhistory .winnermark {
+     color:#0687e3;
+     display:inline;
+}
+
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(9) > td:nth-child(1) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(10) > td:nth-child(1) > table:nth-child(1) {
+     margin-left:-1px!important;
+}
+
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(9) > td:nth-child(2) > table:nth-child(1),
+.gamecentertable > tbody:nth-child(1) > tr:nth-child(10) > td:nth-child(2) > table:nth-child(1) {
+     margin-left:1px!important;
+}
+
+#mflhistory .report {
+     table-layout:fixed;
+     text-align:center;
+}
+
+#mflhistory td.teamdata,#mflhistory td.vsdata,#mflhistory td.matchupdata,#mflhistory td.teamhead,#mflhistory td.playerdata,#mflhistory td.opponentdata {
+     text-align:left!important;
+}
+
+#mflhistory td.gamedetailcell:first-of-type {
+     text-align:left;
+     text-indent:10px;
+     color: #0687e3;
+}
+
+#mflhistory th.rankhead {
+     width:36px;
+}
+
+#mflhistory .homepagemodule td {
+     text-align:center;
+}
+
+#mflhistory td {
+     text-align:left;
+}
+
+#mflhistory #POSTAPPEAR th.scorehead,#mflhistory #CAREERREGPPS .scorehead,#mflhistory #CAREERALLPPS .scorehead,
+#mflhistory #HCOMB .weekhead,#mflhistory #LCOMB .weekhead,#mflhistory #WINMARGIN .weekhead,#mflhistory #LOWMARGIN .weekhead 
+{
+     width:110px;
+}
+
+#mflhistory td.seasondata br {
+     display:none;
+}
+
+#mflhistory .standingstable > tbody:nth-child(2) > tr:nth-child(1) > th:nth-child(1),#mflhistory .standingstable > tbody:nth-child(3) > tr:nth-child(1) > th:nth-child(1) {
+     width:120px;
+}
+
+#mflhistory .gamecentertable td {
+     text-align:left;
+}
+
+#mflhistory .gamecentertable td.gamescore {
+     text-align:center;
+     color: #ccc;
+     background: rgba(5,134,226,.2);
+}
+
+#mflhistory .gamecentertable .prevmatchups td {
+     text-align:center;
+}
+
+#mflhistory .gamecentertable .prevmatchups th:nth-child(1),#mflhistory .gamecentertable .prevmatchups th:nth-child(2),
+#mflhistory .gamecentertable .prevmatchups th:nth-child(4) {
+     width:50px;
+}
+
+#mflhistory .gamecentertable .prevmatchups th:nth-child(4) {
+     width:100px;
+}
+
+#mfl-teampages form#tabselect,#mfl-players input,#mfl-players select[name="recordtype"] {
+     display:none;
+}
+
+#mfl-singlegame .leaguehistorymodule,#mfl-singleseason .leaguehistorymodule,#mfl-career .leaguehistorymodule,
+#mfl-postseason .leaguehistorymodule,#mfl-milestones .leaguehistorymodule {
+     width:48.4%;
+     display:inline-block;
+     vertical-align;top;
+     padding:0 10px;
+}
+ 
+
+        /* SCREEN RESOLUTION UNDER 1300PX WIDTH REMOVE IMAGE LINKS NEXT TO TABS */
+           @media only screen and (max-width: 1300px) {
+               #mfl-singlegame .leaguehistorymodule,#mfl-singleseason .leaguehistorymodule,#mfl-career .leaguehistorymodule,#mfl-postseason .leaguehistorymodule,#mfl-milestones .leaguehistorymodule {
+                width:100%;display:inline-block;vertical-align:top;padding:0px;
+               }
+           }
+
+
+
+/*  ============================================================================================================== */
+
+/*  ============================================================================================================== */
+
+
+
+
+
+
+/*    POPUP LINKS ON DRAFT PAGES
+===================================== */
+.popmod {
+     background:#0a0a0a url(http://nitrografixx.com/2016/ptd/bg.jpg)center bottom;
+     background-attachment:fixed;   
+}
+
+#tabpopup #playerPopupWrapper {
+     width:450px;
+     max-height: 450px;
+     overflow-y: hidden;
+     background:none;
+     padding-bottom:0!important;
+}
+
+#tabpopup #playerPopupClose {
+     background: #da2b2a;
+     border: 1px solid #fff;
+     color: #fff!important;
+     z-index:999999;
+}
+
+#tabpopup #playerPopupClose:hover {
+     color: #fff!important;
+     background: #263e68;
+     border: 1px solid #fff;
+     color: #fff!important;
+}
+
+#tabpopup #playerPopupWrapper .report {
+     margin-bottom:0px!important;
+     border-radius:2px;
+     box-shadow: 0px 0px 3px 3px none;
+}
+#tabpopup #playerPopupWrapper caption {
+     border-radius:2px;
+}
+
+#tabpopup .ps-container .ps-scrollbar-y-rail {
+     width: 0px;
+}
+
+#tabpopup .ps-container .ps-scrollbar-y {
+     background: linear-gradient(to bottom, transparent 0%, #da2b2a 51%, transparent 100%) repeat scroll 0% 0% transparent;
+     border-radius: 5px;
+     position: absolute;
+     right: -3px;
+     transition: background-color 0.2s linear 0s;
+     width: 4px;
+}
+
+#tabpopup .ps-container .ps-scrollbar-x,#tabpopup .ps-container .ps-scrollbar-x-rail {
+     display:none!important
+}
+
+#tabpopup #playerPopupWrapper .report td .franchiseicon {
+     max-width:150px;
+}
+
+#tabpopup .playerPopupNewsIcon {
+     display:none;
+}
+
+
+
+
+
+
+/*  ============================================================================================================== */
+
+/*  ============================================================================================================== */
+
+
+
+
+
+/*    HOMEPAGE SLIDER
+===================================== */
+div.ws-title {display:none!important}
+
+#wowslider-container1 { 
+	display: table;
+	zoom: 1; 
+	position: relative;
+	width: 100%;
+	max-width: 612px;
+	max-height:200px;
+	margin:0 auto;
+        margin-top:0px;
+	z-index:90;
+	text-align:left; /* reset align=center */
+	font-size: 10px;
+	text-shadow: none; /* fix some user styles */
+        box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+        margin-bottom:15px!important;
+
+	/* reset box-sizing (to boostrap friendly) */
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+        padding:4px;
+       border-radius: 5px;
+       border: 1px solid #171717;
+       box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+}
+* html #wowslider-container1{ width:612px }
+#wowslider-container1 .ws_images ul{
+	position:relative;
+	width: 10000%; 
+	height:100%;
+	left:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-spacing:0;
+	overflow: visible;
+	/*table-layout:fixed;*/
+}
+#wowslider-container1 .ws_images ul li{
+	position: relative;
+	width:1%;
+	height:100%;
+	line-height:0; /*opera*/
+	overflow: hidden;
+	float:left;
+	/*font-size:0;*/
+	padding:0 0 0 0 !important;
+	margin:0 0 0 0 !important;
+}
+
+#wowslider-container1 .ws_images{
+	position: relative;
+	left:0;
+	top:0;
+	height:100%;
+	max-height:300px;
+	max-width: 612px;
+	vertical-align: top;
+	overflow: hidden;
+        border:0;
+}
+#wowslider-container1 .ws_images ul a{
+	width:100%;
+	height:100%;
+	max-height:300px;
+	display:block;
+	color:transparent;
+}
+#wowslider-container1 img{
+	max-width: none !important;
+}
+#wowslider-container1 .ws_images .ws_list img,
+#wowslider-container1 .ws_images > div > img{
+	width:100%;
+	border:none 0;
+	max-width: none;
+	padding:0;
+	margin:0;
+}
+#wowslider-container1 .ws_images > div > img {
+	max-height:300px;
+}
+
+#wowslider-container1 .ws_images iframe {
+	position: absolute;
+	z-index: -1;
+}
+
+#wowslider-container1 .ws-title > div {
+	display: inline-block !important;
+}
+
+#wowslider-container1 a{ 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+}
+
+#wowslider-container1  .ws_bullets { 
+	float: left;
+	position:absolute;
+	z-index:70;
+}
+#wowslider-container1  .ws_bullets div{
+	position:relative;
+	float:left;
+	font-size: 0px;
+}
+/* compatibility with Joomla styles */
+#wowslider-container1  .ws_bullets a {
+	line-height: 0;
+}
+
+#wowslider-container1  .ws_script{
+	display:none;
+}
+#wowslider-container1 sound, 
+#wowslider-container1 object{
+	position:absolute;
+}
+
+/* prevent some of users reset styles */
+#wowslider-container1 .ws_effect {
+	position: static;
+	width: 100%;
+	height: 100%;
+}
+
+#wowslider-container1 .ws_photoItem {
+	border: 2em solid #fff;
+	margin-left: -2em;
+	margin-top: -2em;
+}
+#wowslider-container1 .ws_cube_side {
+	background: #A6A5A9;
+}
+
+
+#wowslider-container1.ws_gestures {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABwSURBVEjH7ZJBEsAgCAMT/v/n9NCOSqe2oD2yNx1JggB4BCEFWyFASP2KMQE7ywWhe/tTRGCGogLk02tFctiW/SUgaMyQG4PdPzDn31rQbMb8FiAXgvsEJNax1yVlVGAjA93apP3HFhZTGIqiKH7iADB6HxPlHdNVAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTA3VDEzOjQ5OjEwKzAyOjAwm7WiFAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0wN1QxMzo0OToxMCswMjowMOroGqgAAAAASUVORK5CYII="), move;
+}
+#wowslider-container1.ws_gestures.ws_grabbing {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABaSURBVEjH7ZMxCkAhDEOT8u9/5TpJ+xWkFse8IYutJgEB8RCHL1qCc90BEFnT6QH7mwgFHBUf8wJyS1TDLuc3vmighx37LZdIth3E5hKj9n6O0HRh+oJCiFcMxRUUDxR1CTMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDctMDdUMTM6NDk6MzgrMDI6MDDqf+sOAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA3LTA3VDEzOjQ5OjM4KzAyOjAwmyJTsgAAAABJRU5ErkJggg=="), move;
+}
+
+/* hide controls when video start play */
+#wowslider-container1.ws_video_playing .ws_bullets,
+#wowslider-container1.ws_video_playing .ws_fullscreen,
+#wowslider-container1.ws_video_playing .ws_next,
+#wowslider-container1.ws_video_playing .ws_prev {
+	display: none;
+}
+
+
+/* youtube/vimeo buttons */
+#wowslider-container1 .ws_video_btn {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 55;
+}
+#wowslider-container1 .ws_video_btn.ws_youtube,
+#wowslider-container1 .ws_video_btn.ws_vimeo {
+	display: block;
+}
+#wowslider-container1 .ws_video_btn div {
+	position: absolute;
+	background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/playvideo.png);
+	background-size: 200%;
+	top: 50%;
+	left: 50%;
+	width: 7em;
+	height: 5em;
+	margin-left: -3.5em;
+	margin-top: -2.5em;
+}
+#wowslider-container1 .ws_video_btn.ws_youtube div {
+	background-position: 0 0;
+}
+#wowslider-container1 .ws_video_btn.ws_youtube:hover div {
+	background-position: 100% 0;
+}
+#wowslider-container1 .ws_video_btn.ws_vimeo div {
+	background-position: 0 100%;
+}
+#wowslider-container1 .ws_video_btn.ws_vimeo:hover div {
+	background-position: 100% 100%;
+}
+
+#wowslider-container1 .ws_playpause.ws_hide {
+	display: none !important;
+}
+
+* html #wowslider-container1{
+	background-image: none;
+}
+
+#wowslider-container1  .ws_bullets { 
+	padding: 0px; 
+}
+#wowslider-container1 .ws_bullets a { 
+	margin-left: 0; 
+	width:20px;
+	height:20px;
+	background: url(http://nitrografixx.com/2016/ptd/slide-engine/bullet.png) right top;
+	float: left; 
+	text-indent: -4000px; 
+	position:relative;
+	color:transparent;
+}
+* html #wowslider-container1 .ws_bullets a {
+	background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/bullet.gif);
+}
+#wowslider-container1 .ws_bullets a.ws_selbull{
+	background-position: left top;
+}
+#wowslider-container1 .ws_bullets a:hover{
+	background-position: left top;
+}
+#wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev {
+	position:absolute;
+	top:50%;
+	margin-top:-3.7em;
+	opacity:0.7;
+	z-index:60;
+	height: 7.5em;
+	width: 6em;
+	background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/arrows.png);
+	background-size: 200%;display: none
+}
+
+* html #wowslider-container1 a.ws_next, * html #wowslider-container1 a.ws_prev{
+	background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/arrows.gif);
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+#wowslider-container1 a.ws_next{
+	background-position: 100% 0; 
+	right:0;
+}
+#wowslider-container1 a.ws_prev {
+	left:0;
+	background-position: 0 0; 
+}
+
+/*playpause*/
+#wowslider-container1 .ws_playpause {
+    width: 6em;
+    height: 7.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3em;
+    margin-top: -3.7em;
+    z-index: 59;
+	background-size: 100%;display: none
+}
+
+#wowslider-container1 .ws_pause {
+    background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/pause.png);display: none
+}
+
+#wowslider-container1 .ws_play {
+    background-image: url(http://nitrografixx.com/2016/ptd/slide-engine/play.png);display: none
+}
+
+#wowslider-container1 .ws_pause:hover, #wowslider-container1 .ws_play:hover {
+    background-position: 100% 100% !important;
+}/* bottom center */
+#wowslider-container1  .ws_bullets {
+	bottom:26px;
+	margin-bottom: -25px;
+	left:50%;
+}
+#wowslider-container1  .ws_bullets div{
+	left:-50%;
+}
+#wowslider-container1  .ws_bullets .ws_bulframe{
+	bottom:29px;
+}#wowslider-container1 .ws-title{
+	position: absolute;
+    font: 1.2em 'Oswald', Arial, Helvetica, sans-serif;
+	bottom:8%;
+	left: 0;
+	margin-right:2em;
+	z-index: 50;
+	color: #000000;
+    letter-spacing: 0.1em;
+    line-height: 1.25em;
+    text-align: left;
+    text-shadow: 0 0 0.15em #FFFFFF;	
+}
+#wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{
+	display:inline-block;
+	padding:0.8em;
+	background:#FFF;
+	-moz-border-radius:0 0.4em 0.4em 0;
+	-webkit-border-radius:0 0.4em 0.4em 0;
+	border-radius:0 0.4em 0.4em 0;
+	opacity:0.5;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);	
+}
+#wowslider-container1 .ws-title div{
+	display:block;
+	margin-top:0.5em;
+	font-size: 0.857em;
+}#wowslider-container1 .ws_images > ul{
+	animation: wsBasic 44s infinite;
+	-moz-animation: wsBasic 44s infinite;
+	-webkit-animation: wsBasic 44s infinite;
+}
+@keyframes wsBasic{0%{left:-0%} 4.55%{left:-0%} 9.09%{left:-100%} 13.64%{left:-100%} 18.18%{left:-200%} 22.73%{left:-200%} 27.27%{left:-300%} 31.82%{left:-300%} 36.36%{left:-400%} 40.91%{left:-400%} 45.45%{left:-500%} 50%{left:-500%} 54.55%{left:-600%} 59.09%{left:-600%} 63.64%{left:-700%} 68.18%{left:-700%} 72.73%{left:-800%} 77.27%{left:-800%} 81.82%{left:-900%} 86.36%{left:-900%} 90.91%{left:-1000%} 95.45%{left:-1000%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 4.55%{left:-0%} 9.09%{left:-100%} 13.64%{left:-100%} 18.18%{left:-200%} 22.73%{left:-200%} 27.27%{left:-300%} 31.82%{left:-300%} 36.36%{left:-400%} 40.91%{left:-400%} 45.45%{left:-500%} 50%{left:-500%} 54.55%{left:-600%} 59.09%{left:-600%} 63.64%{left:-700%} 68.18%{left:-700%} 72.73%{left:-800%} 77.27%{left:-800%} 81.82%{left:-900%} 86.36%{left:-900%} 90.91%{left:-1000%} 95.45%{left:-1000%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 4.55%{left:-0%} 9.09%{left:-100%} 13.64%{left:-100%} 18.18%{left:-200%} 22.73%{left:-200%} 27.27%{left:-300%} 31.82%{left:-300%} 36.36%{left:-400%} 40.91%{left:-400%} 45.45%{left:-500%} 50%{left:-500%} 54.55%{left:-600%} 59.09%{left:-600%} 63.64%{left:-700%} 68.18%{left:-700%} 72.73%{left:-800%} 77.27%{left:-800%} 81.82%{left:-900%} 86.36%{left:-900%} 90.91%{left:-1000%} 95.45%{left:-1000%} }
+
+#wowslider-container1 .ws_images{
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+}#wowslider-container1 .ws_bullets  a img{
+	text-indent:0;
+	display:block;
+	bottom:20px;
+	left:-43px;
+	visibility:hidden;
+	position:absolute;
+    -moz-box-shadow: 0 0 5px #d6d6d6;
+    box-shadow: 0 0 5px #d6d6d6;
+    border: 3px solid #d6d6d6;
+	max-width:none;
+}
+#wowslider-container1 .ws_bullets a:hover img{
+	visibility:visible;
+}
+
+#wowslider-container1 .ws_bulframe div div{
+	height:48px;
+	overflow:visible;
+	position:relative;
+}
+#wowslider-container1 .ws_bulframe div {
+	left:0;
+	overflow:hidden;
+	position:relative;
+	width:85px;
+	background-color:#d6d6d6;
+}
+#wowslider-container1  .ws_bullets .ws_bulframe{
+	display:none;
+	overflow:visible;
+	position:absolute;
+	cursor:pointer;
+    -moz-box-shadow: 0 0 5px #d6d6d6;
+    box-shadow: 0 0 5px #d6d6d6;
+    border: 3px solid #d6d6d6;
+}
+#wowslider-container1 .ws_bulframe span{
+	display:block;
+	position:absolute;
+	bottom:-7px;
+	margin-left:-1px;
+	left:43px;
+	background:url(http://nitrografixx.com/2016/ptd/slide-engine/triangle.png);
+	width:15px;
+	height:6px;
+}#wowslider-container1 .ws_bulframe div div{
+	height: auto;
+}
+
+@media all and (max-width:760px) {
+	#wowslider-container1 .ws_fullscreen {
+		display: block;
+	}
+}
+@media all and (max-width:400px){
+	#wowslider-container1 .ws_controls,
+	#wowslider-container1 .ws_bullets,
+	#wowslider-container1 .ws_thumbs{
+		display: none
+	}
+}
+
+
+
+
+
+
+/*  ============================================================================================================== */
+
+/*  ============================================================================================================== */
+
+
+
+
+
+/*    MODULE SELECT BOX
+===================================== */
+#moduleselectbox,#moduleselectbox2 {
+    color:#ccc!important;
+    font-weight:normal!important;
+    margin:0 auto;
+    text-transform:uppercase!important;
+    margin-bottom:10px!important;
+}
+/*** Main Selection Box ***/
+.jqx-combobox-input.jqx-widget-content.jqx-rc-all {
+    text-indent:5px!important;
+    color:#ccc!important;
+    font-weight:400;
+}
+.jqx-widget-content {
+    border-color: #222!important;
+    background: #000!important; 
+}
+	/*** Main Select Box Arrow Container ***/
+	.jqx-fill-state-normal {
+	    background:#111!important;
+	}
+	.jqx-fill-state-hover {
+	    background:#222!important;
+	}
+	.jqx-fill-state-pressed {
+	    background:#111!important;
+	}
+	.jqx-icon-arrow-down, .jqx-icon-arrow-down-hover, .jqx-icon-arrow-down-selected {
+	    background-image: url('http://www.nitrografixx.com/MFL-module_select/styles/images/icon-down.png');
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	}
+	/*** Reset X Button ***/
+	.clearbtn a{
+	    background:#000!important;
+	    border:1px solid #222!important;
+	    padding:2px 8px!important;
+	    text-decoration:none;
+	    color:#ccc!important;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;}
+	.clearbtn a:hover{
+	    background:#111!important;
+	    color:#fff!important;
+}
+/*** Drop Down Box ***/
+.jqx-listitem-element {
+    color:#aaa!important;
+    background:#000!important;
+}
+.jqx-listitem-element .jqx-fill-state-hover {
+    border-color: #444!important;
+    background:#111!important;
+    color:#ccc!important;
+}
+.jqx-listitem-element .jqx-fill-state-pressed {
+    border-color: #222!important;
+    background:#111!important;
+    color:#ccc!important;
+}
+	/*** Drop Down Box Scrollbar ***/
+	.jqx-reset.jqx-scrollbar-state-normal {
+	    background:#000!important;
+	    border-left:1px solid #222!important;
+	}
+	.jqx-scrollbar-thumb-state-normal {
+	    border:1px solid #222!important;
+	    background:#111!important;
+            -moz-box-shadow: inset 0 0 1px 0px #000;
+            -webkit-box-shadow: inset 0 0 1px 0px #000;
+            box-shadow: inset 0 0 1px 0px #000;
+	}
+	.jqx-scrollbar-thumb-state-hover,.jqx-scrollbar-thumb-state-pressed {  
+	    border:1px solid #444!important;
+	    background:#222!important;
+            -moz-box-shadow: inset 0 0 1px 0px #000;
+            -webkit-box-shadow: inset 0 0 1px 0px #000;
+            box-shadow: inset 0 0 1px 0px #000;
+	}
+	/*** Drop Down Box Scrollbar Up and Down Arrows ***/
+	.jqx-scrollbar-button-state-normal {
+	    background:#111!important;
+            border:1px solid #333!important;
+	}
+	.jqx-scrollbar-button-state-hover,.jqx-scrollbar-button-state-pressed {
+	    background:#222!important;
+            border:1px solid #555!important;
+	}
+	.jqx-scrollbar-button-state-normal.jqx-rc-b {
+	    top:183px!important;
+	}
+	.jqx-icon-arrow-up, .jqx-icon-arrow-up-hover, .jqx-icon-arrow-up-selected {
+	    background-image: url('http://www.nitrografixx.com/MFL-module_select/styles/images/icon-up.png');
+	    background-repeat: no-repeat;
+	    background-position:center center;
+	}
+	.jqx-scrollbar-button-state-normal .jqx-icon-arrow-down, .jqx-scrollbar-button-state-normal .jqx-icon-arrow-down-hover, .jqx-scrollbar-button-state-normal .jqx-icon-arrow-down-selected {
+	    background-image: url('http://www.nitrografixx.com/MFL-module_select/styles/images/icon-down.png');
+	    background-repeat: no-repeat;
+	    background-position:center center;
+	}
+/*** Loading Image and Box ***/
+#ajaxLoaderDIV,#ajaxLoaderDIV2 {
+    border:5px solid #222;
+    border-radius:3px;
+    background:#000;
+    width:400px;
+    height:400px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index:9999999!important;
+}
+div.fixpos {
+    width:200px;
+    height:200px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+#ajaxLoaderDIV p,#ajaxLoaderDIV2 p {
+    text-align:center;
+    margin:0;
+    padding-top:70px;
+}
+#ajaxLoaderDIV a,#ajaxLoaderDIV2 a {
+    display:block;
+    padding-top:2px;
+    color:#ccc;
+    font-size:14pt;
+    font-weight:bold;
+    text-decoration:none;
+}
+/*** Adjust MFL Module Icons and Logos ***/
+#all_icons,#my_icon {
+    text-align:center;
+}
+#all_logos img{
+    margin-bottom:5px;
+}
+#moduleselectbox {
+    width:450px;
+}
+
+.myfantasyleague_tabmenu {display: none;}
+
+html,body{margin:0;}
+
+/*  MFL RESPONSIVE MENU
+========================= */
+.myfantasyleague_menu li a {font-size:11px;font-weight: bold;}
+.myfantasyleague_menu {border-bottom-color:#0586e2;}
+.myfantasyleague_menu,.myfantasyleague_menu ul,.myfantasyleague_menu ul li ul{background:none;}
+.myfantasyleague_menu ul ul li{background:#0e0e0e;}
+.myfantasyleague_menu > ul > li.has-sub > a:after{border-top-color:#ffd00c;}
+.myfantasyleague_menu ul ul > li.has-sub > a:after{border-left-color:#0584e5;}
+.myfantasyleague_menu > ul > li.has-sub:hover > a:after{border-top-color:#0584e5;}
+.myfantasyleague_menu ul ul > li.has-sub:hover > a:after{border-left-color:#0584e5;}
+.myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#0097ff;}
+.myfantasyleague_menu ul li:hover a,.myfantasyleague_menu ul li ul li:hover a,.myfantasyleague_menu ul li ul li ul li:hover a{color:#ffd00c;}
+.myfantasyleague_menu li:hover > a {background-color:#092b47;background-image:none;box-shadow:none;}
+.myfantasyleague_menu ul li ul li:hover > a {background-color:#051726;}
+.myfantasyleague_menu li.player-search input[type="text"]{color:#001326;}
+.myfantasyleague_menu ul li ul {border-top-color:#092b47;}
+.myfantasyleague_menu ul ul li a,.myfantasyleague_menu ul ul li.has-sub a {border-color:#092b47;}
+.myfantasyleague_menu ul ul li.has-sub li:first-of-type {border-top-color:#092b47;}
+
+
+/* STYLE MFL POPUP BOXES
+========================= */
+
+/* Loading circle */
+.MFLPlayerPopupLoader{border-color:#eee;border-top-color:#ffd00c;}
+
+/* Close button displayed in caption */
+#MFLPlayerPopupClose{color:#000;border-color:#000;background:#fff;}
+#MFLPlayerPopupClose:hover{color:#fff;border-color:#000;background:#0586e2;}
+
+/* Background color for the popup report boxes */
+#MFLPlayerPopupContainer .report {background:#fff;}   /* if your design already gives a bg color to reports you will not need this unless its a transparent color */
+
+/* Tabs located on player news popup */
+ul.MFLPlayerPopupTab{border-bottom-color:#0586e2;background:#080808;}
+ul.MFLPlayerPopupTab li{border-right-color:#000;}
+ul.MFLPlayerPopupTab li a{color:#fff;border-right-color:#fff;}
+ul.MFLPlayerPopupTab li a:hover,ul.MFLPlayerPopupTab li a.active{color:#fff;background:#0586e2;}
+
+/* Border around player images located in player news popup */
+#MFLPlayerPopupContainer .articlepicture {border-color:#0586e2;}
+
+/* Color for player bio titles and warning messages */
+#MFLPlayerPopupContainer .warning {color:#0586e2;}
+
+
+/*  MFL POPUP RESPONSIVE DESIGN
+================================ */
+
+@media only screen and (max-width:48.000em){
+	.myfantasyleague_menu ul li.notification-icon{position:absolute;left:90px;left:5.625rem;top:3px;top:0.188rem;}
+}
+@media only screen and (max-width:47.000em){
+	#MFLPlayerPopupHeader{display:none;}
+	#MFLPlayerPopupBioTab{display:table-cell;}
+	.MFLPopTabWrap{margin-top:8px;margin-top:0.500rem;}
+	#MFLPlayerPopupContainer .isMedia{display:none;} 
+	#MFLPlayerPopupContainer{max-height:385px;max-height:24.063rem;} 	
+	#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer{max-height:300px;max-height:18.750rem;}
+}
+@media only screen and (max-width:35.500em) {
+	#MFLPlayerPopupHeader{display:none;}
+	#MFLPlayerPopupBioTab{display:table-cell!important;}
+	#MFLPlayerPopupContainer{max-height:298px;max-height:18.625rem;} 
+	#MFLPlayerPopupNews,#MFLPlayerPopupBio,#MFLPlayerPopupStatsHistory,#MFLPlayerPopupStats{max-height:192px;max-height:12.000rem;}
+	#MFLPlayerPopupContainer .isMedia{display:none;} 
+}
+@media only screen and (max-height:35.500em) and (orientation:landscape) {
+	#MFLPlayerPopupHeader{display:none;}
+	#MFLPlayerPopupBioTab{display:table-cell!important;}
+	.MFLPopTabWrap{margin-top:8px;margin-top:0.500rem;}
+	#MFLPlayerPopupContainer .isMedia{display:none;} 
+	#MFLPlayerPopupContainer{max-height:235px;max-height:14.688rem}
+	#MFLPlayerPopupNews,#MFLPlayerPopupBio,#MFLPlayerPopupStatsHistory,#MFLPlayerPopupStats{max-height:128px;max-height:8.000rem;}
+	#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer{max-height:250px;max-height:15.625rem;}
+	#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent{max-height:158px;max-height:9.875rem;}
+}
+@media only screen and (max-width:35.500em) {
+	#MFLPlayerPopupContainer td.screen-hide{display:none;}
+}
+
+/* RECOMMEND EACH USER TO INSTALL THIS IN CSS IF USING NOTIFICATION POPUP */
+.homepagemessage {display:none;} 
+
+
+
+
+#MFLPlayerPopupContainer .articlepicture {
+    border-width: 2px !important;
+}
+#MFLPlayerPopupClose {
+    left: 5px;
+}
+ul.MFLPlayerPopupTab li a {
+    padding: 2px;
+}
+#MFLPlayerPopupContainer caption {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/*   SKIN SPECIFIC SCOREBOARD COLORING
+======================================= */
+/* color link of populating text in boxscores box and current week in weekly navigation */
+#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate,.navWeekCurr {color:#ffd00c}
+/* border color for each fantasy and nfl box score table  */
+.MFLGameTable,.MFLNFLGameTable{border-color:#092b47}
+/* hover and current state background opactity color for boxscores  */
+#MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(9,43,71,.3)}
+#MFLBoxHolder td.matchupLolite:hover {background:rgba(5,134,226,.2)}
+/* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
+.MFLMainScoreboard {background:#171717;border-color:#092b47}
+/* background graident color for the banner area for scoreboard name  */
+#MFLCenterTop{color:#fff;background-image:url(http://nitrografixx.com/2016/ptd/ptd2017/scoreboard.png)}
+/* franchise team names and nfl team names box background and text colors  */
+#MFLRoadTeamName,#MFLHomeTeamName{color:#fff;border-color:#092b47;background: #171717;}
+/* background gradient for scoreboard scores digits  */
+#MFLRoadScore span,#MFLHomeScore span {border-color:#171717;background: #030500;background: -moz-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: -webkit-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: linear-gradient(to bottom,  top,  #030500 0%, #092a46 50%,  #030500 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* color for horizontal lines in center of scoreboard scores digits  */
+#MFLRoadScore span:before,#MFLHomeScore span:before{background:#0685e4}
+#MFLRoadScore span:after,#MFLHomeScore span:after{background:#0685e4}
+/* gradient colors for the small side boxes on each side of scores digit center lines  */
+#MFLRoadScore span a:after,#MFLHomeScore span a:after,#MFLRoadScore span a:before,#MFLHomeScore span a:before{border-color:#092b47;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* border color for container holding scores digits  */
+#MFLRoadScore,#MFLHomeScore{border-color:#0685e4}
+/* Franchise and Team records background and text color  */
+#MFLRoadTeamRecord,#MFLHomeTeamRecord {color:#0586e4;border-color:#171717;background: #04111c;}
+/* color for scoring digits  */
+#MFLRoadScore span a,#MFLHomeScore span a{color:#ffd00c}
+/* P-YTP-PMR backgrounds and text coloring  */
+.MFLMainScoreboard td.MFLScoreboardTitle {color:#ffd00c;border-color:#14294f;background: #14294f;background: -moz-linear-gradient(top,  #051624 0%, #092b47 50%, #051624 100%);background: -webkit-linear-gradient(top,  #051624 0%, #092b47 50%, #051624 100%);background: linear-gradient(to bottom,  #051624 0%, #092b47 50%, #051624 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#051624', endColorstr='#051624',GradientType=0 )}
+#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR {color:#092b47;border-color:#ccc;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
+/* table row background color for games over or currently playing  */
+.rowGameOver {background:rgba(255,0,0,.1)}
+.CurrentlyPlaying {background:rgba(0,255,36,.1)}
+/* change colors for S.O.S td cells for matchups poor to great  */
+.MFLTeamLineup td.oppRankGreatMatchup{background:#04B404;color:#000}
+.MFLScoreboardLineups td.oppRankGoodMatchup{background:#01DF01;color:#000}
+.MFLScoreboardLineups td.oppRankAvgMatchup{background:#FFFF00;color:#000}
+.MFLScoreboardLineups td.oppRankPoorMatchup{background:#FF8000;color:#000}
+.MFLScoreboardLineups td.oppRankBadMatchup{background:#FF0000;color:#000}
+/* the small tooltip popup arrows shown when hovering actual and pace scores  */
+#scoreboardTooltip:after {border-top-color:#0586e2!important;}
+#scoreboardTooltip.top:after{border-bottom-color:#0586e2!important;}
+.MFLScoreboardLineups .report .oddtablerow {background:#04111c;}
+.MFLScoreboardLineups .report .eventablerow {background:#092b47;}
+
+
+
+/*   SCOREBOARD TOOLTIP POPUP FOR SCORE DETAILS
+================================= */
+#scoreboardTooltip {position:absolute;z-index:100;background:#04111c!important;min-width:250px;min-width:15.625rem;}
+#scoreboardTooltip:after {width:0;height:0;border-left: 8px solid transparent;border-right:8px solid transparent;border-top:8px solid #263e68!important;content: '';position:absolute;left:50%;bottom:-8px;margin-left:-5px}
+#scoreboardTooltip.top:after{border-top-color:transparent;border-bottom:10px solid #263e68!important;top:20px;bottom:auto}
+#scoreboardTooltip.left:after {left:10px;margin:0}
+#scoreboardTooltip.right:after {right:10px;left:auto;margin:0}
+#scoreboardTooltip table {margin:0}
+td[rel="scoreboardTooltip"]{cursor:help}
+#scoreboardTooltip #MFLPlayerPopupClose {display:none}
+#scoreboardTooltip caption {background:#092b47}
+
+/*   SCOREBOARD LOADING CONTAINER
+================================== */
+#MFLScoreboardOverlay{display:none;height:100%;left:0;opacity:0.7;position:fixed;top:0;width:100%;z-index:99999;background-color:#000}
+#MFLScoreboardContainer{display:none;left:50%!important;overflow:hidden;position:fixed!important;top:50%!important;z-index:99999;width:100%;max-width:500px;max-width:31.25rem;height:275px;height:15.625rem}
+#MFLScoreboardLoading{display:block;padding-top:10px;padding-top:.625rem}
+
+
+/*   MFL SCOREBOARD LAYOUT
+=========================== */
+.MFLScoreboardLineups .desktop-hide-caption, .desktop-hide-table {display:none}
+#outerMFLScoreboardDiv td,#outerMFLScoreboardDiv td a,.MFLPlayerStatsPopup.report td{font-family: 'Roboto', sans-serif;}
+/*  TOP SECTION */
+.top_sb_container {min-height:70px;min-height:4.375rem}
+#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate {text-align:center;font-size:20px;font-size:1.250rem;line-height:75px;line-height:4.688rem}
+.MFLWeeklyNavigation select {width:auto}
+.MFLWeeklyNavigation .reportform {text-transform:uppercase;font-size:100%}
+/*  BOXSCORES SECTION */
+#MFLFantasyMatchups,#MFLNFLMatchups,#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate {height:85px;height:5.313rem;margin:5px 0;margin:0.313rem 0;width:100%;overflow:auto;padding:0;-webkit-overflow-scrolling: touch;}
+.MFLGameLinks tr{height:25px;height:1.563rem}
+.MFLGameLinks{border-spacing:1px}
+.MFLGameLinks,.MFLGameTable,.MFLNFLGameTable{height:100%}
+.MFLGameTable,.MFLNFLGameTable{border-style:solid;border-width:1px;border-spacing:0}
+.MFLGameTable{white-space:nowrap;min-width:150px;min-width:9.375rem}
+.matchupLolite,.matchupHilite{cursor:pointer}
+.MFLTeamLineup td.oppRankGreatMatchup,.MFLScoreboardLineups td.oppRankGoodMatchup,.MFLScoreboardLineups td.oppRankAvgMatchup,.MFLScoreboardLineups td.oppRankPoorMatchup,.MFLScoreboardLineups td.oppRankBadMatchup{cursor:default}
+.MFLGameLinks .nflicon {height: 24px;height:1.500rem;width:auto;border-radius:50%;padding: 1px;background:#fff;border:1px solid #ddd;}
+.MFLLiveClock,.MFLNFLLiveClock {text-align:center}
+/*  CENTER TABLE */
+#MFLRoadTeamName,#MFLHomeTeamName,#MFLRoadTeamRecord,#MFLHomeTeamRecord,#MFLRoadScore,#MFLHomeScore {width:33%;}
+#MFLCenterTop span {display: none;}
+#MFLCenterTop,#MFLCenterTop span {font-size:0;} #MFLRoadTeamName,#MFLHomeTeamName{font-size:24px;font-size:1.500rem;}
+#MFLRoadScore,#MFLHomeScore{font-size:30px;font-size:1.875rem;padding:0;}
+#MFLRoadScore span.blank a,#MFLHomeScore span.blank a {padding:4px;padding:4px}
+#MFLRoadScore span,#MFLHomeScore span {border-width:1px;border-width:0.063rem;border-style:solid;text-align:center;position:relative;width:1%;display:table-cell;font-weight:600;line-height:45px;line-height:2.813rem;font-size:40px;font-size:2.500rem;text-decoration:none}
+#MFLRoadScore span:before,#MFLHomeScore span:before{content:"";display:block;position:absolute;height:1px;height:0.063rem;width:100%;top:22px;top:1.375rem;left:0;z-index:0;}
+#MFLRoadScore span:after,#MFLHomeScore span:after{content:"";display:block;position:absolute;height:1px;height:0.063rem;width:100%;top:23px;top:1.438rem;left:0;z-index:0;}
+#MFLRoadScore span a:after,#MFLHomeScore span a:after{content:"";display:block;position:absolute;height:9px;height:0.563rem;width:3px;width:0.188rem;top:18px;top:1.125rem;left:0;z-index:1;}
+#MFLRoadScore span a:before,#MFLHomeScore span a:before{content:"";display:block;position:absolute;height:9px;height:0.563rem;width:3px;width:0.188rem;top:18px;top:1.125rem;right:0;z-index:1;}
+.MFLMainScoreboard,#MFLRoadTeamName,#MFLHomeTeamName,#MFLRoadScore,#MFLHomeScore,#MFLRoadTeamRecord,#MFLHomeTeamRecord,
+.MFLMainScoreboard td.MFLScoreboardTitle,#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR,
+#MFLRoadScore span a:after,#MFLHomeScore span a:after,#MFLRoadScore span a:before,#MFLHomeScore span a:before{border-width:1px;border-width:0.063rem;border-style:solid}
+#MFLRoadScore span,#MFLHomeScore span {cursor:default;border-width:1px;border-width:0.063rem;border-style:solid}
+#MFLCenterTop span {font-size:11px;font-size:0.688rem;font-weight:400;}
+#MFLCenterTop span.hometeam{position:absolute;right:1%;bottom:1%}
+#MFLCenterTop span.awayteam{position:absolute;left:1%;bottom:1%}
+#MFLRoadTeamName img,#MFLHomeTeamName img{max-width:100%;max-height:60px;max-height:3.750rem}
+.MFLMainScoreboard .nflicon{max-width:100%;max-height:60px;max-height:3.750rem;border-radius:50%;margin:2px;margin:0.125rem;border: 2px solid #aaa;border: 0.125rem solid #aaa;padding:5px;padding:0.313rem;background: #fff}
+#MFLCenterTop .awayteam:before{content:"<";}
+#MFLCenterTop .hometeam:after{content:">";}
+#MFLRoadScore div,#MFLHomeScore div{border-spacing:1px;border-spacing:0.063rem}
+/*  PLAYERS TABLES */
+.MFLMainScoreboard {text-align:center;border-radius:2px;border-radius:0.125rem;table-layout:fixed;border-spacing:2px;border-spacing:0.125rem}
+.MFLOuterTable.report {padding:5px 4px;padding:0.313rem 0.250rem;}
+.MFLScoreboardLineups .borderhide {border-left:0;border-right:0;}
+.MFLScoreboardLineups tr.lineupHeaderRow th {width:9%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.sos {width:5%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.gamestime {width:14%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderGames {width:20%;}
+.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderPlayer {width:35%;}
+.MFLTeamLineup{margin-bottom:0}
+#outerMFLScoreboardDiv .mobile-view {width:50%}
+.MFLScoreboardLineups{border-spacing:0}
+.MFLScoreboardLineups .report td,.MFLScoreboardLineups .report th {text-align:center;border-left:0;border-right:0;box-shadow:none}
+.MFLScoreboardLineups .report th.lineupHeaderPlayer,.MFLScoreboardLineups .report td.MFLPlayerName,.MFLScoreboardLineups .report td.MFLPlayerGame mobile-hide,.MFLScoreboardLineups .report th.pointTotalTitle {text-align:left}
+.MFLScoreboardLineups th.pointTotalActual,.MFLScoreboardLineups th.pointTotalProj {font-weight:bold;font-size:14px;font-size:0.875rem}
+.MFLScoreboardLineups td.MFLPlayerProjections,.MFLScoreboardLineups th.pointTotalProj {font-style:italic}
+td.MFLPlayerGame,td.MFLGameClock,td.sos {font-size:11px;font-size:0.688rem}
+.MFLScoreboardLineups .borderhide {border-left:0;border-right:0}
+#MFLCenterTop,#MFLCenterTop span {font-size:0;} 
+
+/*   SCOREBOARED RESPONSIVE STYLE
+================================== */
+@media only screen and (max-width: 66.500em) {
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:none;}
+}
+@media only screen and (max-width: 62.500em) {
+	#outerMFLScoreboardDiv .mobile-view {width:50%!important;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:none;}
+}
+@media only screen and (max-width:54.250em){
+	#outerMFLScoreboardDiv .mobile-view {width:100%!important;}
+	#MFLScoreboardHomeLineup,#MFLScoreboardRoadLineup {margin-top:5px;margin-top:0.313rem;}
+	#outerMFLScoreboardDiv .mobile-hide {display:none;}
+	#outerMFLScoreboardDiv .desktop-hide-caption {display:table-caption;}
+	.desktop-hide-table {display:table}
+	#MFLCenterTop,.MFLMainScoreboard td.MFLScoreboardTitle,#MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR{display:none;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:table-cell;}
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:table-cell;}
+	.MFLScoreboardLineups tr.lineupHeaderRow th {width:20%}
+	.MFLScoreboardLineups tr.lineupHeaderRow th.lineupHeaderPlayer {width:60%}
+}
+@media only screen and (max-width:44.250em){
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(1),#MFLHomeScore > div:nth-child(1) > span:nth-child(1){display:none}
+}
+@media only screen and (max-width:38.250em){
+	#MFLRoadScore > div:nth-child(1) > span:nth-child(2),#MFLHomeScore > div:nth-child(1) > span:nth-child(2){display:none}
+	#MFLRoadTeamName, #MFLHomeTeamName {font-size:20px;font-size:1.250rem}
+       #MFLRoadScore span a,#MFLHomeScore span a{font-size:30px;font-size:1.875rem}
+}
+@media only screen and (max-width:32.250em){
+	#MFLRoadTeamName, #MFLHomeTeamName {font-size:16px;font-size:1.000rem}
+}
