@@ -3877,9 +3877,9 @@ ul.MFLPlayerPopupTab li a {
 /*   SKIN SPECIFIC SCOREBOARD COLORING
 ======================================= */
 /* color link of populating text in boxscores box and current week in weekly navigation */
-#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate,.navWeekCurr {color:#91052e}
+#MFLFantasyMatchupsUpdate,#MFLNFLMatchupsUpdate,.navWeekCurr {color:#ffffff}
 /* border color for each fantasy and nfl box score table  */
-.MFLGameTable,.MFLNFLGameTable{border-color:#bc9a6a}
+.MFLGameTable,.MFLNFLGameTable{border-color:#3d2f22}
 /* hover and current state background opactity color for boxscores  */
 #MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(9,43,71,.3)}
 #MFLBoxHolder td.matchupLolite:hover {background:rgba(5,134,226,.2)}
