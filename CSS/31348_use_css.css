@@ -3886,7 +3886,7 @@ ul.MFLPlayerPopupTab li a {
 /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
 .MFLMainScoreboard {background:#171717;border-color:#3d2f22}
 /* background graident color for the banner area for scoreboard name  */
-#MFLCenterTop{color:#fff;background-image:url(https://darkwater80.github.com/IMAGES/SCOREBOARD/scoreboard.png)}
+#MFLCenterTop{color:#fff;background-image:url(https://darkwater80.github.io/IMAGES/SCOREBOARD/scoreboard.png)}
 /* franchise team names and nfl team names box background and text colors  */
 #MFLRoadTeamName,#MFLHomeTeamName{color:#fff;border-color:#3d2f22;background: #171717;}
 /* background gradient for scoreboard scores digits  */
