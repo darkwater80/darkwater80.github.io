@@ -3881,10 +3881,10 @@ ul.MFLPlayerPopupTab li a {
 /* border color for each fantasy and nfl box score table  */
 .MFLGameTable,.MFLNFLGameTable{border-color:#3d2f22}
 /* hover and current state background opactity color for boxscores  */
-#MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(9,43,71,.3)}
+#MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(60,21,8,.3)}
 #MFLBoxHolder td.matchupLolite:hover {background:rgba(5,134,226,.2)}
 /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
-.MFLMainScoreboard {background:#171717;border-color:#bc9a6a}
+.MFLMainScoreboard {background:#171717;border-color:#3d2f22}
 /* background graident color for the banner area for scoreboard name  */
 #MFLCenterTop{color:#fff;background-image:url(https://darkwater80.github.com/IMAGES/SCOREBOARD/scoreboard.png)}
 /* franchise team names and nfl team names box background and text colors  */
