@@ -3774,7 +3774,7 @@ html,body{margin:0;}
 
 /*  MFL RESPONSIVE MENU
 ========================= */
-.myfantasyleague_menu li a {font-size:13px;}
+.myfantasyleague_menu li a {font-size:11px;}
 .myfantasyleague_menu {border-bottom-color:#bc9a6a;}
 .myfantasyleague_menu,.myfantasyleague_menu ul,.myfantasyleague_menu ul li ul{background:none;}
 .myfantasyleague_menu ul ul li{background:#0e0e0e;}
@@ -3782,13 +3782,13 @@ html,body{margin:0;}
 .myfantasyleague_menu ul ul > li.has-sub > a:after{border-left-color:#bc9a6a;}
 .myfantasyleague_menu > ul > li.has-sub:hover > a:after{border-top-color:#bc9a6a;}
 .myfantasyleague_menu ul ul > li.has-sub:hover > a:after{border-left-color:#bc9a6a;}
-.myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#bc9a6a;}
+.myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#ffffff;}
 .myfantasyleague_menu ul li:hover a,.myfantasyleague_menu ul li ul li:hover a,.myfantasyleague_menu ul li ul li ul li:hover a{color:#fffff;}
 .myfantasyleague_menu li:hover > a {background-color:#bc9a6a;background-image:none;box-shadow:none;}
-.myfantasyleague_menu ul li ul li:hover > a {background-color:#051726;}
+.myfantasyleague_menu ul li ul li:hover > a {background-color:#3b0c0c;}
 .myfantasyleague_menu li.player-search input[type="text"]{color:#001326;}
 .myfantasyleague_menu ul li ul {border-top-color:#bc9a6a;}
-.myfantasyleague_menu ul ul li a,.myfantasyleague_menu ul ul li.has-sub a {border-color:#bc9a6a;}
+.myfantasyleague_menu ul ul li a,.myfantasyleague_menu ul ul li.has-sub a {border-color:#3d2f22;}
 .myfantasyleague_menu ul ul li.has-sub li:first-of-type {border-top-color:#bc9a6a;}
 
 
