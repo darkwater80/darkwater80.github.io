@@ -2772,8 +2772,8 @@ ul#rostertabs .currenttab {
 	 width:1%;
 	 cursor:pointer;
 	 text-transform:uppercase;
-	 border-left: 1px solid #bc9a6a;
-	 border-right: 1px solid #bc9a6a;
+	 border-left: 1px solid #3d2f22;
+	 border-right: 1px solid #3d2f22;
 	 color:#ccc; 
 	 transition: none;
 	 line-height:25px;
