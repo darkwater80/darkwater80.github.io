@@ -3882,26 +3882,26 @@ ul.MFLPlayerPopupTab li a {
 .MFLGameTable,.MFLNFLGameTable{border-color:#3d2f22}
 /* hover and current state background opactity color for boxscores  */
 #MFLBoxHolder td.matchupHilite,#MFLBoxHolder td.matchupHilite:hover{background:rgba(60,21,8,.3)}
-#MFLBoxHolder td.matchupLolite:hover {background:rgba(5,134,226,.2)}
+#MFLBoxHolder td.matchupLolite:hover {background:rgba(98,21,8,.2)}
 /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
 .MFLMainScoreboard {background:#171717;border-color:#3d2f22}
 /* background graident color for the banner area for scoreboard name  */
 #MFLCenterTop{color:#fff;background-image:url(https://darkwater80.github.com/IMAGES/SCOREBOARD/scoreboard.png)}
 /* franchise team names and nfl team names box background and text colors  */
-#MFLRoadTeamName,#MFLHomeTeamName{color:#fff;border-color:#bc9a6a;background: #171717;}
+#MFLRoadTeamName,#MFLHomeTeamName{color:#fff;border-color:#3d2f22;background: #171717;}
 /* background gradient for scoreboard scores digits  */
 #MFLRoadScore span,#MFLHomeScore span {border-color:#171717;background: #030500;background: -moz-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: -webkit-linear-gradient(top,  #030500 0%, #092a46 50%,  #030500 100%);background: linear-gradient(to bottom,  top,  #030500 0%, #092a46 50%,  #030500 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
 /* color for horizontal lines in center of scoreboard scores digits  */
-#MFLRoadScore span:before,#MFLHomeScore span:before{background:#0685e4}
-#MFLRoadScore span:after,#MFLHomeScore span:after{background:#0685e4}
+#MFLRoadScore span:before,#MFLHomeScore span:before{background:#9c9094}
+#MFLRoadScore span:after,#MFLHomeScore span:after{background:#9c9094}
 /* gradient colors for the small side boxes on each side of scores digit center lines  */
 #MFLRoadScore span a:after,#MFLHomeScore span a:after,#MFLRoadScore span a:before,#MFLHomeScore span a:before{border-color:#bc9a6a;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
 /* border color for container holding scores digits  */
-#MFLRoadScore,#MFLHomeScore{border-color:#0685e4}
+#MFLRoadScore,#MFLHomeScore{border-color:#bc9a6a}
 /* Franchise and Team records background and text color  */
-#MFLRoadTeamRecord,#MFLHomeTeamRecord {color:#bd9962;border-color:#171717;background: #04111c;}
+#MFLRoadTeamRecord,#MFLHomeTeamRecord {color:#bd9962;border-color:#171717;background: #420e0e;}
 /* color for scoring digits  */
-#MFLRoadScore span a,#MFLHomeScore span a{color:#91052e}
+#MFLRoadScore span a,#MFLHomeScore span a{color:#ffffff}
 /* P-YTP-PMR backgrounds and text coloring  */
 .MFLMainScoreboard td.MFLScoreboardTitle {color:#91052e;border-color:#14294f;background: #14294f;background: -moz-linear-gradient(top,  #463727 0%, #bc9a6a 50%, #463727 100%);background: -webkit-linear-gradient(top,  #463727 0%, #bc9a6a 50%, #463727 100%);background: linear-gradient(to bottom,  #463727 0%, #bc9a6a 50%, #463727 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#463727', endColorstr='#463727',GradientType=0 )}
 #MFLRoadPlayers,#MFLRoadYTP,#MFLRoadPMR,#MFLHomePlayers,#MFLHomeYTP,#MFLHomePMR {color:#bc9a6a;border-color:#ccc;background: #dddddd;background: -moz-linear-gradient(top,  #dddddd 0%, #eeeeee 31%, #ffffff 50%, #eeeeee 73%, #dddddd 100%);background: -webkit-linear-gradient(top,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);background: linear-gradient(to bottom,  #dddddd 0%,#eeeeee 31%,#ffffff 50%,#eeeeee 73%,#dddddd 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 )}
