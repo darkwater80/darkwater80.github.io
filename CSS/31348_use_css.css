@@ -3782,7 +3782,7 @@ html,body{margin:0;}
 .myfantasyleague_menu ul ul > li.has-sub > a:after{border-left-color:#bc9a6a;}
 .myfantasyleague_menu > ul > li.has-sub:hover > a:after{border-top-color:#bc9a6a;}
 .myfantasyleague_menu ul ul > li.has-sub:hover > a:after{border-left-color:#bc9a6a;}
-.myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#ffffff;}
+.myfantasyleague_menu ul li a,.myfantasyleague_menu ul li:hover ul li a,.myfantasyleague_menu ul li ul li:hover ul li a{color:#bc9a6a;}
 .myfantasyleague_menu ul li:hover a,.myfantasyleague_menu ul li ul li:hover a,.myfantasyleague_menu ul li ul li ul li:hover a{color:#fffff;}
 .myfantasyleague_menu li:hover > a {background-color:#bc9a6a;background-image:none;box-shadow:none;}
 .myfantasyleague_menu ul li ul li:hover > a {background-color:#3b0c0c;}
