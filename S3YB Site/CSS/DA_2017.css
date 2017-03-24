@@ -3223,46 +3223,47 @@ p.form_buttons + span.reportnavigation a:hover,#body_options_129 .reportnavigati
 }
 
 
-/*  HABMAN TRADE POPUP STYLE
+/*  HABMAN TRADE POPUP STYLE
 =================================== */
-
+ 
 #habTradePopupBox {
-     width:400px!important;
-     position:fixed!important;
-     top: 50%!important;
-     left: 50%!important;
-     margin-top: -150px!important;
-     margin-left: -200px!important;
-     z-index:999999!important;
-     border: 12px solid rgba(217, 49, 81, 0.2) !important;
-     border-radius: 5px;
-     box-shadow: 0 0 30px 4px rgba(5, 5, 5, 0.7);}
-
-
-#habTradePopupBox div.closeme a {     
-     background-color: #000;
-     height: 100%;
-     left: 0;
-     opacity: 0.7;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: -1;
-     cursor:default;
+     background-color: rgba(10, 10, 10, 0.6) !important;
+     width:400px!important;
+     position:fixed!important;
+     top: 50%!important;
+     left: 50%!important;
+     margin-top: -150px!important;
+     margin-left: -200px!important;
+     z-index:999999!important;
+     border: 12px solid rgba(217, 49, 81, 0.6) !important;
+     border-radius: 5px;
+     box-shadow: 0 0 30px 4px rgba(5, 5, 5, 0.7);}
+ 
+ 
+#habTradePopupBox div.closeme a {    
+     background-color: #000;
+     height: 100%;
+     left: 0;
+     opacity: 0.6;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: -1;
+     cursor:default;
 }
-
-
-
-/*   REMOVE MFL ADS
+ 
+ 
+/*   REMOVE MFL ADS
 ======================= */
-
+#body_view_news_article .report th+th,#body_view_news_article .report td+td{display:none;}
+ 
 #body_news_articles td.timestamp + td,
 #body_news_articles th.timestamp + th,
 #body_view_news_article .report div[style="float: right;"],
 #body_player table div,
 #body_live_scoring_summary div[align="center"],
-#body_live_scoring div[align="center"],#body_view_news_article object {
-     display: none!important;
+#body_live_scoring div[align="center"],#body_view_news_article object  {
+     display: none!important;
 }
 
 
