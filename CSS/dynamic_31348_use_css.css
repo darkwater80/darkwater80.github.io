@@ -1366,7 +1366,7 @@ body .standingslogo {
     background-image: url("https://image.ibb.co/g8JOmF/events.png");
 }
 #commissioner_setup th#auction_setup {
-    background-image: url("http://www.nitrografixx.com/2015/ladder/images/commish/auction_hammer_gavel.png");
+    background-image: url("http://www.joshduffus.com/2015/ladder/images/commish/auction_hammer_gavel.png");
 }
 #commissioner_setup th#fantasy_schedule_setup {
     background-image: url("https://image.ibb.co/bUJdLa/calendar_edit.png");
@@ -2749,15 +2749,15 @@ td.sos {
     height: auto;
 }
 div.report41 #brief_standings tr:nth-child(1) {
-    background: url(//https://darkwater80.github.io/IMAGES/DivBanner1-sm.png)no-repeat center top;
+    background: url(https://darkwater80.github.io/IMAGES/DivBanner1-sm.png)no-repeat center top;
     background-size: 100%
 }
 div.report42 #brief_standings tr:nth-child(1) {
-    background: url(//https://darkwater80.github.io/IMAGES/DivBanner2-sm.png)no-repeat center top;
+    background: url(https://darkwater80.github.io/IMAGES/DivBanner2-sm.png)no-repeat center top;
     background-size: 100%
 }
 div.report43 #brief_standings tr:nth-child(1) {
-    background: url(//https://darkwater80.github.io/IMAGES/DivBanner1-sm.png)no-repeat center top;
+    background: url(https://darkwater80.github.io/IMAGES/DivBanner1-sm.png)no-repeat center top;
     background-size: 100%
 }
 #brief_standings h3 {
