@@ -2748,6 +2748,10 @@ td.sos {
     width: 180px;
     height: auto;
 }
+#custom-reports #tabcontent200 #brief_standings .franchiseicon {
+    width: 180px;
+    height: auto;
+}
 div.report41 #brief_standings tr:nth-child(1) {
     background: url(https://darkwater80.github.io/IMAGES/DivBanner1-sm.png)no-repeat center top;
     background-size: 100%
