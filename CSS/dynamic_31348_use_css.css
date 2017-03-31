@@ -2748,7 +2748,7 @@ td.sos {
     width: 180px;
     height: auto;
 }
-#custom-reports #tabcontent200 #brief_standings .franchiseicon {
+.franchiseicon {
     width: 180px;
     height: auto;
 }
