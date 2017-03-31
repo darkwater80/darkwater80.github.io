@@ -106,7 +106,7 @@ ul.MFLPlayerPopupTab li a.active {
 }
 ul.MFLPlayerPopupTab {
     line-height: 24px;
-    line-heigh: 2rem;
+    line-height: 2rem;
 }
 /*  MFL RESPONSIVE MENU
 ========================= */
@@ -1263,7 +1263,7 @@ body .standingslogo {
 }
 #monthly_calendar td {
     border: 1px solid #111;
-    borde: 0.0625rem solid #111;
+    border: 0.0625rem solid #111;
     padding: 0;
 }
 #monthly_calendar th {
@@ -1350,7 +1350,7 @@ body .standingslogo {
     background-image: url("https://image.ibb.co/iuncDv/chart_curve_edit.png");
 }
 #commissioner_setup th#use_with_caution {
-    background-image: url("https://image.ibb.co/eFVsfa/error.png";
+    background-image: url("https://image.ibb.co/eFVsfa/error.png";)
     color: #f6f5f5;
 }
 #commissioner_setup th#playoff_setup {
@@ -2511,7 +2511,7 @@ td.sos {
     background: #030500;
     background: -moz-linear-gradient(top, #030500 0%, #092a46 50%, #030500 100%);
     background: -webkit-linear-gradient(top, #030500 0%, #092a46 50%, #030500 100%);
-    background: linear-gradient(to bottom, top, #030500 0%, #092a46 50%, #030500 100%);
+    background: linear-gradient(to bottom,  #030500 0%, #092a46 50%, #030500 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
 }
 /* color for horizontal lines in center of scoreboard scores digits  */
@@ -3370,4 +3370,3 @@ div.ws-title {
     #news_articles {height:274px;}
     
     #twitter_feed td{font-size:85%;}
-
