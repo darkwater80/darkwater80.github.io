@@ -2509,9 +2509,9 @@ td.sos {
 #MFLHomeScore span {
     border-color: #000;
     background: #030500;
-    background: -moz-linear-gradient(top, #030500 0%, #092a46 50%, #030500 100%);
-    background: -webkit-linear-gradient(top, #030500 0%, #092a46 50%, #030500 100%);
-    background: linear-gradient(to bottom,  #030500 0%, #092a46 50%, #030500 100%);
+    background: -moz-linear-gradient(top, #030500 0%, #5a021b 50%, #030500 100%);
+    background: -webkit-linear-gradient(top, #030500 0%, #5a021b 50%, #030500 100%);
+    background: linear-gradient(to bottom,  #030500 0%, #5a021b 50%, #030500 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=0);
 }
 /* color for horizontal lines in center of scoreboard scores digits  */
