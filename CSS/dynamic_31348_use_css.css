@@ -3393,7 +3393,7 @@ div.ws-title {
 /* player proj points */
 #options_02 #benchtable td.proj-pts,#options_02 #startertable td.proj-pts{color:green}
 /* player matchup - player on bye text color */
-#options_02 #startertable tr.playerrow td.weekly-opp b,#options_02 #benchtable tr.playerrow td.weekly-opp b{color:#999;font-family: 'Roboto',sans-serif;}
+#options_02 #startertable tr.playerrow td.weekly-opp b,#options_02 #benchtable tr.playerrow td.weekly-opp b{color:#000000;font-family: 'Roboto',sans-serif;}
 /* x drop player icon */
 #options_02 #startertable tr.playerrow:after{color:#cd2122}
 /* lock icon color for player on bye or game started */
