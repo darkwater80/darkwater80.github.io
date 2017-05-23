@@ -97,7 +97,7 @@ ul.MFLPlayerPopupTab li a:hover,
 ul.MFLPlayerPopupTab li a.active {
     color: #DAA520;
     background: none;
-    border-bottom: 3px solid #DAA520;
+    border-bottom: 3px solid #96052f;
     text-decoration: none;
 }
 #MFLPlayerPopupContainer .articlepicture {
