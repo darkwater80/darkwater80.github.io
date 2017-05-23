@@ -3370,3 +3370,196 @@ div.ws-title {
     #news_articles {height:274px;}
     
     #twitter_feed td{font-size:85%;}
+
+/*******************************/
+/* EDIT BELOW TO MATCH MY SITE */
+/*******************************/
+/* table header row */
+#options_02 .report .theader{background:#f9f9f9;border-bottom:2px solid #ddd}
+/* bg coloring for table rows inside each table that display Select x amount of players */
+#options_02 .report .toomany{background:#fcc} /* light shaded red when player limit exceeded */
+#options_02 .report .notenough{background:#ffc} /* light shaded yellow when need to add more players to that position */
+#options_02 .report .rightamount{background:#f1f1f1} /* grey shade when have correct value of position player in lineup */
+/* Starter and Bench tablerow background color and border color */
+#options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{background:#fff;}
+#options_02 #startertable tr.playerrow.oddtablerow,#options_02 #benchtable tr.playerrow.oddtablerow{background:#f6f6f6;}
+#options_02 tr.rightamount td,#options_02 tr.notenough td,#options_02 tr.toomany td,#options_02 tr.row_empty td,
+#options_02 #startertable tr.playerrow.oddtablerow,#options_02 #benchtable tr.playerrow.oddtablerow,
+#options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{border-bottom:1px solid #ddd}
+/* player photo */
+#options_02 #startertable tr.playerrow td.pphoto,#options_02 #benchtable tr.playerrow td.pphoto{border:1px solid #ddd;background:#fff}
+/* player injury */
+#options_02 #benchtable td.inj b,#options_02 #startertable td.inj b{color:#fff;background:#cd2122}
+/* player proj points */
+#options_02 #benchtable td.proj-pts,#options_02 #startertable td.proj-pts{color:green}
+/* player matchup - player on bye text color */
+#options_02 #startertable tr.playerrow td.weekly-opp b,#options_02 #benchtable tr.playerrow td.weekly-opp b{color:#999;font-family: 'Roboto',sans-serif;}
+/* x drop player icon */
+#options_02 #startertable tr.playerrow:after{color:#cd2122}
+/* lock icon color for player on bye or game started */
+#options_02 #benchtable tr.playerrow.disabled-row:after,#options_02 #startertable tr.playerrow.disabled-row:after{color:#cd2122}
+/* + add player icon */
+#options_02 #benchtable tr.playerrow:after,#options_02 #benchtable tr.playerrow.original-starter:before,#options_02 #startertable tr.playerrow.original-starter:before{color:green}
+/* show bench - show starters - submit lineup - use default submit form icon color */
+#options_02 .form_buttons:before,#options_02 .form_buttons.default-btn:after,#go-back:before{color:#fff}
+/* Lineup Responsive Styles */
+@media only screen and (max-width: 48em) {
+#options_02 #startertable .row_empty td:after{color:green}
+}
+
+/**************************************/
+/* NO NEED TO EDIT BELOW LAYOUT STYLE */
+/**************************************/
+/* table layout */
+#options_02 .report{display:none}
+#options_02 #startertable{float:left;width:49.9%}
+#options_02 #benchtable{float:right;width:49.9%}
+#options_02 .reportnavigation{clear:both}
+#options_02 #startertable .oddtablerow th,#options_02 #startertable .eventablerow th,#options_02 #benchtable .oddtablerow th,#options_02 #benchtable .eventablerow th{display:none}
+#options_02 .report .playerrow:hover,#options_02 .report .playerrow:hover{cursor:pointer}
+#options_02 .report .postitle{text-transform:uppercase}
+#options_02 #benchtable .sheader,#options_02 #startertable .sheader{position:relative;width:100%;display:inline-table}
+#options_02 #benchtable .sheader th,#options_02 #startertable .sheader th{height:22px;line-height:22px;font-weight:400;font-size:12px}
+#options_02 .report .offstartern{position:absolute;right:10px}
+#options_02 #startertable tr.playerrow,#options_02 #benchtable tr.playerrow{position:relative;height:56px;background:none;border:0;box-shadow:none;display:block}
+.row_empty{height:56px}
+#options_02 #startertable tr.playerrow td,#options_02 #benchtable tr.playerrow td{padding:0;font-size:14px;background:none;border:0;box-shadow:none}
+
+/* Hide table on submit lineup submission page when error lineup occures */
+#body_submit_lineups #submit_lineups form{display:none}
+
+/* table header row */
+#options_02 .report .theader{height:30px;line-height:30px;position:relative;box-shadow:none;display:block}
+#options_02 .report .theader td{padding:0;font-size:11px;font-weight:400}
+
+/* player photo */
+#options_02 #startertable tr.playerrow td.pphoto,#options_02 #benchtable tr.playerrow td.pphoto{border-radius:50%;width:52px;max-width:52px;height:52px;overflow:hidden;text-align:center;position:absolute;left:1px;top:2px}
+#options_02 #startertable .headshot,#options_02 #benchtable .headshot{height: 57px;width: 42px;margin-top: -2px;}
+#options_02 #startertable tr.def_row .headshot, #options_02 #benchtable tr.def_row .headshot {height:100%;margin:0;width:auto;}
+/* player name */
+#options_02 #startertable tr.playerrow td.player,#options_02 #benchtable tr.playerrow td.player{position:absolute;left:60px;top:2px;border:0;box-shadow:none;z-index:1}
+#options_02 #benchtable tr.theader td.player,#options_02 #startertable tr.theader td.player{position:absolute;left:1px;top:0;border:0;box-shadow:none}
+/* player matchup */
+#options_02 #startertable tr.playerrow td.weekly-opp,#options_02 #benchtable tr.playerrow td.weekly-opp{position:absolute;left:65px;top:21px;border:0;box-shadow:none;font-size:12px}
+#options_02 #startertable tr.playerrow td.weekly-opp b,#options_02 #benchtable tr.playerrow td.weekly-opp b{font-weight:400;font-style:italic;}
+#options_02 #startertable tr.playerrow td.weekly-opp b:before,#options_02 #benchtable tr.playerrow td.weekly-opp b:before{content:"Player on ";}
+#options_02 #startertable tr.playerrow td.weekly-opp b:after,#options_02 #benchtable tr.playerrow td.weekly-opp b:after{content:" this week !";}
+/* player injury */
+#options_02 #benchtable td.inj,#options_02 #startertable td.inj{position:absolute;left:40px;top:36px;border:0;box-shadow:none;}
+#options_02 #benchtable td.inj b,#options_02 #startertable td.inj b{font-size:10px;font-weight:400;border-radius:50%;width:16px;height:16px;line-height:16px;display:block}
+/* player proj points */
+#options_02 #benchtable td.proj-pts,#options_02 #startertable td.proj-pts{position:absolute;left:70px;top:37px;border:0;box-shadow:none;text-align:center;font-size:12px!important}
+#options_02 #benchtable td.proj-pts:before,#options_02 #startertable td.proj-pts:before{content:"Proj Pts: ";}
+/* player bye */
+#options_02 #benchtable td.bye,#options_02 #startertable td.bye{display:none;}
+/* player ytd points */
+#options_02 #benchtable td.ytd-pts,#options_02 #startertable td.ytd-pts{position:absolute;right:120px;top:18px;border:0;box-shadow:none;width:45px;text-align:center}
+#options_02 #benchtable tr.theader td.ytd-pts,#options_02 #startertable tr.theader td.ytd-pts{position:absolute;right:120px;top:0;border:0;box-shadow:none;width:45px;text-align:center;}
+#options_02 #benchtable td.ytd-pts a,#options_02 #startertable td.ytd-pts a{text-decoration:none}
+/* player avg points */
+#options_02 #benchtable td.avg-pts,#options_02 #startertable td.avg-pts{position:absolute;right:180px;top:18px;border:0;box-shadow:none;width:45px;text-align:center}
+#options_02 #benchtable tr.theader td.avg-pts,#options_02 #startertable tr.theader td.avg-pts{position:absolute;right:180px;top:0;border:0;box-shadow:none;width:45px;text-align:center;}
+/* player rush pass rank */
+#options_02 #benchtable td.rush-rank,#options_02 #startertable td.rush-rank{position:absolute;right:40px;top:18px;border:0;box-shadow:none;width:20px;text-align:center}
+#options_02 #benchtable td.pass-rank,#options_02 #startertable td.pass-rank{position:absolute;right:75px;top:18px;border:0;box-shadow:none;width:20px;text-align:center}
+#options_02 #benchtable tr.theader td.rank,#options_02 #startertable tr.theader td.rank{position:absolute;right:40px;top:0;border:0;box-shadow:none;width:60px;text-align:center;}
+#options_02 #benchtable td.pass-rank a,#options_02 #startertable td.pass-rank a,#options_02 #benchtable td.rush-rank a,#options_02 #startertable td.rush-rank a{text-decoration:none}
+tr.theader .opp-rank{white-space:nowrap;display:block;position:absolute;left:0;right:0;top:-8px}
+tr.theader .rush-rank{position:absolute;left:0px;top:7px}
+tr.theader .pass-rank{position:absolute;right:0px;top:7px;}
+/* player nfl news */
+#options_02 #startertable tr.playerrow td.nfl-news,#options_02 #benchtable tr.playerrow td.nfl-news{display:none}
+
+/* Disable pointer events */
+#options_02 #startertable tr.playerrow,#options_02 #benchtable tr.playerrow{pointer-events:none;z-index:0}
+/* Enable pointer events for player name - ytd points and font awesome icon */
+#options_02 #startertable td.player a,#options_02 #benchtable td.player a,#startertable tr.playerrow:after,#benchtable tr.playerrow:after{pointer-events:all}
+#options_02 #startertable td.player a:before,#options_02 #benchtable td.player a:before{content:"";position:absolute;height:100%;width:102%;z-index:-1;}
+
+/* Add sillouete image to starter empty table rows */
+#startertable tr.row_empty td{position:relative;}
+#startertable tr.row_empty td:before {content:"";position:absolute;border-radius: 50%; width: 51px;max-width: 51px;height: 51px;overflow: hidden;text-align: center;position: absolute;left: 1px;top: 2px;background:url(//nitrografixx.com/MFL-Popups/silhouette.png)no-repeat;background-size:42px 57px;border:1px solid #ddd;border-bottom:0;background-position:50% 60%;overflow:hidden;}
+
+
+/******************/
+/*  FONT AWESOME  */
+/******************/
+/* Starter table x icon */
+#options_02 #startertable tr.playerrow:after{content:"\f057";font-family:FontAwesome;position:absolute;top:13px;z-index:1;font-size:30px;right:5px}
+/* Bench table + icon */
+#options_02 #benchtable tr.playerrow:after{content:"\f055";font-family:FontAwesome;position:absolute;top:13px;z-index:1;font-size:30px;right:5px}
+/* Starter and Bench table lock icon */
+#options_02 #benchtable tr.playerrow.disabled-row:after,#options_02 #startertable tr.playerrow.disabled-row:after{content:"\f023";font-family:FontAwesome;position:absolute;top:13px;z-index:1;font-size:30px;right:7px;cursor:default}
+/* Starter and Bench table checkmark icon */
+#options_02 #benchtable tr.playerrow.original-starter:before,#options_02 #startertable tr.playerrow.original-starter:before{content:"\f05d";font-family:FontAwesome;position:absolute;top:1px;z-index:1;font-size:16px;left:1px;cursor:default;height:12px;width:12px;background:none}
+/* Button layout to use icons */
+#options_02 .form_buttons input[type="button"],#go-back.form_buttons input[type="button"]{position:relative;padding:5px 10px 5px 25px !important;font-size:16px}
+/* Submit button icon */
+#options_02 .form_buttons:before{font-family:'FontAwesome';position:relative;left:26px;content:"\f00c";z-index:1;font-size:16px}
+/* Mobile show bench and show starters icon */
+#options_02 .form_buttons.mobile-button-starter:before,#options_02 .form_buttons.mobile-button-bench:before{content:"\f0e2";left:23px}
+/* Use default submission form icon */
+#options_02 .form_buttons.default-btn input[type="button"]{position:relative;padding:5px 25px 5px 10px !important;font-size:16px}
+#options_02 .form_buttons.default-btn:before,#options_02 h3 + p.default-btn {display:none}
+#options_02 .form_buttons.default-btn:after{font-family:'FontAwesome';position:relative;right:23px;content:"\f0a9";z-index:1;font-size:16px}
+/* form submission go back button */
+#go-back:before {font-family: 'FontAwesome'; position: relative;left: 23px;content: "\f0e2";z-index: 1;font-size: 16px;}
+#options_02 p.form_buttons,#go-back.form_buttons{margin-left:-16px;}
+#options_02 p.form_buttons.default-btn{margin-left:16px;}
+
+/* Lineup Responsive Styles */
+@media only screen and (max-width: 63em) {
+/* player avg points */
+#options_02 #benchtable td.avg-pts,#options_02 #startertable td.avg-pts,
+#options_02 #benchtable tr.theader td.avg-pts,#options_02 #startertable tr.theader td.avg-pts{display:none}
+}
+@media only screen and (max-width: 54em) {
+/* player ytd points */
+#options_02 #benchtable td.ytd-pts,#options_02 #startertable td.ytd-pts,
+#options_02 #benchtable tr.theader td.ytd-pts,#options_02 #startertable tr.theader td.ytd-pts{display:none}
+}
+@media only screen and (max-width: 44em) {
+.starter-hide,.bench-hide{display:none!important}
+.starter-show,.bench-show{float:inherit!important;width:100%!important}
+.mobile-button{display:block!important}
+.mobile-link{cursor:pointer}
+.mobile-table-hide{display:none!important}
+.mobile-table-show{float:inherit!important;width:100%!important}
+#options_02 #startertable .row_empty td{position:relative}
+#options_02 #startertable .row_empty td:after{font-family:"FontAwesome";position:absolute;content:"\f055";font-size:30px;right:5px;top:13px}
+/* player ytd points */
+#options_02 #benchtable td.ytd-pts,#options_02 #startertable td.ytd-pts,
+#options_02 #benchtable tr.theader td.ytd-pts,#options_02 #startertable tr.theader td.ytd-pts{display:block;right:150px;}
+/* player avg points */
+#options_02 #benchtable td.avg-pts,#options_02 #startertable td.avg-pts,
+#options_02 #benchtable tr.theader td.avg-pts,#options_02 #startertable tr.theader td.avg-pts{display:block;right:250px;}
+}
+@media only screen and (max-width: 35em) {  
+/* player ytd points */
+#options_02 #benchtable td.ytd-pts,#options_02 #startertable td.ytd-pts,
+#options_02 #benchtable tr.theader td.ytd-pts,#options_02 #startertable tr.theader td.ytd-pts{right:120px;}
+/* player avg points */
+#options_02 #benchtable td.avg-pts,#options_02 #startertable td.avg-pts,
+#options_02 #benchtable tr.theader td.avg-pts,#options_02 #startertable tr.theader td.avg-pts{right:180px;}  
+}
+@media only screen and (max-width: 31em) {
+/* player avg points */
+#options_02 #benchtable td.avg-pts,#options_02 #startertable td.avg-pts,
+#options_02 #benchtable tr.theader td.avg-pts,#options_02 #startertable tr.theader td.avg-pts{display:none}  
+}
+@media only screen and (max-width: 26em) {
+/* player ytd points */
+#options_02 #benchtable td.ytd-pts,#options_02 #startertable td.ytd-pts,
+#options_02 #benchtable tr.theader td.ytd-pts,#options_02 #startertable tr.theader td.ytd-pts{display:none} 
+}
+@media only screen and (max-width: 20em) {
+#options_02 #benchtable td.rush-rank,#options_02 #startertable td.rush-rank{right:38px;}
+#options_02 #benchtable td.pass-rank,#options_02 #startertable td.pass-rank{right:68px;}
+#options_02 #benchtable tr.theader td.rank,#options_02 #startertable tr.theader td.rank{right:36px;}
+tr.theader .rush-rank{left:3px}
+tr.theader .pass-rank{right:3px;}
+}
+@media only screen and (max-width: 19.9em) {
+#options_02 #benchtable td.rush-rank,#options_02 #startertable td.rush-rank,#options_02 #benchtable td.pass-rank,#options_02 #startertable td.pass-rank{display:none}
+#options_02 #benchtable tr.theader td.rank,#options_02 #startertable tr.theader td.rank{display:none}
+}
