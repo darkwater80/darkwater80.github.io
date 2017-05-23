@@ -3381,8 +3381,8 @@ div.ws-title {
 #options_02 .report .notenough{background:#ffc} /* light shaded yellow when need to add more players to that position */
 #options_02 .report .rightamount{background:#f1f1f1} /* grey shade when have correct value of position player in lineup */
 /* Starter and Bench tablerow background color and border color */
-#options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{background:#fff;}
-#options_02 #startertable tr.playerrow.oddtablerow,#options_02 #benchtable tr.playerrow.oddtablerow{background:#f6f6f6;}
+#options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{background:#101010;}
+#options_02 #startertable tr.playerrow.oddtablerow,#options_02 #benchtable tr.playerrow.oddtablerow{background:#0e0e0e;}
 #options_02 tr.rightamount td,#options_02 tr.notenough td,#options_02 tr.toomany td,#options_02 tr.row_empty td,
 #options_02 #startertable tr.playerrow.oddtablerow,#options_02 #benchtable tr.playerrow.oddtablerow,
 #options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{border-bottom:1px solid #ddd}
