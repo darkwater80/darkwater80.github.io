@@ -3375,7 +3375,7 @@ div.ws-title {
 /* EDIT BELOW TO MATCH MY SITE */
 /*******************************/
 /* table header row */
-#options_02 .report .theader{background:#f9f9f9;border-bottom:2px solid #ddd}
+#options_02 .report .theader{background:#96052f;border-bottom:2px solid #000000}
 /* bg coloring for table rows inside each table that display Select x amount of players */
 #options_02 .report .toomany{background:#b29265} /* light shaded red when player limit exceeded */
 #options_02 .report .notenough{background:#b29265} /* light shaded yellow when need to add more players to that position */
