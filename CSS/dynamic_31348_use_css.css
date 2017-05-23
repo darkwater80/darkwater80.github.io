@@ -3377,8 +3377,8 @@ div.ws-title {
 /* table header row */
 #options_02 .report .theader{background:#f9f9f9;border-bottom:2px solid #ddd}
 /* bg coloring for table rows inside each table that display Select x amount of players */
-#options_02 .report .toomany{background:#fcc} /* light shaded red when player limit exceeded */
-#options_02 .report .notenough{background:#ffc} /* light shaded yellow when need to add more players to that position */
+#options_02 .report .toomany{background:#b29265} /* light shaded red when player limit exceeded */
+#options_02 .report .notenough{background:#b29265} /* light shaded yellow when need to add more players to that position */
 #options_02 .report .rightamount{background:#f1f1f1} /* grey shade when have correct value of position player in lineup */
 /* Starter and Bench tablerow background color and border color */
 #options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{background:#101010;}
