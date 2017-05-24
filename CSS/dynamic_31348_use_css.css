@@ -95,13 +95,13 @@ ul.MFLPlayerPopupTab li a {
 }
 ul.MFLPlayerPopupTab li a:hover,
 ul.MFLPlayerPopupTab li a.active {
-    color: #DAA520;
+    color: #fff;
     background: none;
     border-bottom: 3px solid #96052f;
     text-decoration: none;
 }
 #MFLPlayerPopupContainer .articlepicture {
-    border-color: #DAA520;
+    border-color: #fff;
     outline: none;
 }
 ul.MFLPlayerPopupTab {
@@ -152,7 +152,7 @@ ul.MFLPlayerPopupTab {
     box-shadow: none;
 }
 .myfantasyleague_menu ul li ul li:hover > a {
-    background-color: #051726;
+    background-color: #5a021b;
 }
 .myfantasyleague_menu li.player-search input[type="text"] {
     color: #000;
@@ -3377,8 +3377,8 @@ div.ws-title {
 /* table header row */
 #options_02 .report .theader{background:#96052f;border-bottom:2px solid #000000}
 /* bg coloring for table rows inside each table that display Select x amount of players */
-#options_02 .report .toomany{background:#b29265} /* light shaded red when player limit exceeded */
-#options_02 .report .notenough{background:#b29265} /* light shaded yellow when need to add more players to that position */
+#options_02 .report .toomany{background:#96052f} /* light shaded red when player limit exceeded */
+#options_02 .report .notenough{background:#96052f} /* light shaded yellow when need to add more players to that position */
 #options_02 .report .rightamount{background:#f1f1f1} /* grey shade when have correct value of position player in lineup */
 /* Starter and Bench tablerow background color and border color */
 #options_02 #startertable tr.playerrow.eventablerow,#options_02 #benchtable tr.playerrow.eventablerow{background:#101010;}
