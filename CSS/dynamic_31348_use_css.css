@@ -3411,7 +3411,6 @@ div.ws-title {
 /* NO NEED TO EDIT BELOW LAYOUT STYLE */
 /**************************************/
 /* table layout */
-#options_02 .report{display:none}
 #options_02 #startertable{float:left;width:49.9%}
 #options_02 #benchtable{float:right;width:49.9%}
 #options_02 .reportnavigation{clear:both}
