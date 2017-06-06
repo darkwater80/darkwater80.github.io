@@ -3562,3 +3562,40 @@ tr.theader .pass-rank{right:3px;}
 #options_02 #benchtable td.rush-rank,#options_02 #startertable td.rush-rank,#options_02 #benchtable td.pass-rank,#options_02 #startertable td.pass-rank{display:none}
 #options_02 #benchtable tr.theader td.rank,#options_02 #startertable tr.theader td.rank{display:none}
 }
+
+/* PLACE THIS IN YOUR UPLOADED STYLESHEET FOR MOBILE MENU REPLACEMENT SCRIPT */
+
+/* CHANGE MENU COLORS TO MATCH YOUR SITE */
+   /* menu button pullout */
+#menu-trigger{background:#e9ebf0;border:1px solid #263e68;color:#263e68;}
+   /* menu container */
+.myfantasyleague_menuMobile{background:#e9ebf0;border-right:2px solid #e9ebf0}
+   /* text color for first level items */
+.myfantasyleague_menuMobile > ul > li > a,.myfantasyleague_menuMobile > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > a:visited,.myfantasyleague_menuMobile > ul > li > a:hover {color:#fff}
+   /* text color for first level inner links */
+.myfantasyleague_menuMobile > ul > li > ul > li > a,.myfantasyleague_menuMobile > ul > li > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:visited,.myfantasyleague_menuMobile > ul > li > ul > li > a:hover {color:#fff}
+   /* text color for second level inner links */
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a,.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:visited,.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:hover {color:#fff}
+   /* background for menu links */
+.myfantasyleague_menuMobile a {background:#263e68;border-bottom:1px solid rgba(255,255,255,.2)}
+   /* background for active first level drop down menu links */
+.myfantasyleague_menuMobile > ul > li.has-sub.arrow-down > a{background:#cd2122}
+   /* arrow right color for first level drop items */
+.myfantasyleague_menuMobile > ul > li.has-sub > a:after {color:#fff}
+   /* arrow down color for first level drop items */
+.myfantasyleague_menuMobile > ul > li.has-sub.arrow-down > a:after {color:#fff}
+   /* arrow right color for second level drop items */
+.myfantasyleague_menuMobile > ul > li.has-sub > ul > li.has-sub > a:after {color:#fff}
+   /* arrow down color for second level drop items */
+.myfantasyleague_menuMobile > ul > li.has-sub > ul > li.has-sub.sub-arrow-down > a:after {color:#cd2122}
+   /* background and text color for active second level drop items */
+.myfantasyleague_menuMobile > ul > li.has-sub > ul > li.has-sub.sub-arrow-down > a{background:#fff;color:#cd2122}
+
+/* RESPONSIVE STYLE TO SHOW MENU */
+@media only screen and (max-width: 48em){
+  #menu-trigger,.myfantasyleague_menuMobile{display:block!important}
+  .myfantasyleague_menu,#icon-wrapper,.myfantasyleague_menu .notification-icon-login,.myfantasyleague_menu .notification-icon-search,.pageheader .welcome{display:none;}
+}
