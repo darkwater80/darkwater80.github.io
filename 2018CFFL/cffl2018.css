@@ -881,7 +881,7 @@ td.is-freeagent{color:red}
 /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records  */
 .MFLMainScoreboard {background:none;border:0!important}
 /* background graident color for the banner area for scoreboard name  */
-#MFLCenterTop{border:1px solid #b61f30;background:#fff;color:#fff;background:#b61f30;background: url(http//www.darkwater80.github.io/2018CFFL/scoreboard.png)no-repeat;}
+#MFLCenterTop{border:1px solid #b61f30;background:#fff;color:#fff;background:#b61f30;background: url(https://darkwater80.github.io/2018CFFL/scoreboard.png)no-repeat;}
 #MFLCenterTop span{color:#fff}
 /* franchise team names and nfl team names box background and text colors  */
 #MFLRoadTeamName,#MFLHomeTeamName{color:#b61f30;border-color:#eee}
