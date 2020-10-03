@@ -1,0 +1,1817 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-size: .813rem;
+	color: #263e68;
+	border: 0;
+	background-color:#fff
+}
+
+td a, td a:link, td a:active, td a:visited, td a:focus {
+	font-family: 'Roboto', sans-serif
+}
+
+a:focus, a, a:link, a:active, a:visited, a:focus, th, th a, th a:link, th a:active, th a:visited, th a:focus, h1, td h1 a:link, td h1 a:active, td h1 a:visited, td h1 a:focus, h2, td h2 a:link, td h2 a:active, td h2 a:visited, td h2 a:focus, h3, td h3 a, td h3 a:link, td h3 a:active, td h3 a:visited, td h3 a:focus, h4, td h4 a, td h4 a:link, td h4 a:active, td h4 a:visited, td h4 a:focus, input[type="button"], input[type="submit"], .myfantasyleague_tabmenu, .myfantasyleague_menu, caption, caption a, caption a:link, caption a:active, caption a:visited, caption a:focus, .welcome, .welcome a, .welcome a:link, .welcome a:active, .welcome a:visited, .welcome a:focus, #MFLPlayerPopupLinks .popreport td a, #owner_activity td.franchisename, .myfantasyleague_tabmenu #homepagetabs li a, #vsubmenu, #vsubmenu li, #vsubmenu li a {
+	font-family: 'Roboto Condensed', sans-serif
+}
+
+a:link {
+	color:#cd2122
+}
+
+a:active {
+	color:#cd2122
+}
+
+a:visited {
+	color:#cd2122
+}
+
+a:hover {
+	text-decoration:none
+}
+
+caption {
+	font-size: 120%;
+	font-weight:700
+}
+
+th {
+	color: #FFF;
+	font-style: italic;
+	font-weight: 700;
+	background-color:#263e68
+}
+
+th a:link, th a:visited {
+	color:#FFF
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom:0
+}
+
+ul li {
+	margin-left:-1.5em
+}
+
+small {
+	font-size:95%
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	margin-bottom:0
+}
+
+h2, h3, h4 {
+	margin-top:0
+}
+
+h1 {
+	font-size: 200%;
+	margin-top:6px
+}
+
+h2 {
+	font-size:160%
+}
+
+h3 {
+	font-size:140%
+}
+
+h4 {
+	font-size:120%
+}
+
+form {
+	margin-top: 0;
+	margin-bottom:0
+}
+
+.form_buttons {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center
+}
+
+td.points, td.week, td.salary, td.contractyear, td.drafted, td.year, td.rank {
+	text-align:right
+}
+
+.reportfooter td {
+	text-align:center
+}
+
+.pageheader {
+	width:100%
+}
+
+.brandlogo {
+	width: 15%;
+	vertical-align:top
+}
+
+.verticalmenu {
+	width:120px
+}
+
+.pagetitle {
+	width:70%
+}
+
+.welcome {
+	vertical-align: top;
+	text-align: right;
+	width:15%
+}
+
+.report, .playoffbracket {
+	margin-bottom:1em
+}
+
+.homepagemessage {
+	margin:10px auto
+}
+
+.pagefooter, .pagefooter TD {
+	font-size:95%
+}
+
+.pagefooter {
+	clear:both
+}
+
+.eventablerow {
+	background-color:#ddd
+}
+
+.oddtablerow {
+	background-color:#eee
+}
+
+.module_expand {
+	font-family: monospace;
+	float: right;
+	visibility: visible;
+	cursor: pointer;
+	font-weight:400
+}
+
+.warning {
+	color:#cd2122
+}
+
+div.error {
+	color:red
+}
+
+td.error {
+	color:red
+}
+
+div.hint {
+	color:blue
+}
+
+td.hint {
+	color:blue
+}
+
+.moohighlight {
+	background-color: #ffa;
+	color:#000
+}
+
+.reallysmall {
+	font-size:90%
+}
+
+.picks {
+	width:400px
+}
+
+.currentweek {
+	font-weight:700
+}
+
+.leaguelogo, .franchiselogo, .standingslogo {
+	border: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center
+}
+
+#support .leaguelogo {
+	display:none
+}
+
+.franchiseicon {
+	border:0
+}
+
+.requiredfield {
+	font-weight:700
+}
+
+.inputlabel {
+	text-align:right
+}
+
+.inputfield {
+	text-align:center
+}
+
+td.confw {
+	text-align:right
+}
+
+td.divpct {
+	text-align:right
+}
+
+td.nondivw {
+	text-align:right
+}
+
+td.maxpa {
+	text-align:right
+}
+
+td.gb {
+	text-align:center
+}
+
+td.confl {
+	text-align:right
+}
+
+td.nonconfwlt {
+	text-align:right
+}
+
+td.divt {
+	text-align:right
+}
+
+td.confwlt {
+	text-align:center
+}
+
+td.minpa {
+	text-align:right
+}
+
+td.pa {
+	text-align:right
+}
+
+td.nonconfw {
+	text-align:right
+}
+
+td.maxpf {
+	text-align:right
+}
+
+td.divwlt {
+	text-align:center
+}
+
+td.vp {
+	text-align:right
+}
+
+td.confpf {
+	text-align:right
+}
+
+td.dp {
+	text-align:right
+}
+
+td.nondivt {
+	text-align:right
+}
+
+td.h2hl {
+	text-align:right
+}
+
+td.bbidspent {
+	text-align:right
+}
+
+td.nondivl {
+	text-align:right
+}
+
+td.nondivpct {
+	text-align:right
+}
+
+td.op {
+	text-align:right
+}
+
+td.divl {
+	text-align:right
+}
+
+td.nonconfpct {
+	text-align:right
+}
+
+td.pwr {
+	text-align:right
+}
+
+td.confpct {
+	text-align:right
+}
+
+td.eff {
+	text-align:right
+}
+
+td.ww {
+	text-align:right
+}
+
+td.bbidbalance {
+	text-align:right
+}
+
+td.strk {
+	text-align:center
+}
+
+td.nondivwlt {
+	text-align:right
+}
+
+td.pf {
+	text-align:right
+}
+
+td.h2ht {
+	text-align:right
+}
+
+td.divw {
+	text-align:right
+}
+
+td.all_play_pct {
+	text-align:right
+}
+
+td.nonconfl {
+	text-align:right
+}
+
+td.avgpf {
+	text-align:right
+}
+
+td.altpwr {
+	text-align:right
+}
+
+td.minpf {
+	text-align:right
+}
+
+td.h2hwlt {
+	text-align:center
+}
+
+td.pb {
+	text-align:right
+}
+
+td.conft {
+	text-align:right
+}
+
+td.nonconft {
+	text-align:right
+}
+
+td.divpf {
+	text-align:right
+}
+
+td.pp {
+	text-align:right
+}
+
+td.acct {
+	text-align:right
+}
+
+td.all_play_wlt {
+	text-align:center
+}
+
+td.avgpa {
+	text-align:right
+}
+
+td.salary {
+	text-align:right
+}
+
+td.h2hw {
+	text-align:right
+}
+
+td.h2hpct {
+	text-align:right
+}
+
+.header_links th, .header_links caption {
+	display:none
+}
+
+.header_links li {
+	list-style: none;
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	white-space:nowrap
+}
+
+.header_links a {
+	text-decoration: none;
+	border: 1px solid;
+	padding: 1px;
+	margin: 1px;
+	display: block;
+	font-weight: 700;
+	float: left;
+	border-color:#FFF #333 #333 #FFF
+}
+
+.header_links .warning a {
+	border: none;
+	display: inline;
+	float:none
+}
+
+.header_links .oddtablerow {
+	background-color:transparent
+}
+
+.homepagecolumn {
+	vertical-align: top;
+	padding-right: 5px;
+	padding-right:.313rem
+}
+
+.homepagecolumn:last-child {
+	padding-right:0
+}
+
+#homepagecolumns {
+	width:100%
+}
+
+.homepagemessage {
+	border: 1px solid #cd2122;
+	padding: 0;
+	width:60%
+}
+
+.livescoringsummary {
+	width: 260px;
+	height:300px
+}
+
+.homepagecolumn #standings h3, .homepagecolumn #brief_standings h3, .homepagecolumn .homepagemodule caption {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFF;
+	background-color:#cd2122
+}
+
+.homepagecolumn .homepagemodule h3 {
+	margin:-1px
+}
+
+.homepagecolumn .homepagemodule, .homepagecolumn .homepagemodule caption {
+	width:100%
+}
+
+.homepagemodule caption {
+	cursor:move
+}
+
+.newposition td, .newposition th {
+	border-top:2px solid #263e68
+}
+
+.topteam {
+	border-bottom:2px #000 solid
+}
+
+.bracket {
+	border-right:2px #000 solid
+}
+
+.bottomteam {
+	border-bottom: 2px #000 solid;
+	border-right:2px #000 solid
+}
+
+.gameunderway {
+	background-image: url(/mflicons/game_under_way.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right:12px
+}
+
+.haspossession {
+	background-image: url(/mflicons/has_ball.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right:12px
+}
+
+.redzone {
+	background-image: url(/mflicons/red_zone.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right:12px
+}
+
+.updatedstats {
+	background-image: url(/mflicons/new_stats_3.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right:12px
+}
+
+.highscore {
+	font-weight:700
+}
+
+.lowscore {
+	font-style: italic;
+	text-decoration:underline
+}
+
+.tiebreaker {
+	font-weight:700
+}
+
+.shouldstart {
+	background: url(/mflicons/up_arrow_green.gif) center right no-repeat;
+	padding-right:12px
+}
+
+.shouldbench {
+	background: url(/mflicons/down_arrow_red.gif) center right no-repeat;
+	padding-right:12px
+}
+
+#monthly_calendar {
+	width: 80%;
+	border: 1px solid #000;
+	border-collapse:collapse
+}
+
+.homepagecolumn #monthly_calendar {
+	width:95%
+}
+
+#monthly_calendar td.today {
+	border:4px double #cd2122
+}
+
+#monthly_calendar td, #monthly_calendar th {
+	width: 14%;
+	border: 1px solid #000;
+	padding:2px
+}
+
+#monthly_calendar td {
+	height: 4em;
+	padding: 0;
+	font-size:95%
+}
+
+#monthly_calendar ul li {
+	font-size:95%
+}
+
+#monthly_calendar td .calendarday {
+	float: right;
+	text-align: center;
+	border-bottom: 1px solid;
+	padding-bottom: 1px;
+	border-left: 1px solid;
+	padding-left:2px
+}
+
+.reportform {
+	text-align:center
+}
+
+.reportnavigation {
+	text-align: center;
+	display: block;
+	padding-top: 1em;
+	padding-bottom:1em
+}
+
+TD .reportnavigation {
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align:left
+}
+
+.reportnavigationheader {
+	font-weight:700
+}
+
+.franchise_online {
+	background: url(/mflicons/online.gif) center right no-repeat;
+	padding-right:16px
+}
+
+.franchise_offline {
+	background: url(/mflicons/offline.gif) center right no-repeat;
+	padding-right:16px
+}
+
+@media only screen and (max-width: 920px) {
+	#body_ajax_ld td.mobile-view-draft {
+		float: left;
+		width:100%
+	}
+
+	#body_ajax_ld .draft_picks_container {
+		height: auto;
+		max-height:300px
+	}
+
+	#body_ajax_ld #draft_status_table + input {
+		margin: 0 auto;
+		display:block
+	}
+
+	#body_ajax_ld td.mobile-view-draft:last-of-type, #body_ajax_ld .reportnavigation, #body_ajax_ld #draft_picks_container + table td {
+		text-align:center !important
+	}
+
+	#body_ajax_ld td.mobile-view-draft:first-of-type table {
+		table-layout:fixed
+	}
+
+	#body_ajax_ld #draft_countdown_timer {
+		text-align:left !important
+	}
+}
+
+#body_ajax_ld .report {
+	border-top-left-radius: 0;
+	border-top-right-radius:0
+}
+
+.draft_picks_header.report {
+	border-radius:0
+}
+
+#body_ajax_ld #draft_picks_container + table {
+	margin-top: 10px;
+	border-radius:3px
+}
+
+#body_ajax_ld .draft_picks_container {
+	border: 1px solid;
+	border-top: 0;
+	border-radius: 3px;
+	border-top-right-radius: 0;
+	border-top-left-radius:0
+}
+
+#body_ajax_ld .draft_picks_container table {
+	border: 0;
+	padding:0
+}
+
+#body_ajax_ld .draft_picks_header.report th {
+	border:0
+}
+
+#body_ajax_ld .draft_picks_header.report {
+	border-bottom:0
+}
+
+#body_ajax_ld #pickertop + table, #pickertop + table div {
+	width:100% !important
+}
+
+#body_ajax_ld #pickertop + table div {
+	border: 0 !important;
+	border:1px solid !important
+}
+
+#body_ajax_ld #pickertop {
+	display:none
+}
+
+#body_ajax_ld #pickertop + table th {
+	border:0
+}
+
+#body_ajax_ld h2, #body_ajax_la h2 {
+	margin-top: 0;
+	height: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	font-size:24px
+}
+
+#body_ajax_ld .draft_picks_header {
+	margin-bottom: 0;
+	width:95%
+}
+
+#body_ajax_ld .draft_picks_container {
+	height: 400px;
+	overflow: auto;
+	vertical-align: top;
+	width:100%
+}
+
+#body_ajax_ld #draft_status, #body_ajax_la #draft_status {
+	height: 150px;
+	overflow:auto
+}
+
+#body_ajax_ld #draft_status_table + input + br {
+	display:none
+}
+
+#body_ajax_ld #draft_status_table + input {
+	margin: 0 auto;
+	display:block
+}
+
+#body_ajax_ld #league_chat th {
+	height:1pt
+}
+
+#body_ajax_ld #draft_countdown_timer {
+	text-align:center
+}
+
+#body_ajax_ld .pick {
+	width:10%
+}
+
+#body_ajax_ld .franchise {
+	width:30%
+}
+
+#body_ajax_ld .selection {
+	width:40%
+}
+
+#body_ajax_ld .timestamp {
+	width:20%
+}
+
+#body_ajax_ld td .report, #body_ajax_ld td .report {
+	width:100%
+}
+
+#body_pro_schedule .tool-tip {
+	width:270px
+}
+
+#body_pro_schedule .tool-title, #body_pro_schedule .tool-text {
+	background-color:#fff
+}
+
+#homepagetabs {
+	margin: 0;
+	padding-bottom: 19px;
+	padding-left:10px
+}
+
+#homepagetabs ul, #homepagetabs li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	line-height: 14px;
+	margin-right: 8px;
+	padding: 2px 10px;
+	text-decoration: none;
+	cursor:pointer
+}
+
+#options_238 #map_canvas {
+	height:600px
+}
+
+#home #map_canvas {
+	height:350px
+}
+
+#standings .franchise_eliminated, #weekly_summary .franchise_eliminated, .franchise_eliminated {
+	text-decoration:line-through
+}
+
+#withmenus.withleft {
+	margin-left: 105px;
+	zoom:1
+}
+
+#hsubmenu {
+	padding: 5px 0;
+	overflow: hidden;
+	position: relative;
+	zoom:1
+}
+
+#hsubmenu ul {
+	float: left;
+	list-style: none;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: 50%;
+	text-align:center
+}
+
+#hsubmenu ul li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: none;
+	list-style: none;
+	border-left: 1px solid #ccc;
+	position: relative;
+	right:50%
+}
+
+#hsubmenu ul li:first-child {
+	border-left:none
+}
+
+#hsubmenu ul a {
+	text-decoration: none;
+	padding: 3px 8px;
+	white-space: nowrap;
+	margin: 0;
+	display:block
+}
+
+#vsubmenu {
+	float: left;
+	clear:both
+}
+
+#vsubmenu ul {
+	list-style: none;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	line-height:1em
+}
+
+#vsubmenu ul li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 8px 5px 0;
+	background: none;
+	list-style: none;
+	width: 100px;
+	width:90px
+}
+
+#vsubmenu ul li ul li {
+	padding: 0;
+	width:100px
+}
+
+#vsubmenu ul li a {
+	display: block;
+	padding: 3px 0 3px 15px;
+	text-decoration: none;
+	border-top: 1px solid #ccc;
+	width: 100px;
+	width:85px
+}
+
+#vsubmenu ul li ul {
+	padding-top: 5px;
+	margin-left:-5px
+}
+
+* html #vsubmenu ul li {
+	float: left;
+	height:1%
+}
+
+* html #vsubmenu ul li a {
+	height:1%
+}
+
+:-moz-any-link:focus, :focus, img, li, a {
+	outline:medium none
+}
+
+* {
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0) !important
+}
+
+body {
+	margin: 0;
+	padding:0
+}
+
+@media screen and (max-device-width: 36.250em) {
+	body {
+		-webkit-text-size-adjust:none
+	}
+}
+
+.myfantasyleague_menu {
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	height: 2.5rem;
+	position: relative;
+	z-index: 99999;
+	border-bottom: 4px solid #cd2122;
+	border-bottom: .25rem solid #cd2122;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box
+}
+
+.myfantasyleague_menu, .myfantasyleague_menu ul, .myfantasyleague_menu ul li ul {
+	background:#263e68
+}
+
+.myfantasyleague_menu > span {
+	display:none
+}
+
+.myfantasyleague_menu input {
+	position: absolute;
+	display:none
+}
+
+.myfantasyleague_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	white-space: nowrap;
+	text-align: left;
+	display: inline-block;
+	* display:inline
+}
+
+.myfantasyleague_menu li {
+	margin: 0;
+	padding: 0;
+	cursor:pointer
+}
+
+.myfantasyleague_menu ul ul {
+	position: absolute;
+	left:-9999px
+}
+
+.myfantasyleague_menu > ul {
+	margin:0 auto
+}
+
+.myfantasyleague_menu > ul > li {
+	float: left;
+	display: block;
+	position:relative
+}
+
+.myfantasyleague_menu ul ul li {
+	position: relative;
+	background:#263e68
+}
+
+.myfantasyleague_menu ul ul > li.has-sub > a {
+	position:relative
+}
+
+.myfantasyleague_menu > ul > li.has-sub > a:after {
+	right: 6px;
+	right: .375rem;
+	top: 50%;
+	margin-top: -2px;
+	margin-top: -.125rem;
+	position: absolute;
+	display: inline-block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top: 4px solid #fff;
+	border: .25rem solid transparent;
+	border-top:.25rem solid #fff
+}
+
+.myfantasyleague_menu ul ul > li.has-sub > a:after {
+	right: 2px;
+	right: .125rem;
+	top: 50%;
+	margin-top: -4px;
+	margin-top: -.25rem;
+	position: absolute;
+	display: inline-block;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-left: 4px solid #fff;
+	border: .25rem solid transparent;
+	border-left:.25rem solid #fff
+}
+
+.myfantasyleague_menu > ul > li.has-sub:hover > a:after {
+	border-top: 4px solid #fff;
+	border-top:.25rem solid #fff
+}
+
+.myfantasyleague_menu ul ul > li.has-sub:hover > a:after {
+	border-left: 4px solid #fff;
+	border-left:.25rem solid #fff
+}
+
+.myfantasyleague_menu ul ul li b {
+	margin-top: -36px;
+	margin-top:-2.25rem
+}
+
+.myfantasyleague_menu ul li b {
+	display:none
+}
+
+.myfantasyleague_menu li a {
+	display: block;
+	line-height: 36px;
+	line-height: 2.25rem;
+	text-decoration: none;
+	padding: 0 20px 0 8px;
+	padding: 0 1.25rem 0 .5rem;
+	text-transform:uppercase
+}
+
+.myfantasyleague_menu li ul li a {
+	line-height: 28px;
+	line-height:1.75rem
+}
+
+.myfantasyleague_menu ul li a, .myfantasyleague_menu ul li:hover ul li a, .myfantasyleague_menu ul li ul li:hover ul li a {
+	color:#fff
+}
+
+.myfantasyleague_menu ul li:hover a, .myfantasyleague_menu ul li ul li:hover a, .myfantasyleague_menu ul li ul li ul li:hover a {
+	color:#fff
+}
+
+.myfantasyleague_menu a.no-sub {
+	padding: 0 8px;
+	padding:0 .5rem 0 .5rem
+}
+
+.myfantasyleague_menu > ul > li > a {
+	float:left
+}
+
+.myfantasyleague_menu ul li:hover > ul {
+	visibility: visible;
+	left: 0;
+	top: 36px;
+	top: 2.25rem;
+	opacity:1
+}
+
+.myfantasyleague_menu ul ul li:hover > ul {
+	visibility: visible;
+	left: 100%;
+	top: auto;
+	margin-top: -30px;
+	margin-top:-1.875rem
+}
+
+.myfantasyleague_menu ul ul li:first-of-type:hover > ul {
+	margin-top: -29px;
+	margin-top:-1.813rem
+}
+
+.myfantasyleague_menu ul li:hover > b {
+	width:0
+}
+
+.myfantasyleague_menu li:hover > a {
+	background-color: #cd2122;
+	text-decoration:underline
+}
+
+.myfantasyleague_menu ul li ul li:hover > a {
+	background-color: #182a4a;
+	background-image: none;
+	box-shadow: none
+}
+
+.myfantasyleague_menu li.player-search input[type="text"] {
+	position: relative;
+	display: inline;
+	width: auto;
+	color: #182a4a;
+	border: 0;
+	margin-left: 2px;
+	margin-left: .125rem;
+	padding-bottom:0
+}
+
+.myfantasyleague_menu li.player-search a {
+	padding: 0 8px !important;
+	padding:0 .5rem 0 .5rem !important
+}
+
+.myfantasyleague_menu li.player-search a:hover {
+	text-decoration: none;
+	cursor:default
+}
+
+.myfantasyleague_menu li.player-search form {
+	text-transform:uppercase
+}
+
+.myfantasyleague_menu li.player-search a:hover {
+	background:none
+}
+
+.myfantasyleague_menu li.player-search a::before {
+	visibility:hidden
+}
+
+.myfantasyleague_menu li.sub-default, .myfantasyleague_menu li ul li.sub-default:hover > a, .myfantasyleague_menu li.sub-default:hover > a {
+	cursor:default
+}
+
+.myfantasyleague_menu ul li ul {
+	border-top: 4px solid #cd2122;
+	border-top:.25rem solid #cd2122
+}
+
+.myfantasyleague_menu ul li ul li ul {
+	border-top:0
+}
+
+.myfantasyleague_menu ul ul li a, .myfantasyleague_menu ul ul li.has-sub a {
+	border: 1px solid #182a4a;
+	border:.063rem solid #182a4a
+}
+
+.myfantasyleague_menu ul ul li.has-sub li {
+	margin-left: -1px;
+	margin-left:-.063rem
+}
+
+.myfantasyleague_menu ul ul li.has-sub:first-of-type li:first-of-type, .myfantasyleague_menu ul ul li.has-sub a, .myfantasyleague_menu ul ul li a {
+	border-top:0
+}
+
+.myfantasyleague_menu ul ul li.has-sub li:first-of-type {
+	border-top: 1px solid #182a4a;
+	border-top:.063rem solid #182a4a
+}
+
+.myfantasyleague_menu li.mfl-icon a {
+	padding:0
+}
+
+.myfantasyleague_menu li.mfl-icon a:hover {
+	padding: 0;
+	background: none;
+	box-shadow:none
+}
+
+li.mfl-icon img {
+	display: inline-block;
+	height: 36px;
+	height: 2.25rem;
+	padding: 5px;
+	padding: .313rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box
+}
+
+li.mfl-icon a span {
+	display:none
+}
+
+.myfantasyleague_tabmenu ul#homepagetabs {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	border-bottom: 4px solid #cd2122;
+	border-bottom:.25rem solid #cd2122
+}
+
+.myfantasyleague_tabmenu {
+	width: 100%;
+	background: #263e68;
+	text-align: left;
+	position: relative;
+	z-index: 99998;
+	margin-bottom: 15px;
+	margin-bottom:.9375rem
+}
+
+.myfantasyleague_tabmenu > span {
+	display: none;
+	text-transform:uppercase
+}
+
+.myfantasyleague_tabmenu input {
+	position: absolute;
+	display:none
+}
+
+.myfantasyleague_tabmenu #homepagetabs li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	cursor: pointer;
+	height: 45px;
+	height: 2.813rem;
+	line-height: 45px;
+	line-height: 2.813rem;
+	padding: 0;
+	border: 0;
+	background: none;
+	float: none;
+	border-left: 1px solid #182a4a;
+	border-left: .0625rem solid #182a4a;
+	border-right: 1px solid rgba(255, 255, 255, .1);
+	border-right:.0625rem solid rgba(255, 255, 255, .1)
+}
+
+.myfantasyleague_tabmenu #homepagetabs li a {
+	font-size: 13px;
+	font-size: .813rem;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 12px;
+	padding: 0 .75rem;
+	height: 100%;
+	text-align:center
+}
+
+.myfantasyleague_tabmenu #homepagetabs li:last-of-type a, .myfantasyleague_tabmenu #homepagetabs li:last-of-type {
+	border-right:0
+}
+
+.myfantasyleague_tabmenu #homepagetabs li:first-of-type {
+	border-left:0
+}
+
+.myfantasyleague_tabmenu #homepagetabs li:hover {
+	background-color:#182a4a
+}
+
+.myfantasyleague_tabmenu #homepagetabs li:hover a {
+	text-decoration: underline;
+	color:#fff
+}
+
+.myfantasyleague_tabmenu #homepagetabs li.currenttab a {
+	text-decoration: underline;
+	color: #fff;
+	text-decoration:none
+}
+
+.myfantasyleague_tabmenu #homepagetabs li.currenttab, .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
+	background:#cd2122
+}
+
+#MFLPlayerPopupLoading {
+	display: block;
+	padding-top: 10px;
+	padding-top:.625rem
+}
+
+#MFLPlayerPopupLoaded {
+	display:none
+}
+
+.MFLPlayerPopupLoader {
+	border-radius: 50%;
+	width: 120px;
+	width: 7.5rem;
+	height: 120px;
+	height: 7.5rem;
+	-webkit-animation: MFLPlayerPopupSpinner 2s linear infinite;
+	-moz-animation: MFLPlayerPopupSpinner 2s linear infinite;
+	-o-animation: MFLPlayerPopupSpinner 2s linear infinite;
+	animation: MFLPlayerPopupSpinner 2s linear infinite;
+	border: 16px solid #eee;
+	border: 1rem solid #eee;
+	border-top: 16px solid #cd2122;
+	border-top: 1rem solid #cd2122;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box
+}
+
+@keyframes MFLPlayerPopupSpinner {
+	0% {
+		transform:rotate(0deg)
+	}
+
+	100% {
+		transform:rotate(360deg)
+	}
+}
+
+@-webkit-keyframes MFLPlayerPopupFadeEffect {
+	from {
+		opacity:0
+	}
+
+	to {
+		opacity:1
+	}
+}
+
+@keyframes MFLPlayerPopupFadeEffect {
+	from {
+		opacity:0
+	}
+
+	to {
+		opacity:1
+	}
+}
+
+#MFLPlayerPopupOverlay {
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+	background-color:#000
+}
+
+#MFLPlayerPopupContainer {
+	display: none;
+	left: 50% !important;
+	overflow: hidden;
+	position: fixed !important;
+	top: 50% !important;
+	z-index: 99999;
+	width: 100%;
+	max-width: 500px;
+	max-width: 31.25rem;
+	height: 500px;
+	height:31.25rem
+}
+
+#MFLPlayerPopupContainer .report {
+	height: 100%;
+	padding: 0;
+	border-width: 2px;
+	border-width: .125rem;
+	overflow:hidden
+}
+
+#MFLPlayerPopupContainer caption {
+	width: 100%;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	display: inline-block;
+	border-radius:0
+}
+
+#MFLPlayerPopupClose {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	top: 6px;
+	top: .375rem;
+	right: 7px;
+	right: .438rem;
+	border-radius: 3px;
+	border-radius: .188rem;
+	line-height: 26px;
+	line-height: 1.625rem;
+	width: 26px;
+	width: 1.625rem;
+	text-align: center;
+	color: #fff;
+	background: #263e68;
+	border: 2px solid #fff;
+	border: .125rem solid #fff;
+	font-weight:700
+}
+
+#MFLPlayerPopupClose:hover {
+	background:#cd2122
+}
+
+#MFLPlayerPopupContainer .popreport td.pop-photo {
+	width: 81px;
+	width: 5.063rem;
+	text-align: left;
+	width: 1px;
+	border: 0;
+	position: relative;
+	height: 109px;
+	height:6.813rem
+}
+
+#MFLPlayerPopupContainer .articlepicture {
+	margin: 0;
+	height: 109px;
+	height: 6.813rem;
+	width: 81px;
+	width: 5.063rem;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box
+}
+
+#MFLPlayerPopupHeader .popreport td.pop-photo, #MFLPlayerPopupBio .popreport td.pop-photo {
+	text-indent:0
+}
+
+.MFLPlayerPopupJersey {
+	position: absolute;
+	bottom: 4px;
+	bottom: .25rem;
+	left: 4px;
+	left: .25rem;
+	border-radius: 20px;
+	border-radius: 1.25rem;
+	background-color: #000;
+	color:#fff
+}
+
+.MFLPlayerPopupJersey span {
+	text-align: center;
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	width: 16px;
+	font-size: 9px;
+	font-size:.563rem
+}
+
+.MFLPlayerPopupNFLTeamLogo {
+	position: absolute;
+	top: 3px;
+	top: .188rem;
+	left: 55px;
+	left: 3.438rem;
+	height: 23px;
+	height: 1.438rem;
+	width: auto;
+	border: 0;
+	outline:0
+}
+
+#MFLPlayerPopupContainer .MFLPopTabWrap {
+	padding: 0 2px;
+	padding:0 .125rem
+}
+
+#MFLPlayerPopupBioTab {
+	display:none
+}
+
+ul.MFLPlayerPopupTab {
+	height: 36px;
+	height: 2.25rem;
+	line-height: 32px;
+	line-height: 2rem;
+	width: 100%;
+	padding: 0;
+	border-bottom: 4px solid #cd2122;
+	border-bottom: .25rem solid #cd2122;
+	background:#263e68
+}
+
+ul.MFLPlayerPopupTab li {
+	display: table-cell;
+	text-align: center;
+	width: 1%;
+	border-right: 1px solid #182a4a;
+	border-right:.0625rem solid #182a4a
+}
+
+ul.MFLPlayerPopupTab li a {
+	display: block;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-right: 1px solid rgba(255, 255, 255, .1);
+	border-right:.0625rem solid rgba(255, 255, 255, .1)
+}
+
+ul.MFLPlayerPopupTab li:last-child > a:nth-child(1), ul.MFLPlayerPopupTab > li:last-child {
+	border-right:0
+}
+
+ul.MFLPlayerPopupTab li a:hover {
+	text-decoration: underline;
+	background: #182a4a;
+	color:#fff
+}
+
+ul.MFLPlayerPopupTab li a.active {
+	background: #cd2122;
+	color:#fff
+}
+
+.MFLPlayerPopupTabContent {
+	display:none
+}
+
+#MFLPlayerPopupNews, #MFLPlayerPopupBio, #MFLPlayerPopupStatsHistory, #MFLPlayerPopupStats {
+	position: relative;
+	height: 280px;
+	height: 17.5rem;
+	overflow: auto;
+	-webkit-overflow-scrolling:touch
+}
+
+.MFLPlayerPopupTabContent {
+	-webkit-animation: MFLPlayerPopupFadeEffect 1s;
+	animation:MFLPlayerPopupFadeEffect 1s
+}
+
+#MFLPlayerPopupContainer .popreport {
+	width: 100%;
+	padding: 2px;
+	padding: .125rem;
+	border-spacing:0
+}
+
+#MFLPlayerPopupHeader .popreport td, #MFLPlayerPopupBio .popreport td {
+	text-indent: 5px;
+	text-indent:.313rem
+}
+
+#MFLPlayerPopupHeader, #MFLPlayerPopupBio {
+	margin: 7px 2px 2px;
+	margin:.438rem .125rem .125rem .125rem
+}
+
+#MFLPlayerPopupContainer .warning {
+	padding: 0;
+	font-size:100%
+}
+
+#MFLPlayerPopupContainer h3.warning {
+	text-align: center;
+	padding-top: 5px;
+	font-weight:400
+}
+
+#MFLPlayerPopupContainer .MFLPlayerPopupMoreNews {
+	cursor:pointer
+}
+
+#MFLPlayerPopupContainer .report td {
+	font-size: 11px;
+	font-size: .688rem;
+	padding:0
+}
+
+#MFLPlayerPopupNews .headline th span {
+	float:right
+}
+
+#MFLPlayerPopupContainer th, #MFLPlayerPopupContainer td {
+	text-align:center
+}
+
+#MFLPlayerPopupContainer #MFLPlayerPopupHeader td, #MFLPlayerPopupContainer #MFLPlayerPopupBio td, #MFLPlayerPopupContainer #MFLPlayerPopupNews td, #MFLPlayerPopupContainer #MFLPlayerPopupNews .headline th, #MFLPlayerPopupContainer #MFLPlayerPopupBio .popreport td, #MFLPlayerPopupContainer #MFLPlayerPopupTrades td, #MFLPlayerPopupContainer #MFLPlayerPopupCommishMessage td, #MFLPlayerPopupContainer #MFLPlayerPopupReminders td, #MFLPlayerPopupContainer #MFLPlayerPopupMessages td {
+	text-align:left
+}
+
+#MFLPlayerPopupLinks .popreport td {
+	display: table-cell;
+	width:1%
+}
+
+#MFLPlayerPopupContainer .popreport tr.rows-4 {
+	height: 27.25px;
+	height:1.703rem
+}
+
+#MFLPlayerPopupContainer .popreport tr.rows-6 {
+	height: 18.16px;
+	height:1.135rem
+}
+
+#MFLPlayerPopupContainer #MFLPlayerPopupArticleLoaded td {
+	padding: 5px;
+	padding: .313rem;
+	font-size:100%
+}
+
+#MFLPlayerPopupArticleLoaded tr.article td {
+	text-align:left
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupArticleContainer {
+	max-height: 250px;
+	max-height:15.625rem
+}
+
+#MFLPlayerPopupArticleLoaded {
+	position: relative;
+	margin-top: 8px;
+	margin-top: .5rem;
+	height: 198px;
+	height: 12.375rem;
+	overflow: auto;
+	-webkit-overflow-scrolling:touch
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer {
+	height: 400px;
+	height: 25rem;
+	max-height: 400px;
+	max-height:25rem
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent {
+	height: 210px;
+	height: 13.125rem;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-top: 3px;
+	margin-top:.188rem
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer #MFLPlayerPopupHeader .popreport {
+	height: 100px;
+	height:6.25rem
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer td {
+	text-align: left;
+	text-indent:0
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .popreportfooter td {
+	text-align: center;
+	padding: 5px;
+	padding:.313rem
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer input, #MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer label {
+	vertical-align: middle
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer #MFLPlayerPopupTrades form .popreport td[align="right"] {
+	text-align:center
+}
+
+.playerPopupIcon {
+	color: transparent;
+	font-size:0
+}
+
+.mflModal {
+	display: none;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #000;
+	background-color:rgba(0, 0, 0, 0.5)
+}
+
+.mflModal-content {
+	position: relative;
+	margin: 10% auto;
+	padding: 0;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.mflModal-body {
+	margin:5px 16px
+}
+
+@media only screen and (max-width: 720px) {
+	#modal_body_player > table > tbody > tr > td {
+		float: left;
+		width:100% !important
+	}
+}
+
+#myfantasyleague_tabs .tabs_scroll {
+	overflow: auto;
+	-webkit-overflow-scrolling:touch
+}
+
+#myfantasyleague_tabs .myfantasyleague_tabmenu {
+	height: 100%;
+	margin: 0;
+	z-index: 99997;
+	font-size:0
+}
+
+#myfantasyleague_tabs div .report caption {
+	display: none;
+	margin:0
+}
+
+#myfantasyleague_tabs div .report {
+	padding-top:0
+}
+
+#myfantasyleague_tabs .myfantasyleague_tabmenu span {
+	text-transform:uppercase
+}
+
+#myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li {
+	height: 34px;
+	line-height: 34px;
+	height: 2.125rem;
+	line-height:2.125rem
+}
+
+#body_login .report td.inputlabel {
+	vertical-align:top
+}
+
+#body_options_26 .rulestable > tbody > tr > td:first-of-type {
+	width: 50%;
+	padding-right: 5px;
+	padding-right: .313rem;
+	font-weight:700
+}
+
+#body_options_26 .rulestable > tbody > tr > td:last-of-type {
+	width: 50%;
+	padding-left: 5px;
+	padding-left: .313rem
+}
+
+#destination_list, #source_list, textarea, input[type="text"], #picker, #drop, #add {
+	background: #fff;
+	color:#000
+}
+
+#add tr.highlight, #add tr:hover, #drop tr.highlight, #drop tr:hover, #picker tr:hover, #picker tr.highlight {
+	background: #000;
+	color:#fff
+}
+
+#picker tr:hover, #add tr.highlight, #add tr:hover, #drop tr.highlight, #drop tr:hover {
+	cursor:pointer
+}
+
+#waiver_request_list td, #waiver_request_list th, #body_options_254 .report th, #body_options_254 .report td {
+	text-align:left
+}
+
+#body_options_254 .report .credit, #body_options_254 .report .debit {
+	text-align: center
+}
+
+#body_options_254 .report th[colspan="4"] {
+	text-align: center;
+	font-size: 120%
+}
+

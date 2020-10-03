@@ -1,0 +1,114 @@
+@media only screen and (max-width: 63em) {
+	#lineup #benchtable td.avg-pts, #lineup #startertable td.avg-pts, #lineup #benchtable tr.theader td.avg-pts, #lineup #startertable tr.theader td.avg-pts {
+		display:none
+	}
+}
+
+@media only screen and (max-width: 54em) {
+	#lineup #benchtable td.ytd-pts, #lineup #startertable td.ytd-pts, #lineup #benchtable tr.theader td.ytd-pts, #lineup #startertable tr.theader td.ytd-pts {
+		display:none
+	}
+}
+
+@media only screen and (max-width: 44em) {
+	.starter-hide, .bench-hide {
+		display:none !important
+	}
+
+	.starter-show, .bench-show {
+		float: inherit !important;
+		width:100% !important
+	}
+
+	.mobile-link {
+		cursor:pointer
+	}
+
+	.mobile-table-hide {
+		display:none !important
+	}
+
+	.mobile-table-show {
+		float: inherit !important;
+		width:100% !important
+	}
+
+	#lineup #startertable .row_empty td {
+		position:relative
+	}
+
+	#lineup #startertable .row_empty td:after {
+		font-family: "FontAwesome";
+		position: absolute;
+		content: "\f055";
+		font-size: 30px;
+		right: 5px;
+		top: 50%;
+		transform:translateY(-50%)
+	}
+
+	#lineup #benchtable td.ytd-pts, #lineup #startertable td.ytd-pts, #lineup #benchtable tr.theader td.ytd-pts, #lineup #startertable tr.theader td.ytd-pts {
+		display: block;
+		right:150px
+	}
+
+	#lineup #benchtable td.avg-pts, #lineup #startertable td.avg-pts, #lineup #benchtable tr.theader td.avg-pts, #lineup #startertable tr.theader td.avg-pts {
+		display: block;
+		right:250px
+	}
+}
+
+@media only screen and (max-width: 35em) {
+	#lineup #benchtable td.ytd-pts, #lineup #startertable td.ytd-pts, #lineup #benchtable tr.theader td.ytd-pts, #lineup #startertable tr.theader td.ytd-pts {
+		right:120px
+	}
+
+	#lineup #benchtable td.avg-pts, #lineup #startertable td.avg-pts, #lineup #benchtable tr.theader td.avg-pts, #lineup #startertable tr.theader td.avg-pts {
+		right:180px
+	}
+}
+
+@media only screen and (max-width: 31em) {
+	#lineup #benchtable td.avg-pts, #lineup #startertable td.avg-pts, #lineup #benchtable tr.theader td.avg-pts, #lineup #startertable tr.theader td.avg-pts {
+		display:none
+	}
+}
+
+@media only screen and (max-width: 26em) {
+	#lineup #benchtable td.ytd-pts, #lineup #startertable td.ytd-pts, #lineup #benchtable tr.theader td.ytd-pts, #lineup #startertable tr.theader td.ytd-pts {
+		display:none
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	#lineup #benchtable td.rush-rank, #lineup #startertable td.rush-rank {
+		right:38px
+	}
+
+	#lineup #benchtable td.pass-rank, #lineup #startertable td.pass-rank {
+		right:68px
+	}
+
+	#lineup #benchtable tr.theader td.rank, #lineup #startertable tr.theader td.rank {
+		right:36px
+	}
+
+	tr.theader .rush-rank {
+		left:3px
+	}
+
+	tr.theader .pass-rank {
+		right:3px
+	}
+}
+
+@media only screen and (max-width: 19.9em) {
+	#lineup #benchtable td.rush-rank, #lineup #startertable td.rush-rank, #lineup #benchtable td.pass-rank, #lineup #startertable td.pass-rank {
+		display:none
+	}
+
+	#lineup #benchtable tr.theader td.rank, #lineup #startertable tr.theader td.rank {
+		display: none
+	}
+}
+
